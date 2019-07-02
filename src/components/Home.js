@@ -2,6 +2,8 @@ import React from 'react';
 import Card from './Card';
 import CardTestimonial from './CardTestimonial'
 import Modal from 'react-modal';
+import { connect } from 'react-redux';
+import { createClient } from '../store/actions';
 import '../css/Home.css'
 
 // blue dark #295b8d
@@ -22,8 +24,17 @@ const customStyles = {
 class Home extends React.Component {
 
   state= {
-    modalIsOpen: false
+    modalIsOpen: false,
+    clientData: {
+      name: '',
+      email: '',
+      phone: ''
+    }
   }
+
+  componentWillMount() {
+    Modal.setAppElement('body');
+}
 
   openModal = () => {
     this.setState({modalIsOpen: true});
@@ -31,6 +42,18 @@ class Home extends React.Component {
  
   closeModal = () => {
     this.setState({modalIsOpen: false});
+  }
+
+  sendClientInfo = (formValues) => {
+    this.props.createClient(formValues).then(() => {
+      if(!this.props.error) {
+        this.closeModal()
+      }
+    })
+  }
+
+  handleInputChange = (event, value) => {
+    this.setState({clientData: {...this.state.clientData, [value]: event.target.value}})
   }
 
   render() {
@@ -52,19 +75,20 @@ class Home extends React.Component {
                   <p style={{marginLeft: '5px', color: '#295b8d', fontWeight: 'bold', fontSize: '18px', width: '320px'}}>Deja la siguiente información para contactarte y ayudarte a hacer marketing correctamente</p>
                   <form style={{marginTop: '30px'}}>
                     <div>
-                      <input className="inputModal" placeholder="Nombre"></input>
+                      <input className="inputModal" placeholder="Nombre" onChange={(e, value) => this.handleInputChange(e, 'name')}></input>
                     </div>
                     <div>
-                      <input className="inputModal" placeholder="Email"></input>
+                      <input className="inputModal" placeholder="Email" onChange={(e, value) => this.handleInputChange(e, 'email')}></input>
                     </div>
                     <div>
-                      <input className="inputModal" type="number" placeholder="Número de teléfono"></input>
+                      <input className="inputModal" type="number" placeholder="Número de teléfono" onChange={(e, value) => this.handleInputChange(e, 'phone')}></input>
                     </div>
                   </form>
                   <div style={{display: 'flex', justifyContent: 'space-between', marginTop: '20px'}}>
-                    <button onClick={this.closeModal} type="button" style={{marginTop: '10px', fontWeight: 'bold', padding: '12px', marginRight:'40px' }} className="btn btn-success">Enviar información</button>
+                    <button onClick={() => this.sendClientInfo(this.state.clientData)} type="button" style={{marginTop: '10px', fontWeight: 'bold', padding: '12px', marginRight:'40px' }} className="btn btn-success">Enviar información</button>
                     <button onClick={this.closeModal} type="button" style={{marginTop: '10px', fontWeight: 'bold', padding: '12px' }} className="btn btn-success">Quizás luego</button>
                   </div>
+                  <p style={{color: 'red', marginTop: '5px'}}>{this.props.error}</p>
               </Modal>
             </div>
           </div>
@@ -157,4 +181,11 @@ class Home extends React.Component {
   }
 } 
 
-export default Home
+const mapStateToProps = state => {
+  return {
+      error: state.client.error
+  } 
+}
+
+
+export default connect(mapStateToProps, { createClient })(Home)

@@ -35,7 +35,7 @@
     margin-top: 30px
 }
 
-.input {
+.rmk-input {
   background-color: #fbfbfb;
   border-radius: 5px;
   border: 3px solid rgba(0,0,0,0);
@@ -53,6 +53,18 @@
 
 @media (max-width: 840px) {
     .gracias__subtitle {
+        width: 100%;
+    }
+
+    .rmk-first__title{
+        font-size: 26px
+    }
+
+    .rmk-first__subtitle {
+        font-size: 20px
+    }
+
+    .rmk-input {
         width: 100%;
     }
   }

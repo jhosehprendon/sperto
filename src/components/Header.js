@@ -1,11 +1,17 @@
 import React from 'react';
 import '../css/Header.css'
+import history from '../history';
 
 class Header extends React.Component  {
+
+  sendHome = () => {
+    history.push('/')
+  }
+
   render() {
     return (
       <div className="header-sperto">
-        <p className="header__title">Sperto</p>
+        <p className="header__title" onClick={this.sendHome} style={{cursor: 'pointer'}}>Sperto</p>
         <div className="header__left">
           {/* <p className="header__left__align">About us</p> */}
           {/* <button 
