@@ -1,0 +1,45 @@
+.header-sperto {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 12px -2px rgba(0,0,0,.2);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header__title {
+    margin: 4px 0 0 10%;
+    font-weight: bold;
+    color: #295b8d;
+    font-size: 20px
+}
+
+.header__left {
+    margin-right: 10%;
+    display: flex;
+    color: #295b8d;
+}
+
+.header__left__align {
+    margin: 6px 20px 0 0;
+}
+
+.button-header-variant {
+    border-color: #295b8d; 
+    color: #295b8d;
+}
+
+.button-header-variant:hover {
+    background-color: #295b8d;
+    border-color: #295b8d;
+}
+
+@media (max-width: 540px) {
+    .heade {
+        display: none
+    }
+}
