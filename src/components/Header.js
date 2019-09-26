@@ -11,7 +11,7 @@ class Header extends React.Component  {
   render() {
     return (
       <div className="header-sperto">
-        <p className="header__title" onClick={this.sendHome} style={{cursor: 'pointer'}}>Sperto</p>
+        <p className="header__title" onClick={this.sendHome} style={{cursor: 'pointer'}}>Sperto Media</p>
         <div className="header__left">
           {/* <p className="header__left__align">About us</p> */}
           {/* <button 

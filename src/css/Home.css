@@ -14,7 +14,7 @@
 }
 
 .home-fourth {
-  background-image: url(../images/desk.jpg);
+  background-image: url(../images/something-great.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -30,7 +30,7 @@
   color: white; 
   font-size: 25px;
   margin-top: 25px; 
-  width: 50%
+  width: 40%
 }
 
 .home-first--flex {
@@ -90,6 +90,22 @@ ul li::before {
 
   .banner-first {
       width: 90%
+  }
+}
+
+.info-block {
+  margin: auto; 
+  display: flex;
+}
+
+.info-block div {
+  margin-left: 10px;
+}
+
+@media (max-width: 1040px) {
+  .info-block {
+    margin: auto; 
+    display: block;
   }
 }
 

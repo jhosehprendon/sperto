@@ -5,7 +5,7 @@
 }
 
 .rmk-fourth {
-    background-image: url(../images/desk.jpg);
+    background-image: url(../images/something-great.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -66,5 +66,27 @@
 
     .rmk-input {
         width: 100%;
+    }
+  }
+
+  .inputTool {
+    width: 80%
+    }
+
+  @media (min-width: 800px) {
+    .inputTool {
+        width: 50%
+    }
+  }
+
+  @media (max-width: 800px) {
+    .table-display {
+        display: none
+    }
+  }
+
+  @media (min-width: 800px) {
+    .table-display2 {
+        display: none
     }
   }
