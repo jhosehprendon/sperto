@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/RemarketingCase.css';
+import '../css/Sequence.css';
 import Card from './Card';
 import { connect } from 'react-redux';
 import { fetchInterests } from '../store/actions';

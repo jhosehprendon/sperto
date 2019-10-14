@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/RemarketingCase.css'
+import '../css/Sequence.css'
 import { connect } from 'react-redux';
 import { createClientLead } from '../store/actions';
 import history from '../history';

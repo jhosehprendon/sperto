@@ -114,7 +114,7 @@ class Home extends React.Component {
                       <i className="fas fa-users" style={{color: '#295b8d', margin: '3px 10px 0 0'}}></i>
                     </div>
                     <div>
-                     <h5 className="card-title" style={{color: '#3a8dde'}}>IT Recruitment</h5>
+                     <h5 className="card-title" style={{color: '#295b8d'}}>IT Recruitment</h5>
                     </div>
                   </div>
                   <ul>
@@ -131,7 +131,7 @@ class Home extends React.Component {
                       <i className="fas fa-shopping-cart" style={{color: '#295b8d', margin: '3px 10px 0 0'}}></i>
                     </div>
                     <div>
-                      <h5 className="card-title" style={{color: '#3a8dde'}}>E-commerce</h5>
+                      <h5 className="card-title" style={{color: '#295b8d'}}>E-commerce</h5>
                     </div>
                   </div>
                   <ul>
@@ -149,7 +149,7 @@ class Home extends React.Component {
                       <i className="fas fa-home" style={{color: '#295b8d', margin: '3px 10px 0 0'}}></i>
                     </div>
                     <div>
-                     <h5 className="card-title" style={{color: '#3a8dde'}}>Real Estate</h5>
+                     <h5 className="card-title" style={{color: '#295b8d'}}>Real Estate</h5>
                     </div>
                   </div>
                   <ul>
@@ -166,7 +166,7 @@ class Home extends React.Component {
                      <i className="fas fa-book" style={{color: '#295b8d', margin: '3px 10px 0 0'}}></i>
                     </div>
                     <div>
-                      <h5 className="card-title" style={{color: '#3a8dde'}}>Info Products</h5>
+                      <h5 className="card-title" style={{color: '#295b8d'}}>Info Products</h5>
                     </div>
                   </div>
                   <ul>
@@ -188,8 +188,8 @@ class Home extends React.Component {
           </div>
         </div>
   
-        <div style={{ backgroundColor: '#9dccfa', padding: '3%' }}>
-          <p style={{textAlign: 'center', color: '#295b8d', fontWeight: 'bold', fontSize: '24px', margin: 'auto'}}><i className="fas fa-quote-left" style={{marginRight: '8px'}}></i>Creemos en el Poder del Marketing para Potenciar tu Negocio<i className="fas fa-quote-right" style={{marginLeft: '8px'}}></i></p>
+        <div style={{ backgroundColor: 'white', padding: '3%' }}>
+          <p style={{textAlign: 'center', color: '#283d54', fontWeight: 'bold', fontSize: '24px', margin: 'auto'}}><i className="fas fa-quote-left" style={{marginRight: '8px', color: '#f2c924'}}></i>Creemos en el Poder del Marketing para Potenciar tu Negocio<i className="fas fa-quote-right" style={{marginLeft: '8px', color: '#f2c924'}}></i></p>
         </div>
         <div className='home-fourth' style={{height: '350px'}}>
           <div className="over">
@@ -211,7 +211,7 @@ class Home extends React.Component {
         
         <div style={{ backgroundColor: 'white', textAlign: 'center', color: '#295b8d', padding: '40px' }}>
           <p style={{fontWeight: 'bold', fontSize: '20px'}}>Sperto Media</p>
-          <a href="#">Contáctanos para ayudarte a cumplir tus objetivos</a>
+          <a href="#" style={{color: '#283d54'}}>Contáctanos para ayudarte a cumplir tus objetivos</a>
         </div>
       </div>
     )

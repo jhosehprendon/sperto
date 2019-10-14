@@ -21,11 +21,21 @@
 .header__left {
     margin-right: 10%;
     display: flex;
-    color: #295b8d;
+    color: #283d54;
+    margin-top: 5px;
 }
 
 .header__left__align {
     margin: 6px 20px 0 0;
+}
+
+.header__left-icons {
+    cursor: pointer; 
+    font-weight: bold;
+}
+
+.header__left-icons:hover {
+    color: #c4a427;
 }
 
 .button-header-variant {
@@ -39,7 +49,7 @@
 }
 
 @media (max-width: 540px) {
-    .heade {
+    .header-hide {
         display: none
     }
 }
