@@ -211,7 +211,7 @@ class Home extends React.Component {
         
         <div style={{ backgroundColor: 'white', textAlign: 'center', color: '#295b8d', padding: '40px' }}>
           <p style={{fontWeight: 'bold', fontSize: '20px'}}>Sperto Media</p>
-          <a href="#" style={{color: '#283d54'}}>Contáctanos para ayudarte a cumplir tus objetivos</a>
+          <a onClick={this.openModal} style={{color: '#283d54', cursor: 'pointer'}}>Contáctanos para ayudarte a cumplir tus objetivos</a>
           <br/>
           <a style={{fontWeight: 'bold', cursor: 'pointer'}}  onClick={this.sendNosotros}>Sobre Nosotros</a>
         </div>

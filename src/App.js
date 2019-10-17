@@ -7,7 +7,7 @@ import Header from './components/Header';
 import RemarketingCase from './components/RemarketingCase';
 import RemarketingCaseGracias from './components/RemarketingCaseGracias';
 import InterestsTool from './components/InterestsTool';
-import CoursePayment from './components/CoursePayment';
+import CursoReclutadores from './components/CursoReclutadores';
 import GuiaEmailCandidato from './components/GuiaEmailCandidato';
 import GuiaEmailCandidatoGracias from './components/GuiaEmailCandidatoGracias'
 import SecuenciaVideo1 from './components/SecuenciaVideo1';
@@ -29,7 +29,8 @@ class App extends React.Component {
           <Route path="/case-remarketing" exact component={RemarketingCase} />
           <Route path="/case-remarketing/gracias" component={RemarketingCaseGracias} />
           <Route path="/interests-tool" component={InterestsTool} />
-          <Route path="/course-payment" component={CoursePayment} />
+          {/* Recruiter Funnel */}
+          <Route path="/curso-sistema-reclutadores" component={CursoReclutadores} />
           <Route path="/guia-email-candidato" exact component={GuiaEmailCandidato} />
           <Route path="/guia-email-candidato/gracias" component={GuiaEmailCandidatoGracias} />
           <Route path="/guia-sistema" exact component={GuiaSistema} />
