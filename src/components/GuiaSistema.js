@@ -10,7 +10,7 @@ class GuiaSistema extends React.Component {
           <div style={{marginRight: '10%'}}>
             <h3 className='rmk-first__subtitle' style={{color: '#FFDE59', fontWeight: 'bold'}}>Acceso a Guía GRATIS</h3>
             <h2 className='rmk-first__title'>Cubre más Vacantes con el Sistema Automático de Generación de Candidatos</h2>
-            <h3 className='rmk-first__subtitle'>Este sistema funciona como una máquina que una vez activada no para de generar candidatos</h3>
+            <h3 className='rmk-first__subtitle'>Inicia tu Dia con el Calendario lleno de Entrevistas Programadas</h3>
             <form style={{marginTop: '30px'}}>
               <div>
                 <input className="rmk-input" onChange={(e, value) => this.handleInputChange(e, 'name')} placeholder="Nombre"></input>

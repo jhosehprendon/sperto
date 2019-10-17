@@ -5,6 +5,7 @@ import Modal from 'react-modal';
 import { connect } from 'react-redux';
 import { createClient } from '../store/actions';
 import '../css/Home.css'
+import history from '../history';
 
 // blue dark #295b8d
 // blue medium #3a8dde
@@ -56,14 +57,18 @@ class Home extends React.Component {
     this.setState({clientData: {...this.state.clientData, [value]: event.target.value}})
   }
 
+  sendNosotros = () => {
+    history.push('/sobre-nosotros')
+  }
+
   render() {
     return ( 
       <div>
         <div className='home-first'>
           <div className='home-first--flex over'>
             <div style={{marginRight: '10%'}}>
-              <h2 className='home-first__title'>Transforma tu Negocio en una Máquina de Generar Resultados</h2>
-              <h3 className='home-first__subtitle'>Maximiza tus Resultados con el Poder del Marketing Digital</h3>
+              <h2 className='home-first__title'>Conecta con el Mejor Talento IT en Modo Automático</h2>
+              <h3 className='home-first__subtitle'>Accelera el Proceso de Selección con el Poder del Marketing Digital</h3>
               <button onClick={this.openModal} type="button" style={{marginTop: '10px', fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Consulta Gratis</button>
               <Modal
                 isOpen={this.state.modalIsOpen}
@@ -97,83 +102,78 @@ class Home extends React.Component {
         </div>
         <div style={{ backgroundColor: '#9dccfa', padding: '1%' }}>
           <hr style={{backgroundColor: '#3a8dde', width: '80px'}}></hr>
-          <p className="banner-first">Usamos estrategias efectivas de marketing digital para conectar la audiencia indicada con tu empresa</p>
+          <p className="banner-first">Usamos estrategias efectivas de marketing digital para conectar y crear relaciones con talento de calidad</p>
           <hr style={{backgroundColor: '#3a8dde', width: '80px'}}></hr>
         </div>
         <div style={{ backgroundColor: '#66b3ff', height: '10px' }}>
         </div>
         <div style={{ paddingTop: '4%'}}>
-          <h2 style={{textAlign: 'center', color: '#295b8d', fontWeight: 'bold'}}>Experiencia en...</h2>
+          <h2 style={{textAlign: 'center', color: '#295b8d', fontWeight: 'bold'}}>Sistema de Generación de Candidatos</h2>
           <hr style={{backgroundColor: '#3a8dde', width: '80px'}}></hr>
           <div className="row" style={{paddingTop: '4%'}}>
             <div className="info-block">
             <div>
                 <Card>
-                  <div style={{display: 'flex', margin: '10px 0 10px 10px'}}>
-                    <div> 
-                      <i className="fas fa-users" style={{color: '#295b8d', margin: '3px 10px 0 0'}}></i>
-                    </div>
+                  <div style={{margin: '10px 0 10px 0px'}}>
                     <div>
-                     <h5 className="card-title" style={{color: '#295b8d'}}>IT Recruitment</h5>
+                     <h5 className="card-title" style={{color: '#295b8d'}}>1- Lead Generation</h5>
                     </div>
                   </div>
-                  <ul>
-                    <li>Sistema de generación de candidatos</li>
-                    <li>Lead Nurturing</li>
-                    <li>Candidate Experience</li>
-                  </ul>
+                  <div style={{margin: '10px 0 10px -15px'}}>
+                    <ul>
+                      <li>Landing page</li>
+                      <li>Contenido de Valor</li>
+                      <li>Facebook Ads</li>
+                    </ul>
+                  </div>
                 </Card>
               </div>
               <div>
                 <Card>
-                  <div style={{display: 'flex', margin: '10px 0 4px 10px'}}>  
+                  <div style={{margin: '10px 0 4px 0px'}}>  
                     <div>
-                      <i className="fas fa-shopping-cart" style={{color: '#295b8d', margin: '3px 10px 0 0'}}></i>
-                    </div>
-                    <div>
-                      <h5 className="card-title" style={{color: '#295b8d'}}>E-commerce</h5>
+                      <h5 className="card-title" style={{color: '#295b8d'}}>2- Secuencia de Emails</h5>
                     </div>
                   </div>
-                  <ul>
-                    <li>Brand Awareness</li>
-                    <li>Dynamic Product Ads</li>
-                    <li>Product Catalogue</li>
-                    <li>Instagram Shop</li>
-                  </ul>
+                  <div style={{margin: '10px 0 10px -15px'}}>
+                    <ul>
+                      <li>Relación con el lead</li>
+                      <li>Secuencias contenido</li>
+                      <li>Ads replica</li>
+                    </ul>
+                  </div>
                 </Card>
               </div>
               <div>
                 <Card>
-                  <div style={{display: 'flex', margin: '10px 0 10px 10px'}}>
-                    <div> 
-                      <i className="fas fa-home" style={{color: '#295b8d', margin: '3px 10px 0 0'}}></i>
-                    </div>
+                  <div style={{margin: '10px 0 10px 0px'}}>
                     <div>
-                     <h5 className="card-title" style={{color: '#295b8d'}}>Real Estate</h5>
+                     <h5 className="card-title" style={{color: '#295b8d'}}>3- Llamada Reconocimiento</h5>
                     </div>
                   </div>
-                  <ul>
-                    <li>FB Lead Generation Form</li>
-                    <li>Lead Generation con Landing Pages</li>
-                    <li>Diseño de Lead Magnet</li>
-                  </ul>
+                  <div style={{margin: '10px 0 10px -15px'}}>
+                    <ul>
+                      <li>Filtro de leads de valor</li>
+                      <li>Programación de reuniones</li>
+                      <li>Evaluación inicial</li>
+                    </ul>
+                  </div>
                 </Card>
               </div>
               <div>
                 <Card>
-                  <div style={{display: 'flex', margin: '10px 0 10px 10px'}}>  
+                  <div style={{margin: '10px 0 10px 0px'}}>  
                     <div>
-                     <i className="fas fa-book" style={{color: '#295b8d', margin: '3px 10px 0 0'}}></i>
-                    </div>
-                    <div>
-                      <h5 className="card-title" style={{color: '#295b8d'}}>Info Products</h5>
+                      <h5 className="card-title" style={{color: '#295b8d'}}>4- Llamada Oportunidad</h5>
                     </div>
                   </div>
-                  <ul>
-                    <li>Embudo de Marketing</li>
-                    <li>Lead Generation y Lead Magnet</li>
-                    <li>Webinars</li>
-                  </ul>
+                  <div style={{margin: '10px 0 10px -15px'}}>
+                    <ul>
+                      <li>Presentación de Vacante</li>
+                      <li>Introducción al proceso</li>
+                      <li>Selección</li>
+                    </ul>
+                  </div>
                 </Card>
               </div>
             </div>
@@ -189,7 +189,7 @@ class Home extends React.Component {
         </div>
   
         <div style={{ backgroundColor: 'white', padding: '3%' }}>
-          <p style={{textAlign: 'center', color: '#283d54', fontWeight: 'bold', fontSize: '24px', margin: 'auto'}}><i className="fas fa-quote-left" style={{marginRight: '8px', color: '#f2c924'}}></i>Creemos en el Poder del Marketing para Potenciar tu Negocio<i className="fas fa-quote-right" style={{marginLeft: '8px', color: '#f2c924'}}></i></p>
+          <p style={{textAlign: 'center', color: '#283d54', fontWeight: 'bold', fontSize: '24px', margin: 'auto'}}><i className="fas fa-quote-left" style={{marginRight: '8px', color: '#f2c924'}}></i>Creemos en el Poder del Marketing para Crear Relaciones<i className="fas fa-quote-right" style={{marginLeft: '8px', color: '#f2c924'}}></i></p>
         </div>
         <div className='home-fourth' style={{height: '350px'}}>
           <div className="over">
@@ -212,6 +212,8 @@ class Home extends React.Component {
         <div style={{ backgroundColor: 'white', textAlign: 'center', color: '#295b8d', padding: '40px' }}>
           <p style={{fontWeight: 'bold', fontSize: '20px'}}>Sperto Media</p>
           <a href="#" style={{color: '#283d54'}}>Contáctanos para ayudarte a cumplir tus objetivos</a>
+          <br/>
+          <a style={{fontWeight: 'bold', cursor: 'pointer'}}  onClick={this.sendNosotros}>Sobre Nosotros</a>
         </div>
       </div>
     )

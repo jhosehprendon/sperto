@@ -17,31 +17,38 @@ import MiniCurso from './components/MiniCurso';
 import Consulta from './components/Consulta';
 import GuiaSistema from './components/GuiaSistema';
 import GuiaSistemaGracias from './components/GuiaSistemaGracias';
+import Nosotros from './components/Nosotros';
 
-const App = () => (
-  <Router history={history}>
-      <Header />
-      <Switch>
-        <Route path="/" exact component={Home}/>
-        <Route path="/case-remarketing" exact component={RemarketingCase} />
-        <Route path="/case-remarketing/gracias" component={RemarketingCaseGracias} />
-        <Route path="/interests-tool" component={InterestsTool} />
-        <Route path="/course-payment" component={CoursePayment} />
-        <Route path="/guia-email-candidato" exact component={GuiaEmailCandidato} />
-        <Route path="/guia-email-candidato/gracias" component={GuiaEmailCandidatoGracias} />
-        <Route path="/secuencia/video-1" component={SecuenciaVideo1} />
-        <Route path="/guia-sistema" exact component={GuiaSistema} />
-        <Route path="/guia-sistema/gracias" exact component={GuiaSistemaGracias} />
-        <Route path="/secuencia/video-2" component={SecuenciaVideo2} />
-        <Route path="/secuencia/video-3" component={SecuenciaVideo3} />
-        <Route path="/mini-curso" component={MiniCurso} />
-        <Route path="/consulta" component={Consulta} />
-        <Route path='/secuencia/video-4' exact={true} component={MiniCurso} />
-        <Route path='/secuencia/*' exact={true} component={SecuenciaVideo1} />
-        <Route path='*' exact={true} component={Home} />
-      </Switch>
-  </Router>
-);
+class App extends React.Component {
+  render() {
+    return (
+      <Router history={history}>
+        <Header />
+        <Switch>
+          <Route path="/" exact component={Home}/>
+          <Route path="/case-remarketing" exact component={RemarketingCase} />
+          <Route path="/case-remarketing/gracias" component={RemarketingCaseGracias} />
+          <Route path="/interests-tool" component={InterestsTool} />
+          <Route path="/course-payment" component={CoursePayment} />
+          <Route path="/guia-email-candidato" exact component={GuiaEmailCandidato} />
+          <Route path="/guia-email-candidato/gracias" component={GuiaEmailCandidatoGracias} />
+          <Route path="/guia-sistema" exact component={GuiaSistema} />
+          <Route path="/guia-sistema/gracias" exact component={GuiaSistemaGracias} />
+          <Route path="/secuencia/video-1" component={SecuenciaVideo1} />
+          <Route path="/secuencia/video-2" component={SecuenciaVideo2} />
+          <Route path="/secuencia/video-3" component={SecuenciaVideo3} />
+          <Route path="/mini-curso" component={MiniCurso} />
+          <Route path="/consulta" component={Consulta} />
+          <Route path="/sobre-nosotros" component={Nosotros} />
+          {/* Redirects */}
+          <Route path='/secuencia/video-4' exact={true} component={MiniCurso} />
+          <Route path='/secuencia/*' exact={true} component={SecuenciaVideo1} />
+          <Route path='*' exact={true} component={Home} />
+        </Switch>
+      </Router>
+    )
+  }
+};
 
 
 export default App;

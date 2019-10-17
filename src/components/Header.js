@@ -8,6 +8,10 @@ class Header extends React.Component  {
     history.push('/')
   }
 
+  sendNosotros = () => {
+    history.push('/sobre-nosotros')
+  }
+
   render() {
     return (
       <div className="header-sperto">
@@ -17,7 +21,7 @@ class Header extends React.Component  {
             <p class="header__left-icons">Cursos</p>
           </div>
           <div  className="header__left__align header-hide">
-            <p class="header__left-icons">Sobre Nostros</p>
+            <p class="header__left-icons" onClick={this.sendNosotros}>Sobre Nostros</p>
           </div>
         </div>
       </div>
