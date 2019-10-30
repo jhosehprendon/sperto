@@ -74,7 +74,7 @@ ul li::before {
   margin: 14% 0 14% 10%; 
   font-size: 40px;
   font-weight: bold;
-  width: 65%
+  width: 70%
 }
 
 .nosotros-intro {
@@ -89,12 +89,14 @@ ul li::before {
 .nosotros-block {
   display: flex;
   background-color: #203144; 
-  color: white
+  color: white;
+  padding-bottom: 60px;
 }
 
 .nosotros-story {
-  width: 50%; 
-  margin: 4% 10% 1% 0;
+  margin: 50px auto;
+  padding: 20px 0 20px 0;
+  width: 80%
 }
 
 .row {
@@ -103,6 +105,11 @@ ul li::before {
 }
 
 @media (max-width: 840px) {
+
+  .nosotros-intro-main {
+    width: 100%;
+    padding-top: 2px;
+  }
 
   .home-first__subtitle {
       width: 100%
@@ -123,12 +130,6 @@ ul li::before {
 
   .nosotros-intro-main  {
     display: none
-  }
-
-  .nosotros-story {
-    margin: auto;
-    padding: 20px 0 20px 0;
-    width: 80%
   }
 
   .nosotros-block {

@@ -61,15 +61,19 @@ class Home extends React.Component {
     history.push('/sobre-nosotros')
   }
 
+  sendConsulta = () => {
+    history.push('/consulta')
+  }
+
   render() {
     return ( 
       <div>
         <div className='home-first'>
           <div className='home-first--flex over'>
             <div style={{marginRight: '10%'}}>
-              <h2 className='home-first__title'>Conecta con el Mejor Talento IT en Modo Automático</h2>
-              <h3 className='home-first__subtitle'>Accelera el Proceso de Selección con el Poder del Marketing Digital</h3>
-              <button onClick={this.openModal} type="button" style={{marginTop: '10px', fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Consulta Gratis</button>
+              <h2 className='home-first__title'>Construye Relaciones con el Mejor Talento IT</h2>
+              <h3 className='home-first__subtitle'>Mejora tu Proceso de Selección con el Poder del Marketing Digital</h3>
+              <button onClick={this.sendConsulta} type="button" style={{marginTop: '10px', fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">¡Agenda tu Consulta Gratis!</button>
               <Modal
                 isOpen={this.state.modalIsOpen}
                 onAfterOpen={this.afterOpenModal}
@@ -121,8 +125,8 @@ class Home extends React.Component {
                   </div>
                   <div style={{margin: '10px 0 10px -15px'}}>
                     <ul>
-                      <li>Landing page</li>
                       <li>Contenido de Valor</li>
+                      <li>Conexión por Linkedin</li>
                       <li>Facebook Ads</li>
                     </ul>
                   </div>
@@ -132,14 +136,14 @@ class Home extends React.Component {
                 <Card>
                   <div style={{margin: '10px 0 4px 0px'}}>  
                     <div>
-                      <h5 className="card-title" style={{color: '#295b8d'}}>2- Secuencia de Emails</h5>
+                      <h5 className="card-title" style={{color: '#295b8d'}}>2- Construcción de Relación</h5>
                     </div>
                   </div>
                   <div style={{margin: '10px 0 10px -15px'}}>
                     <ul>
-                      <li>Relación con el lead</li>
-                      <li>Secuencias contenido</li>
-                      <li>Ads replica</li>
+                      <li>Secuencia de Emails</li>
+                      <li>Canal Slack</li>
+                      <li>Ads con contenido</li>
                     </ul>
                   </div>
                 </Card>
@@ -199,9 +203,9 @@ class Home extends React.Component {
                   <img style={{width: '75%'}} alt="sperto" src={require('../images/background.png')} />
                 </div>
                 <div className="col" style={{ paddingTop: '8%', color: 'white', fontWeight: 'bold', fontSize: '18px'}}>
-                  <p style={{padding: '0 0 5px 30px', fontSize: '30px'}}>Genera Resultados con la Estrategia de Marketing Apropiada</p>
+                  <p style={{padding: '0 0 5px 30px', fontSize: '30px'}}>Genera Resultados con la Mejor Estrategia de Marketing</p>
                   <div style={{paddingLeft: '30px'}}>
-                    <button onClick={this.openModal} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Consulta Gratis</button>
+                    <button onClick={this.sendConsulta} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">¡Agenda tu Consulta Gratis!</button>
                   </div>
                 </div>
               </div>
@@ -211,7 +215,7 @@ class Home extends React.Component {
         
         <div style={{ backgroundColor: 'white', textAlign: 'center', color: '#295b8d', padding: '40px' }}>
           <p style={{fontWeight: 'bold', fontSize: '20px'}}>Sperto Media</p>
-          <a onClick={this.openModal} style={{color: '#283d54', cursor: 'pointer'}}>Contáctanos para ayudarte a cumplir tus objetivos</a>
+          <a onClick={this.sendConsulta} style={{color: '#283d54', cursor: 'pointer'}}>Contáctanos para ayudarte a cumplir tus objetivos</a>
           <br/>
           <a style={{fontWeight: 'bold', cursor: 'pointer'}}  onClick={this.sendNosotros}>Sobre Nosotros</a>
         </div>

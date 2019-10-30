@@ -35,6 +35,21 @@
     margin-top: 30px
 }
 
+.payment-input {
+    background-color: #fbfbfb;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  color: #3c3c3c;
+  font-size: 18px;
+  font-weight:500;
+  line-height: 22px;
+  margin-bottom: 10px;
+  outline: none;
+  padding: 7px 13px 7px 20px;
+  width:400px;
+}
+
 
 .rmk-input {
   background-color: #fbfbfb;
@@ -80,8 +95,8 @@
     }
 
     .video {
-        width: 400px;
-        height: 240px;
+        width: 350px;
+        height: 200px;
     }
   }
 
