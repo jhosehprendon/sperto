@@ -98,6 +98,10 @@
         width: 350px;
         height: 200px;
     }
+
+    .payment-input {
+        width:250px;
+    }
   }
 
   .inputTool {

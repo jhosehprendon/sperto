@@ -135,6 +135,10 @@ ul li::before {
   .nosotros-block {
     display: block
   }
+
+  .nosotros-intro {
+    margin: 10% 0 0 10%;
+  }
 }
 
 .info-block {
