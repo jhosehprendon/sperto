@@ -28,9 +28,9 @@ class CursoReclutadores extends React.Component {
           <h1 className='nosotros-banner'><i className="fas fa-quote-left" style={{marginRight: '8px', color: '#f2c924'}}></i>Que bueno iniciar tu día con el calendario lleno de entrevistas con candidatos potenciales <i className="fas fa-quote-right" style={{ color: '#f2c924'}}></i></h1>
         </div>
         <h2 style={{width: '80%', margin: '2% auto'}}>En este curso vas a conocer el poder del Marketing en el proceso de Reclutamiento y vas a poder crear tu sistema automático de generación de candidatos</h2>
-        <div style={{textAlign: 'center'}}>
+        {/* <div style={{textAlign: 'center'}}>
           <iframe title="miniCurso" type="text/html" frameborder="0" class="video" src="https://www.youtube.com/embed/QU_7Wwj2f8w" allowfullscreen></iframe>
-        </div>
+        </div> */}
         <div style={{textAlign: "center", marginTop: '6%'}}>
           <hr style={{width: '30%', backgroundColor: '#f2c924'}}></hr>
           <h2>Curso de Marketing Digital para Reclutadores IT</h2>
