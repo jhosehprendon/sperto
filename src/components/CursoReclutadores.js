@@ -33,7 +33,7 @@ class CursoReclutadores extends React.Component {
         </div>
         <div style={{textAlign: "center", marginTop: '6%'}}>
           <hr style={{width: '30%', backgroundColor: '#f2c924'}}></hr>
-          <h2>Curso Avanzado de Marketing para Reclutadores IT</h2>
+          <h2>Curso de Marketing Digital para Reclutadores IT</h2>
           <h2><span style={{textDecoration: 'line-through'}}>$2000</span> $197</h2>
         </div>
         <form style={{marginTop: '30px', textAlign: 'center'}}>
