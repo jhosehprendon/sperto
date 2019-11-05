@@ -15,6 +15,7 @@ import SecuenciaVideo2 from './components/SecuenciaVideo2';
 import SecuenciaVideo3Consulta from './components/SecuenciaVideo3Consulta';
 import SecuenciaVideo3Curso from './components/SecuenciaVideo3Curso';
 import MiniCurso from './components/MiniCurso';
+import MiniCursoRegistro from './components/MiniCursoRegistro';
 import Consulta from './components/Consulta';
 import GuiaSistema from './components/GuiaSistema';
 import GuiaSistemaGracias from './components/GuiaSistemaGracias';
@@ -43,7 +44,8 @@ class App extends React.Component {
           <Route path="/secuencia/video-2" component={SecuenciaVideo2} />
           <Route path="/secuencia/video-3-consulta" component={SecuenciaVideo3Consulta} />
           <Route path="/secuencia/video-3-curso" component={SecuenciaVideo3Curso} />
-          <Route path="/mini-curso" component={MiniCurso} />
+          <Route path="/mini-curso" exact component={MiniCurso} />
+          <Route path="/mini-curso/registro" component={MiniCursoRegistro} />
           <Route path="/consulta" exact component={Consulta} />
           <Route path="/consulta/gracias" component={ConsultaGracias} />
           <Route path="/sobre-nosotros" component={Nosotros} />
