@@ -3,22 +3,23 @@ import history from '../history';
 
 class CursoReclutadores extends React.Component {
 
-  state = {
-    clientData: {
-      name: '',
-      email: '',
-      phone: ''
-    }
-  }
+  // state = {
+  //   clientData: {
+  //     name: '',
+  //     email: '',
+  //     phone: ''
+  //   }
+  // }
 
 
-  handleInputChange = (event, value) => {
-    this.setState({clientData: {...this.state.clientData, [value]: event.target.value}})
-  }
+  // handleInputChange = (event, value) => {
+  //   this.setState({clientData: {...this.state.clientData, [value]: event.target.value}})
+  // }
 
   sendCursoPayment = () => {
-    history.push('/curso-sistema-reclutadores/payment')
-    window.location.reload(false)
+    // history.push('/curso-sistema-reclutadores/payment')
+    // window.location.reload(false)
+    window.location.href = "https://jhosehprendon.activehosted.com/f/3"
   }
   
   render() {
@@ -36,14 +37,6 @@ class CursoReclutadores extends React.Component {
           <h2>Curso de Marketing Digital para Reclutadores IT</h2>
           <h2><span style={{textDecoration: 'line-through'}}>$2000</span> $197</h2>
         </div>
-        <form style={{marginTop: '30px', textAlign: 'center'}}>
-          <div>
-            <input className="payment-input" onChange={(e, value) => this.handleInputChange(e, 'name')} placeholder="Nombre"></input>
-          </div>
-          <div>
-            <input className="payment-input" onChange={(e, value) => this.handleInputChange(e, 'email')} placeholder="Email"></input>
-          </div>
-        </form>
         <div style={{textAlign: 'center', marginBottom: '20px'}}>
           <button onClick={this.sendCursoPayment} type="button" style={{marginTop: '10px', fontWeight: 'bold', padding: '12px' }} className="btn btn-success">Comprar curso</button>
         </div>

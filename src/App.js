@@ -22,6 +22,8 @@ import GuiaSistemaGracias from './components/GuiaSistemaGracias';
 import Nosotros from './components/Nosotros';
 import CursoReclutadoresPayment from './components/CursoReclutadoresPayment';
 import ConsultaGracias from './components/ConsultaGracias';
+import GuiaEsquemaGoogle from './components/GuiaEsquemaGoogle';
+import GuiaEsquemaGoogleGracias from './components/GuiaEsquemaGoogleGracias';
 
 class App extends React.Component {
   render() {
@@ -33,21 +35,32 @@ class App extends React.Component {
           <Route path="/case-remarketing" exact component={RemarketingCase} />
           <Route path="/case-remarketing/gracias" component={RemarketingCaseGracias} />
           <Route path="/interests-tool" component={InterestsTool} />
+
+          {/* Manager Funnel */}
+          <Route path="/guia-esquema-google" exact component={GuiaEsquemaGoogle} />
+          <Route path="/guia-esquema-google/gracias" component={GuiaEsquemaGoogleGracias} />
+
           {/* Recruiter Funnel */}
           <Route path="/curso-sistema-reclutadores" exact component={CursoReclutadores} />
           <Route path="/curso-sistema-reclutadores/payment" component={CursoReclutadoresPayment} />
+
           <Route path="/guia-email-candidato" exact component={GuiaEmailCandidato} />
           <Route path="/guia-email-candidato/gracias" component={GuiaEmailCandidatoGracias} />
+
           <Route path="/guia-sistema" exact component={GuiaSistema} />
           <Route path="/guia-sistema/gracias" exact component={GuiaSistemaGracias} />
+
           <Route path="/secuencia/video-1" component={SecuenciaVideo1} />
           <Route path="/secuencia/video-2" component={SecuenciaVideo2} />
           <Route path="/secuencia/video-3-consulta" component={SecuenciaVideo3Consulta} />
           <Route path="/secuencia/video-3-curso" component={SecuenciaVideo3Curso} />
+
           <Route path="/mini-curso" exact component={MiniCurso} />
           <Route path="/mini-curso/registro" component={MiniCursoRegistro} />
+
           <Route path="/consulta" exact component={Consulta} />
           <Route path="/consulta/gracias" component={ConsultaGracias} />
+
           <Route path="/sobre-nosotros" component={Nosotros} />
           {/* Redirects */}
           <Route path='/secuencia/video-4' exact={true} component={MiniCurso} />

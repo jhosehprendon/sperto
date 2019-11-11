@@ -2,7 +2,9 @@ import React from 'react';
 import '../css/Sequence.css'
 
 class MiniCursoRegistro extends React.Component {
-
+  sendToMiniCourse() {
+    window.location.href = "https://jhosehprendon.activehosted.com/f/5"
+  }
   render() {
     return ( 
       <div className='rmk-first'>
@@ -10,16 +12,8 @@ class MiniCursoRegistro extends React.Component {
           <div style={{marginRight: '10%'}}>
             <h3 className='rmk-first__subtitle' style={{color: '#FFDE59', fontWeight: 'bold'}}>Acceso a Mini Curso GRATIS</h3>
             <h2 className='rmk-first__title'>Marketing Digital y Facebook Ads para Reclutadores IT</h2>
-            <form style={{marginTop: '30px'}}>
-              <div>
-                <input className="rmk-input" onChange={(e, value) => this.handleInputChange(e, 'name')} placeholder="Nombre"></input>
-              </div>
-              <div>
-                <input className="rmk-input" onChange={(e, value) => this.handleInputChange(e, 'email')} placeholder="Email"></input>
-              </div>
-            </form>
-            <p style={{color: 'white', marginTop: '5px'}}>{this.props.error}</p>
-            <button onClick={() => this.sendClientLeadInfo(this.state.clientData)} type="button" style={{marginTop: '10px', fontWeight: 'bold', padding: '12px' }} className="btn btn-success">Acceder al Mini Curso</button>
+            <p style={{color: 'white', fontSize: '20px'}}>Si haz decidido ver este curso, es porque probablemente tienes problemas para encontrar candidatos de calidad. Quizas te cuesta recibir respuestas a tus ofertas, en ocaciones comienzas el proceso con un candidato y al final este acepta otra oferta o simplemente buscas mejorar tu proceso de reclutamiento.</p>
+            <button onClick={() => this.sendToMiniCourse()} type="button" style={{marginTop: '10px', fontWeight: 'bold', padding: '12px' }} className="btn btn-success">Acceder al Mini Curso</button>
           </div>
           <div className="cover-guia">
             <img style={{width: '250px'}} alt="sperto" src={require('../images/mini-curso.png')} />
