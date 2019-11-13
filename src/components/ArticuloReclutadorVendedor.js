@@ -23,9 +23,9 @@ class ArticuloReclutadorVendedor extends React.Component {
             <p>Existe un riesgo alto en cambiar de trabajo. Quizá esta persona ya se sienta cómoda donde está, su familia ya esta establecida en esa ciudad, su carrera profesional parece estar creciendo. Entonces, por qué cambiaria a esa nueva empresa que le acaba de contactar?</p>
             <p>Por eso se requiere un mayor trabajo en el proceso de venta donde es necesario:</p>
             <ul>
-                <li>Crear una relación con el candidato,</li>
-                <li>Ganar su confianza,</li>
-                <li>Ofrecer la vacante con mayor probabilidades de éxito de "compra".</li>
+                <li style={{lineHeight: '26px'}}>Crear una relación con el candidato,</li>
+                <li style={{lineHeight: '26px'}}>Ganar su confianza,</li>
+                <li style={{lineHeight: '26px'}}>Ofrecer la vacante con mayor probabilidades de éxito de "compra".</li>
             </ul>
             <p>Esta es la tarea del Marketing, por eso toda empresa que depende de las ventas, tiene un departamento de marketing que se encarga de conectar con su audiencia, crear conversaciones, dar información y finalmente filtrar a los contactos calificados para pasarlos al departamento de venta.</p>
             <p>Entonces, ¿por qué no existe un departamento de marketing para reclutadores? ¿Por qué no existe esa colaboración entre ambos equipos? O simplemente, ¿por qué no entrenar a nuestros reclutadores con el conocimiento necesario de marketing?</p>
@@ -40,11 +40,11 @@ class ArticuloReclutadorVendedor extends React.Component {
             <p>Pero esto es algo que debe cambiar. Como lo mencionamos arriba, los reclutadores deben ser vendedores y todo vendedor tiene un equipo de marketing que se encarga de crear relaciones, nutrir y filtrar prospectos para que el proceso de venta sea más eficiente.</p>
             <p>Mi objetivo es mejorar este proceso con el poder del marketing digital. Por eso he creado un sistema que te va a permitir:</p>
             <ul>
-                <li>Equipar a tus reclutadores con herramientas y conocimiento que les permita ejecutar estrategias de marketing efectivas.</li>
-                <li>Conectar con candidatos para crear relaciones.</li>
-                <li>Crear una comunidad que este interactúe con tu marca.</li>
-                <li>Generar interés en tus vacantes.</li>
-                <li>Construir tu marca de empleador.</li>
+                <li style={{lineHeight: '26px'}}>Equipar a tus reclutadores con herramientas y conocimiento que les permita ejecutar estrategias de marketing efectivas.</li>
+                <li style={{lineHeight: '26px'}}>Conectar con candidatos para crear relaciones.</li>
+                <li style={{lineHeight: '26px'}}>Crear una comunidad que este interactúe con tu marca.</li>
+                <li style={{lineHeight: '26px'}}>Generar interés en tus vacantes.</li>
+                <li style={{lineHeight: '26px'}}>Construir tu marca de empleador.</li>
             </ul>
             <p>Si quieres saber más puedes entrar a mi perfil: <a href="https://www.linkedin.com/in/jhosehp-rendon/">Jhosehp Rendón</a></p>
           </div>
