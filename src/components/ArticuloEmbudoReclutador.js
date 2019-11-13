@@ -13,7 +13,7 @@ class ArticuloembudoReclutador extends React.Component {
         </div>
         <div className='blog-block'>
           <h1 className='blog-title'>El camino que deben seguir tus candidatos IT en el proceso de reclutamiento.</h1>
-          <h3>Published on November 12, 2019</h3>
+          <h3 className="blog-date">Published on November 12, 2019</h3>
           <hr></hr>
           <div className='blog-content'>
             <p>Si eres usuario frecuente de Linkedin de seguro habrás leído mas de un comentario acerca de procesos de reclutamiento desorganizados, muy largos, poco personalizados que no concluyen en nada, donde el candidato siente que perdió el tiempo. </p>

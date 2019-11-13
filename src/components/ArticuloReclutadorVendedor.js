@@ -13,7 +13,7 @@ class ArticuloReclutadorVendedor extends React.Component {
         </div>
         <div className='blog-block'>
           <h1 className='blog-title'>Si tus reclutadores saben vender, ganarás mas candidatos contratados.</h1>
-          <h3>Published on November 12, 2019</h3>
+          <h3 className="blog-date">Published on November 12, 2019</h3>
           <hr></hr>
           <div className='blog-content'>
             <p>Si tus reclutadores se encuentran trabajando en la búsqueda constante de candidatos calificados, envían diariamente mensajes a múltiples candidatos, y aun así no consiguen los resultados esperados. Esta es lo que necesitas leer para mejorar tus resultados.</p>

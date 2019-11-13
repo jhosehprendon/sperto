@@ -19,3 +19,19 @@
   font-size: 18px;
   margin: 30px 0 80px 0;
 }
+
+@media (max-width: 800px) {
+  .blog-title {
+    font-size: 60px;
+    margin: 0 40px 0 40px;
+  }
+  
+  .blog-content {
+    font-size: 25px;
+    margin: 30px 40px 80px 40px;
+  }
+
+  .blog-date {
+    margin: 0 40px 0 40px;
+  }
+}

@@ -13,7 +13,7 @@ class ArticuloGeneracionRec extends React.Component {
         </div>
         <div className='blog-block'>
           <h1 className='blog-title'>Conoce la Nueva Generación de Reclutadores 2.0</h1>
-          <h3>Published on November 12, 2019</h3>
+          <h3 className="blog-date">Published on November 12, 2019</h3>
           <hr></hr>
           <div className='blog-content'>
             <p>Uno de los secretos mejor guardados de grandes empresarios y compañías exitosas es el constante aprendizaje. Dedican parte de su tiempo en mantenerse actualizado, conocer las estrategias que están funcionando y aplicarlas a su entorno. </p>
