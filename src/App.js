@@ -24,6 +24,10 @@ import CursoReclutadoresPayment from './components/CursoReclutadoresPayment';
 import ConsultaGracias from './components/ConsultaGracias';
 import GuiaEsquemaGoogle from './components/GuiaEsquemaGoogle';
 import GuiaEsquemaGoogleGracias from './components/GuiaEsquemaGoogleGracias';
+//Blog
+import ArticuloGeneracionRec from './components/ArticuloGeneracionRec';
+import ArticuloEmbudoReclutador from './components/ArticuloEmbudoReclutador';
+import ArticuloReclutadorVendedor from './components/ArticuloReclutadorVendedor'
 
 class App extends React.Component {
   render() {
@@ -53,6 +57,7 @@ class App extends React.Component {
           <Route path="/secuencia/video-1" component={SecuenciaVideo1} />
           <Route path="/secuencia/video-2" component={SecuenciaVideo2} />
           <Route path="/secuencia/video-3-consulta" component={SecuenciaVideo3Consulta} />
+          <Route path="/secuencia/video-3" component={SecuenciaVideo3Curso} />
           <Route path="/secuencia/video-3-curso" component={SecuenciaVideo3Curso} />
 
           <Route path="/mini-curso" exact component={MiniCurso} />
@@ -62,6 +67,12 @@ class App extends React.Component {
           <Route path="/consulta/gracias" component={ConsultaGracias} />
 
           <Route path="/sobre-nosotros" component={Nosotros} />
+
+          {/* Blog */}
+          <Route path='/blog/nueva-generacion-de-reclutadores' exact={true} component={ArticuloGeneracionRec} />
+          <Route path='/blog/embudo-candidatos' exact={true} component={ArticuloEmbudoReclutador} />
+          <Route path='/blog/reclutador-vendedor' exact={true} component={ArticuloReclutadorVendedor} />
+
           {/* Redirects */}
           <Route path='/secuencia/video-4' exact={true} component={MiniCurso} />
           <Route path='/secuencia/*' exact={true} component={SecuenciaVideo1} />
