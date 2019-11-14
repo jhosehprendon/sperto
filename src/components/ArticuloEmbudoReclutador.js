@@ -1,5 +1,6 @@
 import React from 'react';
-import '../css/Blog.css'
+import '../css/Blog.css';
+import '../css/Home.css';
 
 class ArticuloembudoReclutador extends React.Component {
   componentDidMount() {
@@ -7,7 +8,7 @@ class ArticuloembudoReclutador extends React.Component {
   }
   render() {
     return ( 
-      <div>
+      <div style= {{width: '90%'}}>
         <div className='blog-image-block'>
           <img className="blog-image" alt="sperto" src={require('../images/embudo-candidato.png')} />
         </div>
