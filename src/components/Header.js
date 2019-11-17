@@ -13,7 +13,7 @@ class Header extends React.Component  {
   }
 
   sendCursos = () => {
-    history.push('/curso-sistema-reclutadores')
+    history.push('/entrenamiento')
   }
 
   render() {
@@ -22,7 +22,7 @@ class Header extends React.Component  {
         <p className="header__title" onClick={this.sendHome} style={{cursor: 'pointer'}}><img alt="logo" style={{width: '45px'}} src={require('../images/logo.png')} /></p>
         <div className="header__left">
           <div className="header__left__align">
-            <p className="header__left-icons" onClick={this.sendCursos}>Cursos</p>
+            <p className="header__left-icons" onClick={this.sendCursos}>Entrenamiento</p>
           </div>
           <div  className="header__left__align header-hide">
             <p className="header__left-icons" onClick={this.sendNosotros}>Sobre Nostros</p>

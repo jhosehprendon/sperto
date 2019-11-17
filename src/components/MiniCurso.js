@@ -29,7 +29,6 @@ class MiniCurso extends React.Component {
           <div style={{textAlign: 'center', color: '#283d54', marginTop: '20px'}}>
             <h2 style={{fontSize: '30px'}}>Mini Curso de Marketing Digital para Reclutadores IT </h2>
             <h3>Conoce cómo puedes conectar con talento calificado a través del marketing digital</h3>
-            <h3>Inicia tu día con el calendario lleno de entrevistas programadas con candidatos</h3>
             <iframe title="miniCurso" type="text/html" frameborder="0" class="video" src="https://www.youtube.com/embed/jCnjgErlgWQ" allowfullscreen></iframe>
             <div>
               <button 

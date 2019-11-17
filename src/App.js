@@ -24,6 +24,9 @@ import CursoReclutadoresPayment from './components/CursoReclutadoresPayment';
 import ConsultaGracias from './components/ConsultaGracias';
 import GuiaEsquemaGoogle from './components/GuiaEsquemaGoogle';
 import GuiaEsquemaGoogleGracias from './components/GuiaEsquemaGoogleGracias';
+import Entrenamiento from './components/Entrenamiento';
+import DescargarGuiaEmail from './components/DescargarGuiaEmails';
+import DescargarGuiaEsquema from './components/DescargarGuiaEsquema';
 //Blog
 import ArticuloGeneracionRec from './components/ArticuloGeneracionRec';
 import ArticuloEmbudoReclutador from './components/ArticuloEmbudoReclutador';
@@ -65,6 +68,11 @@ class App extends React.Component {
 
           <Route path="/consulta" exact component={Consulta} />
           <Route path="/consulta/gracias" component={ConsultaGracias} />
+
+          <Route path="/entrenamiento" component={Entrenamiento} />
+
+          <Route path="/descarga-guia-emails" component={DescargarGuiaEmail} />
+          <Route path="/descarga-guia-esquema" component={DescargarGuiaEsquema} />
 
           <Route path="/sobre-nosotros" component={Nosotros} />
 

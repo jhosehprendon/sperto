@@ -5,6 +5,11 @@
     height: 100vh;
 }
 
+.mini-curso-registro {
+    background-color: rgba(39,62,84);
+    height: 100vh;
+}
+
 .rmk-fourth {
     background-image: url(../images/something-great.jpg);
     background-repeat: no-repeat;
@@ -101,6 +106,10 @@
 
     .payment-input {
         width:250px;
+    }
+
+    .mini-curso-registro {
+        height: 100%;
     }
   }
 

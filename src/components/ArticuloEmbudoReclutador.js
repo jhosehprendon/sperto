@@ -8,7 +8,7 @@ class ArticuloembudoReclutador extends React.Component {
   }
   render() {
     return ( 
-      <div style= {{width: '90%'}}>
+      <div>
         <div className='blog-image-block'>
           <img className="blog-image" alt="sperto" src={require('../images/embudo-candidato.png')} />
         </div>

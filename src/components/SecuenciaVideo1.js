@@ -1,12 +1,7 @@
 import React from 'react';
-import history from '../history';
+import { Link } from 'react-router-dom';
 
 class SecuenciaVideo1 extends React.Component {
-
-  sendGuiaEmails = () => {
-    history.push('/guia-email-candidato')
-  }
-
   render() {
     return ( 
       <div>
@@ -17,9 +12,11 @@ class SecuenciaVideo1 extends React.Component {
             <h3>Luego de extraer emails calificados podemos hacer marketing por Facebook directamente a los candidatos</h3>
             <iframe title="video1" type="text/html" frameborder="0" className="video" src="https://www.youtube.com/embed/ewzmw4jXrm4" allowfullscreen></iframe>
             <p style={{marginTop: '30px', fontWeight: 'bold'}}>Si no haz visto el poceso para encontrar emails de programadores a través de Github, puedes descargar la Guía abajo:</p>
-            <div style={{margin: '10px 0 20px 0'}}>
-              <button onClick={this.sendGuiaEmails} type="button" style={{marginTop: '10px', fontWeight: 'bold', padding: '12px' }} className="btn btn-success">Descargar Guía</button>
-            </div>
+            <Link to="/files/Cómo_obtener_emails_de_Candidatos_Calificados.pdf" target="_blank" download>
+              <div style={{margin: '10px 0 20px 0'}}>
+                <button type="button" style={{marginTop: '10px', fontWeight: 'bold', padding: '12px' }} className="btn btn-success">Descargar Guía</button>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

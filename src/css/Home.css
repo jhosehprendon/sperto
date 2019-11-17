@@ -41,6 +41,10 @@
   margin: auto
 }
 
+.first-card {
+  margin-right: 100px
+}
+
 ul {
   list-style: none; /* Remove default bullets */
 }
@@ -139,6 +143,10 @@ ul li::before {
   .nosotros-intro {
     margin: 10% 0 0 10%;
   }
+
+  .first-card {
+    margin: 0px 0px 30px 0px 
+  }
 }
 
 .info-block {
@@ -150,10 +158,36 @@ ul li::before {
   margin-left: 10px;
 }
 
+.courses-block {
+  display: flex
+}
+
+.image-cursos {
+  width: 400px;
+}
+
+.image-cursos2 {
+  width: 400px;
+  height: 270px;
+}
+
 @media (max-width: 1040px) {
   .info-block {
     margin: auto; 
     display: block;
+  }
+
+  .courses-block {
+    display: block;
+  }
+
+  .image-cursos {
+    width: 80%;
+  }
+
+  .image-cursos2 {
+    width: 80%;
+    height: 100%
   }
 }
 
