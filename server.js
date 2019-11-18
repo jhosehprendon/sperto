@@ -8,9 +8,13 @@ const app = express();
 app.use(sslRedirect());
 app.use(express.static(__dirname));
 app.use(express.static(path.join(__dirname, 'build')));
+
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
+
+var http = express.createServer();
+
 http.get('*', function(req, res) {  
   res.redirect('https://' + req.headers.host + req.url);
 
