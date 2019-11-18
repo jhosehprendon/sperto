@@ -32,6 +32,8 @@ import ArticuloGeneracionRec from './components/ArticuloGeneracionRec';
 import ArticuloEmbudoReclutador from './components/ArticuloEmbudoReclutador';
 import ArticuloReclutadorVendedor from './components/ArticuloReclutadorVendedor';
 
+import GoogleAnalytics from './components/GoogleAnalytics';
+
 class App extends React.Component {
   render() {
     return (
@@ -93,6 +95,7 @@ class App extends React.Component {
           <Route path='/secuencia/*' exact={true} component={SecuenciaVideo1} />
           <Route path='*' exact={true} component={Home} />
         </Switch>
+        <GoogleAnalytics />
       </Router>
     )
   }
