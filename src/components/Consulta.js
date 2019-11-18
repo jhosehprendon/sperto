@@ -30,6 +30,7 @@ class Consulta extends React.Component {
               <li>Los recursos no son invertidos eficientemente</li>
               <li>Por lo tanto, la empresa no cumple con sus objetivos</li>
           </ul>
+          <br></br>
           <p>¿Y qué pasa si no haces nada? ¿Si te mantienes haciendo lo mismo?.</p>
           <p>Pierdes dinero en recursos que no obtienen resultados...Arriesgas perder otro cliente o no cumples con los objetivos de la empresa.</p>
           <h2>He descubierto cómo las empresas pueden cubrir más vacantes a tiempo con candidatos de calidad.</h2>
@@ -49,6 +50,7 @@ class Consulta extends React.Component {
             <li>Obtener más respuestas a tus invitaciones</li>
             <li>Cubrir más vacantes, en menos tiempo</li>
           </ul>
+          <br></br>
           <p>Y tus reclutadores van a aprender:</p>
           <ul>
             <li>Los principios del Marketing Digital para el proceso de Talent Acquisition</li>
@@ -59,6 +61,7 @@ class Consulta extends React.Component {
             <li>Cómo escribir un Job Description que llame la atención</li>
             <li>...En pocas palabras, tendrás un equipo de reclutadores full-stack con las herramientas y el conocimiento avanzado para obtener mejores resultados</li>
           </ul>
+          <br></br>
           <p><strong>¡Es el momento de tomar una decisión!</strong></p>
           <p>Puedes seguir haciendo lo que has venido haciendo, pero ya sabes que resultados vas a obtener.</p>
           <p>Pregúntate si es realmente lo que quieres lograr.</p>
