@@ -30,7 +30,12 @@ import DescargarGuiaEsquema from './components/DescargarGuiaEsquema';
 //Blog
 import ArticuloGeneracionRec from './components/ArticuloGeneracionRec';
 import ArticuloEmbudoReclutador from './components/ArticuloEmbudoReclutador';
-import ArticuloReclutadorVendedor from './components/ArticuloReclutadorVendedor'
+import ArticuloReclutadorVendedor from './components/ArticuloReclutadorVendedor';
+
+history.listen((location) => {
+  window.ga('set', 'page', location.pathname + location.search);
+  window.ga('send', 'pageview');
+});
 
 class App extends React.Component {
   render() {
