@@ -32,16 +32,18 @@ import ArticuloGeneracionRec from './components/ArticuloGeneracionRec';
 import ArticuloEmbudoReclutador from './components/ArticuloEmbudoReclutador';
 import ArticuloReclutadorVendedor from './components/ArticuloReclutadorVendedor';
 
-history.listen((location) => {
-  window.ga('set', 'page', location.pathname + location.search);
-  window.ga('send', 'pageview');
-});
-
 class App extends React.Component {
   render() {
     return (
       <Router history={history}>
         <Header />
+        <Route path="/" render={({location}) => {
+          if (typeof window.ga === 'function') {
+            window.ga('set', 'page', location.pathname + location.search);
+            window.ga('send', 'pageview');
+          }
+          return null;
+        }} />
         <Switch>
           <Route path="/" exact component={Home}/>
           <Route path="/case-remarketing" exact component={RemarketingCase} />
