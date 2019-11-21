@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import history from '../history';
 
 class SecuenciaVideo1 extends React.Component {
 
