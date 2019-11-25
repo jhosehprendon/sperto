@@ -64,7 +64,7 @@ export const createContact = (formValues, tagId, sequenceId) => {
         const response = await active.post('/contacts', data, {
           headers: {
             'Content-type': 'application/json',
-            'Api-Token': process.env.API_AC_TOKEN
+            'Api-Token': process.env.REACT_APP_API_AC_TOKEN
           }
         })
         dispatch({ type: CREATE_CONTACT, payload: response.data })
@@ -97,7 +97,7 @@ export const createContact = (formValues, tagId, sequenceId) => {
         await active.post('/contactTags', tagData, {
           headers: {
             'Content-type': 'application/json',
-            'Api-Token': process.env.API_AC_TOKEN
+            'Api-Token': process.env.REACT_APP_API_AC_TOKEN
           }
         })
 
@@ -113,7 +113,7 @@ export const createContact = (formValues, tagId, sequenceId) => {
         await active.post('/contactAutomations', sequenceData, {
           headers: {
             'Content-type': 'application/json',
-            'Api-Token': process.env.API_AC_TOKEN
+            'Api-Token': process.env.REACT_APP_API_AC_TOKEN
           }
         })
 
