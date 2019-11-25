@@ -1,14 +1,41 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import LeadForm from './LeadForm';
+import { createContact } from '../store/actions';
 import '../css/Sequence.css'
 
 class GuiaEmailCandidato extends React.Component {
+
+  state = {
+    tryCreate: false
+  }
 
   componentDidMount() {
     window.scrollTo(0, 0)
   }
 
-  sendToForm() {
-    window.location.href = "https://jhosehprendon.activehosted.com/f/2"
+  // sendToForm() {
+  //   window.location.href = "https://jhosehprendon.activehosted.com/f/2"
+  // }
+
+  onSubmit = (formValues) => {
+    this.setState({ tryCreate: true })
+
+    this.props.createContact(formValues, 2, 5).then(() => {
+        this.setState({tryCreate: false})
+    }).catch(e => {
+      this.setState({tryCreate: false})
+    })
+  }
+
+  renderSpinner = () => {
+    if(this.state.tryCreate) {
+      return (
+        <div style ={{marginTop: '10px'}} class="ui active centered inline loader"></div>
+      )
+    } else {
+      return null
+    }
   }
 
   render() {
@@ -19,7 +46,12 @@ class GuiaEmailCandidato extends React.Component {
             <h3 className='rmk-first__subtitle' style={{color: '#FFDE59', fontWeight: 'bold'}}>Acceso a Guía GRATIS</h3>
             <h2 className='rmk-first__title'>Cómo obtener Emails de Candidatos Calificados por Linkedin, Github y Facebook</h2>
             <h3 className='rmk-first__subtitle'>¡Incluyendo aquellos que no estan en búqueda activa!</h3>
-            <button onClick={() => this.sendToForm()} type="button" style={{marginTop: '10px', fontWeight: 'bold', padding: '12px' }} className="btn btn-success">Descargar Guía</button>
+            <LeadForm 
+              onSubmit={this.onSubmit} 
+              buttonText='Descargar Guía' 
+            />
+            {this.renderSpinner()}
+            <p style={{marginTop: '3px', color: 'white'}}>{this.props.error}</p>
           </div>
           <div className="cover-guia">
             <img style={{width: '250px'}} alt="sperto" src={require('../images/cover-guia.jpg')} />
@@ -30,5 +62,10 @@ class GuiaEmailCandidato extends React.Component {
   }
 } 
 
+const mapStateToProps = (state) => {
+  return {
+    error: state.contact.error
+  }
+}
 
-export default GuiaEmailCandidato
+export default connect(mapStateToProps, {createContact})(GuiaEmailCandidato)

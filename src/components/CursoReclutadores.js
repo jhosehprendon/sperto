@@ -1,27 +1,35 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import LeadForm from './LeadForm';
+import { createContact } from '../store/actions';
 
 
 // import history from '../history';
 
 class CursoReclutadores extends React.Component {
 
-  // state = {
-  //   clientData: {
-  //     name: '',
-  //     email: '',
-  //     phone: ''
-  //   }
-  // }
+  state = {
+    tryCreate: false
+  }
 
+  onSubmit = (formValues) => {
+    this.setState({ tryCreate: true })
 
-  // handleInputChange = (event, value) => {
-  //   this.setState({clientData: {...this.state.clientData, [value]: event.target.value}})
-  // }
+    this.props.createContact(formValues, 3, 7).then(() => {
+        this.setState({tryCreate: false})
+    }).catch(e => {
+      this.setState({tryCreate: false})
+    })
+  }
 
-  sendCursoPayment = () => {
-    // history.push('/curso-sistema-reclutadores/payment')
-    // window.location.reload(false)
-    window.location.href = "https://jhosehprendon.activehosted.com/f/3"
+  renderSpinner = () => {
+    if(this.state.tryCreate) {
+      return (
+        <div style ={{marginTop: '10px'}} class="ui active centered inline loader"></div>
+      )
+    } else {
+      return null
+    }
   }
   
   render() {
@@ -83,8 +91,13 @@ class CursoReclutadores extends React.Component {
           <h2>Curso de Marketing Digital para Reclutadores IT</h2>
           <h2><span style={{textDecoration: 'line-through'}}>$2000</span> $197</h2>
         </div>
-        <div style={{textAlign: 'center', marginBottom: '20px'}}>
-          <button onClick={this.sendCursoPayment} type="button" style={{marginTop: '10px', fontWeight: 'bold', padding: '12px' }} className="btn btn-success">Comprar curso</button>
+        <div style={{margin: 'auto', width: '400px'}}>
+          <LeadForm 
+            onSubmit={this.onSubmit} 
+            buttonText='Hacer Pago' 
+          />
+          {this.renderSpinner()}
+          <p style={{marginTop: '3px', color: 'black'}}>{this.props.error}</p>
         </div>
       </div>
     )
@@ -92,5 +105,10 @@ class CursoReclutadores extends React.Component {
 
 }
 
-export default CursoReclutadores
+const mapStateToProps = (state) => {
+  return {
+    error: state.contact.error
+  }
+}
 
+export default connect(mapStateToProps, {createContact})(CursoReclutadores)
