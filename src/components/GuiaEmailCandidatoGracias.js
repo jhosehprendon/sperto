@@ -23,7 +23,7 @@ class GuiaEmailCandidatoGracias extends React.Component {
           <div style={{fontSize: '25px', marginTop: '40px'}}>
             <p>Al descargar esta guía haz dado el primer paso para mejorar tu proceso de reclutamiento.</p>
             <p>Se que quieres contratar más desarrolladores de calidad...Y eso es lo que pasará si comienzas a aplicar buenas prácticas de marketing digital.</p>
-            <p>Con estos métodos vas a poder encontrar emails de desarrolladores decalidad en las platformas que usan diariamente.</p>
+            <p>Con estos métodos vas a poder encontrar emails de desarrolladores de calidad en las plataformas que usan diariamente.</p>
             <p><strong>Pero dejame hacerte una pregunta...</strong></p>
             <p>Ahora que puedes tener una lista de emails...¿Qué harás con ella?...¿Enviarias un email directamente con la vacante?...NO lo hagas por favor, es un ERROR.</p>
             <p>¿Qué hacer entonces?</p>
