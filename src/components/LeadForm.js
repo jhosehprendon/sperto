@@ -28,6 +28,16 @@ class LeadForm extends React.Component {
       this.props.onSubmit(formValues, sequenceId)
   }
 
+  renderSpinner = () => {
+    if(this.props.loading) {
+      return (
+        <div style ={{margin: 'auto'}} class="ui active centered inline loader"></div>
+      )
+    } else {
+      return null
+    }
+  }
+
   render() {
     return (
       <div className="ui card" style={{ marginTop: '50px'}}>
@@ -36,7 +46,9 @@ class LeadForm extends React.Component {
             <Field name="fullName" component={this.renderInput} label="Nombre y Apellido"/>
             <Field name="email" component={this.renderInput} label="Email"/>
             <button className="ui button primary">{this.props.buttonText}</button>
+            {this.renderSpinner()}
           </form>
+          <p style={{marginTop: '3px', color: 'red'}}>{this.props.message}</p>
         </div>
       </div>
     )
@@ -67,6 +79,6 @@ const validate = (formValues) => {
 
 
 export default reduxForm({
-    form: 'LeadForm',
-    validate: validate
-})(LeadForm);
+  form: 'LeadForm',
+  validate: validate
+})(LeadForm)

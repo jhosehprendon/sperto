@@ -21,16 +21,6 @@ class CursoReclutadores extends React.Component {
       this.setState({tryCreate: false})
     })
   }
-
-  renderSpinner = () => {
-    if(this.state.tryCreate) {
-      return (
-        <div style ={{marginTop: '10px'}} class="ui active centered inline loader"></div>
-      )
-    } else {
-      return null
-    }
-  }
   
   render() {
     return (
@@ -94,10 +84,10 @@ class CursoReclutadores extends React.Component {
         <div style={{margin: 'auto', width: '400px'}}>
           <LeadForm 
             onSubmit={this.onSubmit} 
-            buttonText='Hacer Pago' 
+            buttonText='Hacer Pago'
+            loading={this.state.tryCreate}
+            message= {this.props.error}
           />
-          {this.renderSpinner()}
-          <p style={{marginTop: '3px', color: 'black'}}>{this.props.error}</p>
         </div>
       </div>
     )

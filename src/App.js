@@ -24,9 +24,12 @@ import CursoReclutadoresPayment from './components/CursoReclutadoresPayment';
 import ConsultaGracias from './components/ConsultaGracias';
 import GuiaEsquemaGoogle from './components/GuiaEsquemaGoogle';
 import GuiaEsquemaGoogleGracias from './components/GuiaEsquemaGoogleGracias';
+import GuiaSiglasIT from './components/GuiaSiglasIT';
+import GuiaSiglasITGracias from './components/GuiaSiglasITGracias';
 import Entrenamiento from './components/Entrenamiento';
 import DescargarGuiaEmail from './components/DescargarGuiaEmails';
 import DescargarGuiaEsquema from './components/DescargarGuiaEsquema';
+import DescargarGuiaSiglasIT from './components/DescargarGuiaSiglasIT';
 //Blog
 import ArticuloGeneracionRec from './components/ArticuloGeneracionRec';
 import ArticuloEmbudoReclutador from './components/ArticuloEmbudoReclutador';
@@ -66,6 +69,9 @@ class App extends React.Component {
           <Route path="/guia-sistema" exact component={GuiaSistema} />
           <Route path="/guia-sistema/gracias" exact component={GuiaSistemaGracias} />
 
+          <Route path="/guia-siglas-it" exact component={GuiaSiglasIT} />
+          <Route path="/guia-siglas-it/gracias" exact component={GuiaSiglasITGracias} />
+
           <Route path="/secuencia/video-1" component={SecuenciaVideo1} />
           <Route path="/secuencia/video-2" component={SecuenciaVideo2} />
           <Route path="/secuencia/video-3-consulta" component={SecuenciaVideo3Consulta} />
@@ -82,6 +88,7 @@ class App extends React.Component {
 
           <Route path="/descarga-guia-emails" component={DescargarGuiaEmail} />
           <Route path="/descarga-guia-esquema" component={DescargarGuiaEsquema} />
+          <Route path="/descarga-guia-siglas-it" component={DescargarGuiaSiglasIT} />
 
           <Route path="/sobre-nosotros" component={Nosotros} />
 

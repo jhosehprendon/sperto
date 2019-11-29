@@ -2,7 +2,7 @@
     /* background-image: url(../images/headeropen.jpg); */
     /* box-shadow: 0 0 100px 80px rgba(39,62,84, 0.95) inset; */
     background-color: rgba(39,62,84);
-    height: 100vh;
+    height: 100%;
 }
 
 .mini-curso-registro {
@@ -83,6 +83,11 @@
 
 
 @media (max-width: 840px) {
+
+    .rmk-first {
+        height: 100vh;
+    }
+
     .gracias__subtitle {
         width: 100%;
     }

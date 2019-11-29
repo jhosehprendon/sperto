@@ -25,16 +25,6 @@ class GuiaSistema extends React.Component {
     })
   }
 
-  renderSpinner = () => {
-    if(this.state.tryCreate) {
-      return (
-        <div style ={{marginTop: '10px'}} class="ui active centered inline loader"></div>
-      )
-    } else {
-      return null
-    }
-  }
-
   render() {
     return ( 
       <div className='rmk-first'>
@@ -46,9 +36,8 @@ class GuiaSistema extends React.Component {
             <LeadForm 
               onSubmit={this.onSubmit} 
               buttonText='Descargar Guía' 
+              loading={this.state.tryCreate}
             />
-            {this.renderSpinner()}
-            <p style={{marginTop: '3px', color: 'white'}}>{this.props.error}</p>
           </div>
           <div className="cover-guia">
             <img style={{width: '250px'}} alt="sperto" src={require('../images/cover-sistema.png')} />

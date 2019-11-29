@@ -61,7 +61,7 @@ export const createContact = (formValues, tagId, sequenceId) => {
       }
 
       try {
-        const response = await active.post('/contacts', data, {
+        const response = await active.post('/contactxs', data, {
           headers: {
             'Content-type': 'application/json',
             'Api-Token': process.env.REACT_APP_API_AC_TOKEN
@@ -83,6 +83,10 @@ export const createContact = (formValues, tagId, sequenceId) => {
 
         if(tagId == '3'){
           history.push('/curso-sistema-reclutadores/payment')
+        }
+
+        if(tagId == '5'){
+          history.push('/guia-siglas-it/gracias')
         }
 
         ////// ADD TAG

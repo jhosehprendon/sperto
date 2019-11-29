@@ -28,16 +28,6 @@ class GuiaEmailCandidato extends React.Component {
     })
   }
 
-  renderSpinner = () => {
-    if(this.state.tryCreate) {
-      return (
-        <div style ={{marginTop: '10px'}} class="ui active centered inline loader"></div>
-      )
-    } else {
-      return null
-    }
-  }
-
   render() {
     return ( 
       <div className='rmk-first'>
@@ -48,10 +38,10 @@ class GuiaEmailCandidato extends React.Component {
             <h3 className='rmk-first__subtitle'>¡Incluyendo aquellos que no estan en búqueda activa!</h3>
             <LeadForm 
               onSubmit={this.onSubmit} 
-              buttonText='Descargar Guía' 
+              buttonText='Descargar Guía'
+              loading={this.state.tryCreate}
+              message= {this.props.error}
             />
-            {this.renderSpinner()}
-            <p style={{marginTop: '3px', color: 'white'}}>{this.props.error}</p>
           </div>
           <div className="cover-guia">
             <img style={{width: '250px'}} alt="sperto" src={require('../images/cover-guia.jpg')} />
