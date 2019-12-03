@@ -61,7 +61,7 @@ export const createContact = (formValues, tagId, sequenceId) => {
       }
 
       try {
-        const response = await active.post('/contactxs', data, {
+        const response = await active.post('/contacts', data, {
           headers: {
             'Content-type': 'application/json',
             'Api-Token': process.env.REACT_APP_API_AC_TOKEN

@@ -24,16 +24,6 @@ class GuiaSiglasIT extends React.Component {
     })
   }
 
-  // renderSpinner = () => {
-  //   if(this.state.tryCreate) {
-  //     return (
-  //       <div style ={{margin: 'auto'}} class="ui active centered inline loader"></div>
-  //     )
-  //   } else {
-  //     return null
-  //   }
-  // }
-
   render() {
     return ( 
       <div className='rmk-first'>
@@ -49,7 +39,6 @@ class GuiaSiglasIT extends React.Component {
               message= {this.props.error}
             />
           </div>
-          {/* <p style={{marginTop: '3px', color: 'red'}}>{this.props.error}</p> */}
           <div className="cover-guia">
             <img style={{width: '250px'}} alt="sperto" src={require('../images/cover-guia.jpg')} />
           </div>
