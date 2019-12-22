@@ -1,68 +1,21 @@
 import React from 'react';
 import Card from './Card';
-// import CardTestimonial from './CardTestimonial'
-// import Modal from 'react-modal';
-// import { connect } from 'react-redux';
-// import { createClient } from '../store/actions';
-import '../css/Home.css'
-import history from '../history';
-
-// blue dark #295b8d
-// blue medium #3a8dde
-
-// const customStyles = {
-//   content : {
-//     top                   : '50%',
-//     left                  : '50%',
-//     right                 : 'auto',
-//     bottom                : 'auto',
-//     marginRight           : '-50%',
-//     transform             : 'translate(-50%, -50%)'
-//   }
-// };
- 
+import Modal from 'react-modal';
+import ModalAsk from './ModalAsk'
+import '../css/Home.css' 
 
 class Home extends React.Component {
 
-//   state= {
-//     modalIsOpen: false,
-//     clientData: {
-//       name: '',
-//       email: '',
-//       phone: ''
-//     }
-//   }
-
-//   componentWillMount() {
-//     Modal.setAppElement('body');
-// }
-
-//   openModal = () => {
-//     this.setState({modalIsOpen: true});
-//   }
- 
-//   closeModal = () => {
-//     this.setState({modalIsOpen: false});
-//   }
-
-//   sendClientInfo = (formValues) => {
-//     this.props.createClient(formValues).then(() => {
-//       if(!this.props.error) {
-//         this.closeModal()
-//       }
-//     })
-//   }
-
-  // handleInputChange = (event, value) => {
-  //   this.setState({clientData: {...this.state.clientData, [value]: event.target.value}})
-  // }
-
-  sendNosotros = () => {
-    history.push('/sobre-nosotros')
+  state= {
+    modalIsOpen: false
   }
 
-  sendConsulta = () => {
-    history.push('/consulta')
+  componentWillMount() {
+    Modal.setAppElement('body');
+}
+
+  openModal = () => {
+    this.refs.child.openModal();
   }
 
   render() {
@@ -71,34 +24,10 @@ class Home extends React.Component {
         <div className='home-first'>
           <div className='home-first--flex over'>
             <div style={{marginRight: '10%'}}>
-              <h2 className='home-first__title'>Construye Relaciones con el Mejor Talento IT</h2>
-              <h3 className='home-first__subtitle'>Ayudamos a Reclutadores Cubrir más Vacantes con Talento Calificado</h3>
-              <button onClick={this.sendConsulta} type="button" style={{marginTop: '10px', fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">¡Agenda tu Consulta Gratis!</button>
-              {/* <Modal
-                isOpen={this.state.modalIsOpen}
-                onAfterOpen={this.afterOpenModal}
-                onRequestClose={this.closeModal}
-                style={customStyles}
-                contentLabel="Example"
-              >
-                  <p style={{marginLeft: '5px', color: '#295b8d', fontWeight: 'bold', fontSize: '18px', width: '320px'}}>Deja la siguiente información para contactarte y ayudarte a hacer marketing correctamente</p>
-                  <form style={{marginTop: '30px'}}>
-                    <div>
-                      <input className="inputModal" placeholder="Nombre" onChange={(e, value) => this.handleInputChange(e, 'name')}></input>
-                    </div>
-                    <div>
-                      <input className="inputModal" placeholder="Email" onChange={(e, value) => this.handleInputChange(e, 'email')}></input>
-                    </div>
-                    <div>
-                      <input className="inputModal" type="number" placeholder="Número de teléfono" onChange={(e, value) => this.handleInputChange(e, 'phone')}></input>
-                    </div>
-                  </form>
-                  <div style={{display: 'flex', justifyContent: 'space-between', marginTop: '20px'}}>
-                    <button onClick={() => this.sendClientInfo(this.state.clientData)} type="button" style={{marginTop: '10px', fontWeight: 'bold', padding: '12px', marginRight:'40px' }} className="btn btn-success">Enviar información</button>
-                    <button onClick={this.closeModal} type="button" style={{marginTop: '10px', fontWeight: 'bold', padding: '12px' }} className="btn btn-success">Quizás luego</button>
-                  </div>
-                  <p style={{color: 'red', marginTop: '5px'}}>{this.props.error}</p>
-              </Modal> */}
+              <h2 className='home-first__title'>Accelerate Your Revenue Growth with Facebook and Instagram Ads</h2>
+              <h3 className='home-first__subtitle'>Improve your Marketing Strategy and Grow Your Business</h3>
+              <button onClick={this.openModal} type="button" style={{marginTop: '10px', fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Let's Work Together</button>
+              <ModalAsk ref="child"/>
             </div>
           </div>
         </div>
@@ -106,30 +35,30 @@ class Home extends React.Component {
         </div>
         <div style={{ backgroundColor: '#9dccfa', padding: '1%' }}>
           <hr style={{backgroundColor: '#3a8dde', width: '80px'}}></hr>
-          <p className="banner-first">Usamos estrategias efectivas de marketing digital para conectar y crear relaciones con talento de calidad</p>
+          <p className="banner-first">We Help Internet-based Businesses Improve their Marketing Strategy so they can Grow Faster with Facebook and Instagram Ads</p>
           <hr style={{backgroundColor: '#3a8dde', width: '80px'}}></hr>
         </div>
         <div style={{ backgroundColor: '#66b3ff', height: '10px' }}>
         </div>
         <div style={{ paddingTop: '4%'}}>
-          <h2 style={{textAlign: 'center', color: '#295b8d', fontWeight: 'bold'}}>Como podemos ayudarte</h2>
-          <p style={{textAlign: 'center', color: '#295b8d', fontWeight: 'bold'}}>Consigue Talento Calificado, Rapidez y Diversidad</p>
+          <h2 style={{textAlign: 'center', color: '#295b8d', fontWeight: 'bold'}}>What we Do</h2>
+          {/* <p style={{textAlign: 'center', color: '#295b8d', fontWeight: 'bold'}}>Consigue Talento Calificado, Rapidez y Diversidad</p> */}
           <hr style={{backgroundColor: '#3a8dde', width: '80px'}}></hr>
-          <div className="row" style={{paddingTop: '4%'}}>
+          <div className="row" style={{paddingTop: '3%'}}>
             <div className="info-block">
               <div className="first-card">
                 <Card>
                   <div style={{margin: '10px 0 10px 0px'}}>
                     <div>
-                     <h5 style={{color: '#295b8d'}}>Entrenamos a tu equipo</h5>
+                     <h5 style={{color: '#295b8d'}}>Marketing Strategy</h5>
                     </div>
                   </div>
                   <div style={{margin: '10px 0 10px -15px'}}>
                     <ul>
-                      <li>Marketing para Reclutadores</li>
-                      <li>Linkedin Sourcing</li>
-                      <li>Job Description</li>
-                      <li>Job Promotion y más...</li>
+                      <li>Clarify your Message</li>
+                      <li>Define your Buyer Persona</li>
+                      <li>Build a Sales Funnel</li>
+                      <li>Build a Brand</li>
                     </ul>
                   </div>
                 </Card>
@@ -138,16 +67,15 @@ class Home extends React.Component {
                 <Card>
                   <div style={{margin: '10px 0 4px 0px'}}>  
                     <div>
-                      <h5 style={{color: '#295b8d'}}>Hacemos Marketing por ti</h5>
+                      <h5 style={{color: '#295b8d'}}>Paid Ads</h5>
                     </div>
                   </div>
                   <div style={{margin: '10px 0 10px -15px'}}>
                     <ul>
-                      <li>Employment Marketing</li>
-                      <li>Social Media Paid Ads</li>
-                      <li>Employer Branding</li>
-                      <li>Construimos comunidades</li>
-                      <li>Estructura Job description</li>
+                      <li>Facebook/Instagram Ads</li>
+                      <li>Conversion Rate Optimization</li>
+                      <li>Paid Traffic Management</li>
+                      <li>Campaign Scaling</li>
                     </ul>
                   </div>
                 </Card>
@@ -165,7 +93,7 @@ class Home extends React.Component {
         </div> */}
   
         <div style={{ backgroundColor: 'white', padding: '3%' }}>
-          <p style={{textAlign: 'center', color: '#283d54', fontWeight: 'bold', fontSize: '24px', margin: 'auto'}}><i className="fas fa-quote-left" style={{marginRight: '8px', color: '#f2c924'}}></i>Creemos en el Poder del Marketing para Crear Relaciones<i className="fas fa-quote-right" style={{marginLeft: '8px', color: '#f2c924'}}></i></p>
+          <p style={{textAlign: 'center', color: '#283d54', fontWeight: 'bold', fontSize: '24px', margin: 'auto'}}><i className="fas fa-quote-left" style={{marginRight: '8px', color: '#f2c924'}}></i>We Believe in the Power of Marketing to Build Relationships and Profit<i className="fas fa-quote-right" style={{marginLeft: '8px', color: '#f2c924'}}></i></p>
         </div>
         <div className='home-fourth' style={{height: '350px'}}>
           <div className="over">
@@ -174,10 +102,10 @@ class Home extends React.Component {
                 <div className="col imageBackground2" style={{marginTop: '5%'}}>
                   <img style={{width: '75%'}} alt="sperto" src={require('../images/background.png')} />
                 </div>
-                <div className="col" style={{ paddingTop: '8%', color: 'white', fontWeight: 'bold', fontSize: '18px'}}>
-                  <p style={{padding: '0 0 5px 30px', fontSize: '30px'}}>Genera Resultados con la Mejor Estrategia de Marketing</p>
+                <div className="col" style={{ paddingTop: '6%', color: 'white', fontSize: '18px'}}>
+                  <h2 style={{padding: '0 0 5px 30px', fontSize: '30px'}}>Let's Define a Winning Strategy to help you get the most out of Facebook and Instagram</h2>
                   <div style={{paddingLeft: '30px'}}>
-                    <button onClick={this.sendConsulta} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">¡Agenda tu Consulta Gratis!</button>
+                    <button onClick={this.openModal} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Let's Work Together</button>
                   </div>
                 </div>
               </div>
@@ -187,9 +115,9 @@ class Home extends React.Component {
         
         <div style={{ backgroundColor: 'white', textAlign: 'center', color: '#295b8d', padding: '40px' }}>
           <p style={{fontWeight: 'bold', fontSize: '20px'}}>Sperto Media</p>
-          <a onClick={this.sendConsulta} style={{color: '#283d54', cursor: 'pointer'}}>Contáctanos para ayudarte a cumplir tus objetivos</a>
+          <a onClick={this.openModal} style={{color: '#283d54', cursor: 'pointer'}}>Contact Us to Help you Grow your Business</a>
           <br/>
-          <a style={{fontWeight: 'bold', cursor: 'pointer'}}  onClick={this.sendNosotros}>Sobre Nosotros</a>
+          {/* <a style={{fontWeight: 'bold', cursor: 'pointer'}}  onClick={this.sendNosotros}>About Us</a> */}
         </div>
       </div>
     )

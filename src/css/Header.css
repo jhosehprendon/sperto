@@ -19,14 +19,15 @@
 }
 
 .header__left {
-    margin-right: 10%;
-    display: flex;
+    position: absolute;
+    right: 5%;
     color: #283d54;
-    margin-top: 5px;
+    align-items: center;
+    
 }
 
 .header__left__align {
-    margin: 6px 20px 0 0;
+    margin: 0px 20px 0 0
 }
 
 .header__left-icons {

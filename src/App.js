@@ -19,6 +19,9 @@ import MiniCursoRegistro from './components/MiniCursoRegistro';
 import Consulta from './components/Consulta';
 import GuiaSistema from './components/GuiaSistema';
 import GuiaSistemaGracias from './components/GuiaSistemaGracias';
+// Agency
+import GuiaMaximizador from './components/GuiaMaximizador';
+//
 import Nosotros from './components/Nosotros';
 import CursoReclutadoresPayment from './components/CursoReclutadoresPayment';
 import ConsultaGracias from './components/ConsultaGracias';
@@ -58,6 +61,9 @@ class App extends React.Component {
           {/* Manager Funnel */}
           <Route path="/guia-esquema-google" exact component={GuiaEsquemaGoogle} />
           <Route path="/guia-esquema-google/gracias" component={GuiaEsquemaGoogleGracias} />
+
+          {/* Agency Funnel */}
+          <Route path="/guia-maximizador" exact component={GuiaMaximizador} />
 
           {/* Recruiter Funnel */}
           <Route path="/curso-sistema-reclutadores" exact component={CursoReclutadores} />

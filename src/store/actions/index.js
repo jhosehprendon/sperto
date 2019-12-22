@@ -69,23 +69,23 @@ export const createContact = (formValues, tagId, sequenceId) => {
         })
         dispatch({ type: CREATE_CONTACT, payload: response.data })
 
-        if(tagId == '2'){
+        if(tagId === '2'){
           history.push('/guia-email-candidato/gracias')
         }
 
-        if(tagId == '1'){
+        if(tagId === '1'){
           history.push('/guia-esquema-google/gracias')
         }
 
-        if(tagId == '4'){
+        if(tagId === '4'){
           history.push('/mini-curso')
         }
 
-        if(tagId == '3'){
+        if(tagId === '3'){
           history.push('/curso-sistema-reclutadores/payment')
         }
 
-        if(tagId == '5'){
+        if(tagId === '5'){
           history.push('/guia-siglas-it/gracias')
         }
 
