@@ -25,7 +25,7 @@ class Home extends React.Component {
           <div className='home-first--flex over'>
             <div style={{marginRight: '10%'}}>
               <h2 className='home-first__title'>Accelerate Your Revenue Growth with Facebook and Instagram Ads</h2>
-              <h3 className='home-first__subtitle'>Improve your Marketing Strategy and Grow Your Business</h3>
+              <h3 className='home-first__subtitle'>Improve your Marketing Strategy and Build a Profitable Business</h3>
               <button onClick={this.openModal} type="button" style={{marginTop: '10px', fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Let's Work Together</button>
               <ModalAsk ref="child"/>
             </div>

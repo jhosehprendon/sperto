@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/Header.css'
 import history from '../history';
-import ModalAsk from './ModalAsk'
+import ModalAsk from './ModalAsk';
 
 class Header extends React.Component  {
 
@@ -21,7 +21,7 @@ class Header extends React.Component  {
           {/* <div className="header__left__align">
             <p className="header__left-icons" onClick={this.sendNosotros}>About Us</p>
           </div> */}
-          <div  className="header__left__align header-hide">
+          <div className="header__left__align header-hide">
             <button onClick={this.openModal} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Let's Work Together</button>
           </div>
         </div>

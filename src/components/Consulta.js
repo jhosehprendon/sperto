@@ -14,7 +14,7 @@ class Consulta extends React.Component {
     return ( 
       <div>
       <div className='consulta-block'>
-        <h1 className='consulta-title'>¿Tus Proyectos se Retrasan por Falta de Ingenieros? <br></br>¿No Logras Cubrir Vacantes a Tiempo con Candidatos Calificados?</h1>
+        <h1 className='consulta-title'>Acelera el Crecimiento de tu Negocio con Facebook e Instagram Ads</h1>
         <div style={{textAlign: 'center', marginTop: '30px'}}>
           <button onClick={this.sendCalendly} type="button" style={{marginBottom: '20px', fontWeight: 'bold', padding: '12px' }} className="btn btn-success">¡Agenda tu llamada ahora!</button>
         </div>

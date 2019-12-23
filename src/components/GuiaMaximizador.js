@@ -17,7 +17,7 @@ class GuiaMaximizador extends React.Component {
   onSubmit = (formValues) => {
     this.setState({ tryCreate: true })
 
-    this.props.createContact(formValues, 2, 5).then(() => {
+    this.props.createContact(formValues, 6, 9).then(() => {
         this.setState({tryCreate: false})
     }).catch(e => {
       this.setState({tryCreate: false})

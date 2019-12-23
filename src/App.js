@@ -21,6 +21,8 @@ import GuiaSistema from './components/GuiaSistema';
 import GuiaSistemaGracias from './components/GuiaSistemaGracias';
 // Agency
 import GuiaMaximizador from './components/GuiaMaximizador';
+import FBGrupo from './components/FBGrupo';
+import DescargarGuiaMaximizador from './components/DescargarGuiaMaximizador';
 //
 import Nosotros from './components/Nosotros';
 import CursoReclutadoresPayment from './components/CursoReclutadoresPayment';
@@ -64,6 +66,8 @@ class App extends React.Component {
 
           {/* Agency Funnel */}
           <Route path="/guia-maximizador" exact component={GuiaMaximizador} />
+          <Route path="/fb-grupo" exact component={FBGrupo} />
+          <Route path="/descarga-guia-maximizador" component={DescargarGuiaMaximizador} />
 
           {/* Recruiter Funnel */}
           <Route path="/curso-sistema-reclutadores" exact component={CursoReclutadores} />
