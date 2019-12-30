@@ -6,8 +6,8 @@ class FBGrupo extends React.Component {
     window.scrollTo(0, 0)
   }
 
-  sendCalendly = () => {
-    window.location.href = "https://calendly.com/jhosehp-rendon/15min"
+  sendFBGroup = () => {
+    window.location.href = "https://www.facebook.com/groups/874419683006607"
   }
 
   render() {
@@ -19,7 +19,7 @@ class FBGrupo extends React.Component {
           <p>Pero te invitamos a unirte a nuestro grupo de Facebook donde constantemente estamos compartiendo contenido sobre marketing y lo último en Facebook e Instagram Ads.</p>
         </div>
         <div style={{textAlign: 'center', marginTop: '5px'}}>
-          <button onClick={this.sendCalendly} type="button" style={{marginBottom: '10px', fontWeight: 'bold', padding: '12px' }} className="btn btn-success">Unirme al Grupo</button>
+          <button onClick={this.sendFBGroup} type="button" style={{marginBottom: '10px', fontWeight: 'bold', padding: '12px' }} className="btn btn-success">Unirme al Grupo</button>
         </div>  
       </div>
     )

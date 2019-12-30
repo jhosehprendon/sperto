@@ -31,8 +31,8 @@ class GuiaMaximizador extends React.Component {
           <div style={{marginRight: '10%'}}>
             <h3 className='rmk-first__subtitle' style={{color: '#FFDE59', fontWeight: 'bold'}}>Acceso GRATIS a Guía</h3>
             <h2 className='rmk-first__title'>3 Medidas que Debes Tomar para Maximizar tus Ganancias en Facebook Ads y Acelerar el Crecimiento de tu Negocio</h2>
-            <h3 className='rmk-first__subtitle'>Cada vez es más difícil mantener los costos bajos y un buen volumen de conversiones en Facebook.</h3>
-            <h3 className='rmk-first__subtitle'>La respuesta está en un <span style={{color: '#FFDE59'}}>Maximizador de Ganancias</span> que nos permite obtener un mayor ingreso de nuestros clientes</h3>
+            <h3 className='rmk-first__subtitle'>Cada vez es más difícil mantener los costos bajos y un buen volumen de conversiones en Facebook e Instagram.</h3>
+            <h3 className='rmk-first__subtitle'>La respuesta está en un <span style={{color: '#FFDE59'}}>Maximizador de Ganancias</span> que nos permite obtener un mayor ingreso de nuestros clientes.</h3>
             <LeadForm 
               onSubmit={this.onSubmit} 
               buttonText='Descargar Guía'
