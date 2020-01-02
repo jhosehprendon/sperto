@@ -7,7 +7,7 @@ class Consulta extends React.Component {
   }
 
   sendCalendly = () => {
-    window.location.href = "https://calendly.com/jhosehp-rendon/15min"
+    window.location.href = "https://calendly.com/jhosehp-rendon/30min"
   }
 
   render() {
@@ -19,55 +19,40 @@ class Consulta extends React.Component {
           <button onClick={this.sendCalendly} type="button" style={{marginBottom: '20px', fontWeight: 'bold', padding: '12px' }} className="btn btn-success">¡Agenda tu llamada ahora!</button>
         </div>
         <div style={{fontSize: '25px'}} className='blog-content'>
-          <p>Si a tus reclutadores les cuesta encontrar candidatos de calidad y cubrir vacantes a tiempo... Si estas cansado de no ver resultados. Entonces este mensaje es para ti.</p>
-          <p>Hay una forma en que tus reclutadores pueden optimizar su tiempo y esfuerzos para contratar candidatos de calidad en menor tiempo.</p>
-          <p>Pero necesitas saber que tiene un precio no hacer nada al respecto.</p>
-          <h2>Si no haces nada al respecto, solo se pondrá peor.</h2>
-          <p>Lo que hace la mayoría de los managers, cuando enfrentan problemas al no encontrar candidatos calificados, es de presionar a sus reclutadores para obtener resultados, invierten en software costos o contratan más reclutadores...Entonces, los reclutadores aceleran el proceso para llegar a más candidatos, enviando mensajes a cualquiera que consiguen por Linkedin o buscan referidos desesperadamente. Pero, para la mayoría de los managers, esto no funciona.</p>
+          <p>Si estás gastando dinero en Marketing pero no aumentas tus ventas…si Facebook ya no te es rentable y temes que tu negocio no pueda sostenerse por más tiempo…Entonces este mensaje es para ti.</p>
+          <p>Es por eso que el Sistema MSM “Marketing Selling Machine” es lo que tu negocio necesita para conseguir más clientes a través de Facebook e Instagram Ad. Podrás aumentar tus ventas, ser más rentable y crecer tu negocio de forma predecible.</p>
+          <p>Pero debes saber que si no decides mejorar tu estrategia de marketing, nada cambiara. Seguirás perdiendo dinero en publicidad sin resultado para tu negocio.</p>
+          <p>Lo que hace la mayoría cuando Facebook deja de funcionar y los costos aumentan, es probar nuevas imágenes/videos, nuevas audiencias, diferentes ángulos en el mensaje en la publicidad en Facebook e Instagram… O en algunos casos deciden contratar una nueva agencia de marketing. Pero para la mayoría el problema persiste:</p>
           <ul>
-              <li>No cubren suficientes vacantes a tiempo</li>
-              <li>Los proyectos son retrasados</li>
-              <li>Los recursos no son invertidos eficientemente</li>
-              <li>Por lo tanto, la empresa no cumple con sus objetivos</li>
+              <li>Altos costos por lead o ventas</li>
+              <li>Bajo volumen de conversiones</li>
+              <li>Literalmente, dinero tirado en marketing sin resultados positivos</li>
+              <li>Lo que se traduce en objetivo no cumplidos para la empresa</li>
           </ul>
           <br></br>
           <p>¿Y qué pasa si no haces nada? ¿Si te mantienes haciendo lo mismo?.</p>
-          <p>Pierdes dinero en recursos que no obtienen resultados...Arriesgas perder otro cliente o no cumples con los objetivos de la empresa.</p>
-          <h2>He descubierto cómo las empresas pueden cubrir más vacantes a tiempo con candidatos de calidad.</h2>
+          <p>Pierdes dinero en recursos sin obtener resultados…El futuro de tu empresa está cada vez más nublado.</p>
+          <p>El problema es más estratégico que táctico. Podrás mejorar un poco con algunos cambios en Facebook pero el problema volverá…</p>
+          <h2>Hemos encontrado cómo las empresas pueden generar más conversiones a traves de Facebook e Instagram Ads.</h2>
           <p>Existe una fórmula que funciona y aquí te cuento la historia:</p>
-          <p>Desde que me convertí en programador, he sido contactado por los reclutadores de la misma manera (con mensajes tipo Spam, poco personales para vender su oferta).  No tienen la cortesía de leer mi perfil en Linkedin antes de contactarme, no mencionan las oportunidades que hay en esa vacante para mi, nada acerca del proyecto que pueda ser de mi interés. En conclusión, no hay un acercamiento personal.</p>
-          <p>También he trabajado como Marketer durante varios años y entendí inmediatamente que existía un problema en cómo se comunican los reclutadores con sus candidatos.</p>
-          <p>Una estrategia de marketing exitosa es la que construye relaciones antes de vender. Al final del día, estas vendiendo un nuevo empleo, es una transacción mucho más compleja comparada a vender un par de zapatos, pero al final sigue siendo una VENTA. Y como toda venta, se necesita de una estrategia de marketing ganadora.</p>
-          <p>Nadie pide matrimonio en la primera cita, seguramente obtendrás un NO… Bueno, esto esta pasando con los reclutadores. Están hacienda la propuesta muy pronto.</p>
-          <p>Entonces, he estudiado cómo las grandes empresas como Google y Linkedin utilizan el marketing para ejecutar un procesos de reclutamiento más eficiente... Son capaces de posicionar talento calificado en vacantes de una forma más rápida y efectiva. Me gustaría compartir contigo este conocimiento.</p>
-          <p>Por eso he creado el entrenamiento <strong>Bootcamp de Marketing para Reclutadores.</strong></p>
-          <h2>Funciona para los Reclutadores de Google, Empresas Tecnológicas, Startups, y funcionará para ti.</h2>
+          <p>Durante 5 años ayudé numerosas empresas a ejecutar su publicidad paga por Facebook e Instagram. En la mayoría de los casos logré buenos resultados, pero en otros casos la historia era otra. No importaba lo que hiciera con las campañas: cambio de enfoque, imágenes, videos, audiencias. No lograba mejorar los resultados. Fue realmente frustrante, por eso te entiendo.</p>
+          <p>Pero eso me dio la determinación para mejorar la forma en que hacía Marketing, entre muchas horas de lectura, cursos de líderes en marketing y mi reflexión me llevó a aplicar un sistema que permite potenciar las ventas de cualquier negocio , lo llamo “Marketing Selling Machine”, su Filosofía es usada por empresas y marketers exitosos para predecir los resultados y sacar el mayor provecho del marketing.</p>
+          <p>Este sistema tiene el objetivo principal de crear una relación con el prospecto antes de vender, porque no importa cuanto intentes vender a una audiencia en frío, difícilmente tendras resultados duraderos.</p>
+          <p>Pero, luego de poner en práctica el <strong>Marketing Selling Machine</strong> todos mis esfuerzos comenzaron a tener resultados positivos…Las ventas aumentaron exponencialmente y mis clientes comenzaron a ser rentables…</p>
+          <p>El Sistema funcionó en mis clientes y también funcionará en tu Negocio.</p>
           <p><strong>Finalmente, ¡Es tu turno!</strong></p>
-          <p>Cuando entrenes a tu equipo con en el <strong>Bootcamp de Marketing para Reclutadores</strong> van a tener la clave para: </p>
+          <p>Cuando pongas en práctica el Sistema <strong>Marketing Selling Machine</strong> vas a poder:</p>
           <ul>
-            <li>Construir una relación con prospectos</li>
-            <li>Crear una comunidad de candidatos pasivos</li>
-            <li>Obtener más respuestas a tus invitaciones</li>
-            <li>Cubrir más vacantes, en menos tiempo</li>
+            <li>Bajar los costos y generar más conversiones</li>
+            <li>Incrementar tus ventas de manera predecible y sustentable</li>
+            <li>Crear una comunidad de clientes fieles a tu marca</li>
           </ul>
-          <br></br>
-          <p>Y tus reclutadores van a aprender:</p>
-          <ul>
-            <li>Los principios del Marketing Digital para el proceso de Talent Acquisition</li>
-            <li>Sobre embudos de marketing y el candidate journey</li>
-            <li>La estrategia para construir relaciones con candidatos</li>
-            <li>Cómo usar publicidad paga para obtener aplicaciones</li>
-            <li>Vocabulario técnico para poder establecer conversaciones con ingenieros</li>
-            <li>Cómo escribir un Job Description que llame la atención</li>
-            <li>...En pocas palabras, tendrás un equipo de reclutadores full-stack con las herramientas y el conocimiento avanzado para obtener mejores resultados</li>
-          </ul>
-          <br></br>
           <p><strong>¡Es el momento de tomar una decisión!</strong></p>
           <p>Puedes seguir haciendo lo que has venido haciendo, pero ya sabes que resultados vas a obtener.</p>
           <p>Pregúntate si es realmente lo que quieres lograr.</p>
-          <p>Entonces, “Haz algo diferente, y obtendrás un resultado diferente”. Finalmente comienza a cubrir más vacantes a tiempo con candidatos calificados.</p>
-          <p>¿Qué quieres realmente para ti?, esto es lo que tienes que hacer:</p>
-          <p>Haz Click en el botón de abajo para agendar una llamada de 15 min conmigo. En esta llamada, vamos a discutir sobre las metas de reclutamiento de tu empresa y sobre tu proceso actual para poder identificar procesos de mejora y diseñar el <strong>Bootcamp de Marketing Digital</strong> apropiado para tu equipo de reclutadores.</p>
+          <p>Entonces, “Haz algo diferente, y obtendrás un resultado diferente”. Finalmente comienza a ser rentable y a hacer crecer tu Negocio.</p>
+          <p>Esto es lo que tienes que hacer:</p>
+          <p>Haz Click en el botón de abajo para agendar una llamada Gratis de 30 min conmigo. En esta llamada, conversaremos sobre tu empresa, producto/servicio y los objetivos que quieres lograr para poder diseñar tu estrategia de marketing.</p>
         </div>
       </div>
       <div style={{textAlign: "center", marginTop: '6%'}}>
@@ -75,7 +60,6 @@ class Consulta extends React.Component {
         <div style={{textAlign: 'center', marginTop: '30px'}}>
           <button onClick={this.sendCalendly} type="button" style={{marginBottom: '20px', fontWeight: 'bold', padding: '12px' }} className="btn btn-success">¡Agenda tu llamada ahora!</button>
         </div>
-        <iframe title="cnsulta" type="text/html" frameborder="0" class="video" src="https://www.youtube.com/embed/ocnVgFj36cY" allowfullscreen></iframe>
       </div>
     </div>
     )

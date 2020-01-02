@@ -24,6 +24,49 @@ class LeadForm extends React.Component {
     )
   }
 
+  renderDropdown = ({options, label, meta, input}) => {
+    const className = `field ${meta.error && meta.touched ? 'error' : ''}`
+    const renderSelectOptions = (key, index) => {
+      return (
+        <option
+          key={`${index}-${key}`}
+          value={key}
+        >
+          {options[key]}
+        </option>
+      );
+    }
+    if (options) {
+      return (
+        <div className={className}>
+          <p><strong>{label}</strong></p>
+          <select {...input} style={{height: '40px'}}>
+            <option value="">Selecciona una opción</option>
+            {Object.keys(options).map(renderSelectOptions)}
+          </select>
+          {this.renderError(meta)}
+        </div>
+      )
+    }
+    return <div></div>
+  }
+
+  checkDropdown = () => {
+    if(this.props.from) {
+      return (
+        <Field
+        name="leadType"
+        label="Como te describes"
+        component={this.renderDropdown}
+        options={{
+          manager: 'Manejo el presupuesto de Marketing (CEO, Founder, Owner)',
+          employee: 'Soy empleado (Media Buyer, Marketer)'
+        }}
+      />
+      )
+    }
+  }
+
   onSubmit = (formValues, sequenceId) => {
       this.props.onSubmit(formValues, sequenceId)
   }
@@ -45,6 +88,8 @@ class LeadForm extends React.Component {
           <form onSubmit={this.props.handleSubmit(this.onSubmit)} className="ui form error"> 
             <Field name="fullName" component={this.renderInput} label="Nombre y Apellido"/>
             <Field name="email" component={this.renderInput} label="Email"/>
+            {this.checkDropdown()}
+
             <button className="ui button primary">{this.props.buttonText}</button>
             {this.renderSpinner()}
           </form>
@@ -69,6 +114,10 @@ const validate = (formValues) => {
 
     if(!validateEmail(formValues.email)) {
         errors.email = 'Please enter a valid email'
+    }
+
+    if(!formValues.leadType) {
+      errors.leadType = 'Please select one option'
     }
 
     if(!formValues.email) {

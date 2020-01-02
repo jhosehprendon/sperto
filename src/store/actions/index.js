@@ -89,7 +89,7 @@ export const createContact = (formValues, tagId, sequenceId) => {
           history.push('/guia-siglas-it/gracias')
         }
 
-        if(tagId == '6'){
+        if(tagId == '6' || tagId == '7'){
           history.push('/descarga-guia-maximizador')
         }
 

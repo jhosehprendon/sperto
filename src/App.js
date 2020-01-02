@@ -24,6 +24,8 @@ import GuiaMaximizador from './components/GuiaMaximizador';
 import FBGrupo from './components/FBGrupo';
 import DescargarGuiaMaximizador from './components/DescargarGuiaMaximizador';
 import VideoSystem from './components/VideoSystem';
+import ArticuloLeadMagnet from './components/ArticuloLeadMagnet';
+import ArticuloSistema from './components/ArticuloSistema';
 //
 import Nosotros from './components/Nosotros';
 import CursoReclutadoresPayment from './components/CursoReclutadoresPayment';
@@ -108,6 +110,9 @@ class App extends React.Component {
           <Route path='/blog/nueva-generacion-de-reclutadores' exact={true} component={ArticuloGeneracionRec} />
           <Route path='/blog/embudo-candidatos' exact={true} component={ArticuloEmbudoReclutador} />
           <Route path='/blog/reclutador-vendedor' exact={true} component={ArticuloReclutadorVendedor} />
+
+          <Route path='/blog/lead-magnet' exact={true} component={ArticuloLeadMagnet} />
+          <Route path='/blog/sistema' exact={true} component={ArticuloSistema} />
 
           {/* Redirects */}
           <Route path='/secuencia/video-4' exact={true} component={MiniCurso} />
