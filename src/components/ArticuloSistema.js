@@ -1,14 +1,9 @@
 import React from 'react';
 import '../css/Blog.css';
-import ModalAsk from './ModalAsk';
 
 class ArticuloSistema extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0)
-  }
-
-  openModal = () => {
-    this.refs.child.openModal();
   }
   
   render() {
@@ -36,13 +31,8 @@ class ArticuloSistema extends React.Component {
             <p>Luego entra en el juego un elemento muy importante del sistema: el “Maximizador de Ganancias”. El gran impacto ocurre en este punto, la mayoría de las empresas se quedarán conformes con la venta del producto principal generando $X. Pero qué tal si podemos generar $5X?</p>
             <p>Hemos trabajado muy duro por construir una relación y generar esa primera compra, por qué parar? Con el maximizador de ganancias podemos ofrecer “oder bumps”, “cross sells”, “upsells” e inclusive motivar a repetidas compras.</p>
             <p>Si aplicas el CVO en tu estrategia podras sacar mas provecho (ganancias) de cada cliente, esto nos va a permitir darnos el lujo de invertir más en Facebook u otra plataforma mientras que la competencia se enfoca en hacer cambios insignificantes de la campaña que terminan en frustraciones.</p>
-            <p>Hemos ayudado a numerosos clientes a diseñar una estrategia para obtener más clientes y más ventas de ellos. También podemos ayudarte!</p>
-            <div style={{margin: '10px 0 20px 0'}}>
-              <button onClick={this.openModal} type="button" style={{marginTop: '10px', fontWeight: 'bold', padding: '12px' }} className="btn btn-success">Agenda una Llamada</button>
-            </div>
           </div>
         </div>
-        <ModalAsk ref="child"/>
       </div>
     )
   }

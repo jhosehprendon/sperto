@@ -26,6 +26,16 @@ import DescargarGuiaMaximizador from './components/DescargarGuiaMaximizador';
 import VideoSystem from './components/VideoSystem';
 import ArticuloLeadMagnet from './components/ArticuloLeadMagnet';
 import ArticuloSistema from './components/ArticuloSistema';
+
+import VideoEstrategia from'./components/EmailVideoSequence/VideoEstrategia';
+import ObjetivoMarketing from'./components/EmailVideoSequence/ObjetivoMarketing';
+import AntesDespues from'./components/EmailVideoSequence/AntesDespues';
+import LeadMagnet from'./components/EmailVideoSequence/LeadMagnet';
+import Tripwire from'./components/EmailVideoSequence/Tripwire';
+import MaximizadorGanancias from'./components/EmailVideoSequence/MaximizadorGanancias';
+import ReturnPath from'./components/EmailVideoSequence/ReturnPath';
+import FBLeadGen from'./components/EmailVideoSequence/FBLeadGen';
+import PageLeadGen from'./components/EmailVideoSequence/PageLeadGen';
 //
 import Nosotros from './components/Nosotros';
 import CursoReclutadoresPayment from './components/CursoReclutadoresPayment';
@@ -72,6 +82,16 @@ class App extends React.Component {
           <Route path="/fb-grupo" exact component={FBGrupo} />
           <Route path="/descarga-guia-maximizador" component={DescargarGuiaMaximizador} />
           <Route path="/video-sistema-marketing" component={VideoSystem} />
+
+          <Route path="/email/video-estrategia" component={VideoEstrategia} />
+          <Route path="/email/objetivo-marketing" component={ObjetivoMarketing} />
+          <Route path="/email/antes-despues" component={AntesDespues} />
+          <Route path="/email/lead-magnet" component={LeadMagnet} />
+          <Route path="/email/tripwire" component={Tripwire} />
+          <Route path="/email/maximizador" component={MaximizadorGanancias} />
+          <Route path="/email/return-path" component={ReturnPath} />
+          <Route path="/email/fb-lead-gen" component={FBLeadGen} />
+          <Route path="/email/page-lead-gen" component={PageLeadGen} />
 
           {/* Recruiter Funnel */}
           <Route path="/curso-sistema-reclutadores" exact component={CursoReclutadores} />

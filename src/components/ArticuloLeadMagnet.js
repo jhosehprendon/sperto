@@ -1,14 +1,9 @@
 import React from 'react';
 import '../css/Blog.css';
-import ModalAsk from './ModalAsk';
 
 class ArticuloLeadMagnet extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0)
-  }
-
-  openModal = () => {
-    this.refs.child.openModal();
   }
   
   render() {
@@ -40,13 +35,9 @@ class ArticuloLeadMagnet extends React.Component {
             <p>No es necesario tener conocimientos avanzados de desarrollo web para construir una página de generación de leads. Existen softwares que te permitirán hacerlo sin tener habilidades de programación.</p>
             <p>Lo primero que necesitas es un constructor de landing pages: Leadpages, Clickfunnels, Unbounce son algunos de los más conocidos pero existen otros softwares que te van a permitir cumplir con este objetivo.</p>
             <p>El lead magnet es un recurso que es muy importante para comenzar nuestra relación con el prospecto y debe estar diseñado de una forma que tenga valor y funcione como una introducción para lo que podemos ofrecer. Este debe dejar al prospecto queriendo más de ti y posicionándote como un líder en la industria. Eventualmente, este potencial cliente va a querer lo que ofreces y va a decidir comprar sin necesidad de presionarlo.</p>
-            <p>El Marketing ganador es aquel que crea relaciones con contenido de valor. Hemos ayudado a numerosos clientes a diseñar una estrategia que les permita sacar más provecho de sus clientes y a ejecutar Facebook Ads de manera satisfactoria. También podemos ayudarte!</p>
-            <div style={{margin: '10px 0 20px 0'}}>
-              <button onClick={this.openModal} type="button" style={{marginTop: '10px', fontWeight: 'bold', padding: '12px' }} className="btn btn-success">Agenda una Llamada</button>
-            </div>
+            <p>El Marketing ganador es aquel que crea relaciones con contenido de valor.</p>
           </div>
         </div>
-        <ModalAsk ref="child"/>
       </div>
     )
   }
