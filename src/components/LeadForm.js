@@ -104,7 +104,7 @@ const validate = (formValues) => {
     const errors = {}
 
     if(!formValues.fullName) {
-        errors.fullName = 'You must enter a name'
+        errors.fullName = 'Debes ingresar un nombre'
     }
 
     let validateEmail = (email) => {
@@ -113,15 +113,15 @@ const validate = (formValues) => {
     }
 
     if(!validateEmail(formValues.email)) {
-        errors.email = 'Please enter a valid email'
+        errors.email = 'Por favor ingresa un email válido'
     }
 
     if(!formValues.leadType) {
-      errors.leadType = 'Please select one option'
+      errors.leadType = 'Por favor seleciona una opción'
     }
 
     if(!formValues.email) {
-        errors.email = 'You must enter an email'
+        errors.email = 'Debes ingresar un email'
     }
     return errors
 }

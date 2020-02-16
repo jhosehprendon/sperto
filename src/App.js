@@ -20,6 +20,9 @@ import Consulta from './components/Consulta';
 import GuiaSistema from './components/GuiaSistema';
 import GuiaSistemaGracias from './components/GuiaSistemaGracias';
 // Agency
+import GuiaLeadMagnet from './components/GuiaLeadMagnet';
+import DescargarGuiaLeadMagnet from './components/DescargarGuiaLeadMagnet'
+
 import GuiaMaximizador from './components/GuiaMaximizador';
 import FBGrupo from './components/FBGrupo';
 import DescargarGuiaMaximizador from './components/DescargarGuiaMaximizador';
@@ -78,6 +81,9 @@ class App extends React.Component {
           <Route path="/guia-esquema-google/gracias" component={GuiaEsquemaGoogleGracias} />
 
           {/* Agency Funnel */}
+          <Route path="/guia-lead-magnet" exact component={GuiaLeadMagnet} />
+          <Route path="/descarga-guia-lead-magnet" component={DescargarGuiaLeadMagnet} />
+
           <Route path="/guia-maximizador" exact component={GuiaMaximizador} />
           <Route path="/fb-grupo" exact component={FBGrupo} />
           <Route path="/descarga-guia-maximizador" component={DescargarGuiaMaximizador} />

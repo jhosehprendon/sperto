@@ -93,6 +93,10 @@ export const createContact = (formValues, tagId, sequenceId) => {
           history.push('/descarga-guia-maximizador')
         }
 
+        if(tagId == '8'){
+          history.push('/descarga-guia-lead-magnet')
+        }
+
         ////// ADD TAG
 
         const tagData = {
