@@ -22,7 +22,7 @@ class Header extends React.Component  {
             <p className="header__left-icons" onClick={this.sendNosotros}>About Us</p>
           </div> */}
           <div className="header__left__align header-hide">
-            <button onClick={this.openModal} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Let's Work Together</button>
+            <button onClick={this.openModal} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Trabajemos juntos</button>
           </div>
         </div>
         <ModalAsk ref="child"/>

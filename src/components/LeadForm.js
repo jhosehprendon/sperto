@@ -59,7 +59,7 @@ class LeadForm extends React.Component {
         label="Como te describes"
         component={this.renderDropdown}
         options={{
-          manager: 'Manejo el presupuesto de Marketing (CEO, Founder, Owner)',
+          manager: 'Manejo el presupuesto de Marketing (CEO, Fundador, Dueño)',
           employee: 'Soy empleado (Media Buyer, Marketer)'
         }}
       />

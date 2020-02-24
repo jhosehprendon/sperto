@@ -1,13 +1,15 @@
 
 .over{
-  background: rgba(39,62,84,0.80);
+  /* background: rgba(39,62,84,0.80); */
   height: 100%;
   z-index: 2;
 }
 
 .home-first {
-  background-image: url(../images/headeropen.jpg);
-  box-shadow: 0 0 100px 80px rgba(39,62,84, 0.95) inset;
+  background-image: url(../images/back.png);
+  /* box-shadow: 0 0 100px 80px rgba(39,62,84, 0.95) inset; */
+  /* background-repeat: no-repeat; */
+  width: 100%;
 }
 
 .home-fourth {
@@ -15,14 +17,14 @@
 }
 
 .home-first__title {
-  color: white; 
+  color: #203144; 
   font-weight: bold; 
   font-size: 40px; 
   width: 60%
 }
 
 .home-first__subtitle {
-  color: white; 
+  color: #283D54; 
   font-size: 25px;
   margin-top: 25px; 
   width: 50%
