@@ -49,11 +49,11 @@ class ModalAsk extends React.Component  {
           onRequestClose={this.closeModal}
           style={customStyles}
         >
-          <p style={{marginLeft: '5px', color: '#295b8d', fontWeight: 'bold', fontSize: '25px'}}>How do you describe yourself?</p>
-            <p style={{fontSize: '18px', width: '80%'}}>I am a Founder, CEO or Director, I manage marketing budget and take decisions</p>
-            <button onClick={this.sendConsulta} type="button" style={{fontWeight: 'bold', padding: '12px', marginRight:'40px' }} className="btn btn-success">Continue as Decision Maker</button>
-            <p style={{fontSize: '18px', width: '80%', marginTop: '30px'}}>I am a Marketer but I don't manage marketing budget or take decisions</p>
-            <button onClick={this.sendFBGroup} type="button" style={{fontWeight: 'bold', padding: '12px', marginRight:'40px' }} className="btn btn-success">Continue as Marketer</button>
+          <p style={{marginLeft: '5px', color: '#295b8d', fontWeight: 'bold', fontSize: '25px'}}>¿Cómo te describes?</p>
+            <p style={{fontSize: '18px', width: '80%'}}>Fundador, CEO o Director, tomo decisiones de marketing y presupuesto</p>
+            <button onClick={this.sendConsulta} type="button" style={{fontWeight: 'bold', padding: '12px', marginRight:'40px' }} className="btn btn-success">Continuar como Director</button>
+            <p style={{fontSize: '18px', width: '80%', marginTop: '30px'}}>Soy Marketer pero no tomo decisiones de marketing ni presupuesto</p>
+            <button onClick={this.sendFBGroup} type="button" style={{fontWeight: 'bold', padding: '12px', marginRight:'40px' }} className="btn btn-success">Continuar como Marketer</button>
 
           {/* <div style={{display: 'flex', justifyContent: 'space-between', marginTop: '20px'}}>
             <button onClick={() => this.sendClientInfo(this.state.clientData)} type="button" style={{marginTop: '10px', fontWeight: 'bold', padding: '12px', marginRight:'40px' }} className="btn btn-success">Enviar información</button>
