@@ -39,7 +39,11 @@ class GuiaLeadMagnet extends React.Component {
           <div style={{marginRight: '10%'}}>
             <h3 className='rmk-first__subtitle' style={{color: '#FFDE59', fontWeight: 'bold'}}>Acceso GRATIS a Guía</h3>
             <h2 className='rmk-first__title'>La Fórmula Perfecta de un Lead Magnet Ganador</h2>
-            <h3 className='rmk-first__subtitle'>Construye una Audiencia, Vende más y Acelera el Crecimiento de tu Negocio</h3>
+            <h3 className='rmk-first__subtitle'>Construye una Audiencia, Vende más y Acelera el Crecimiento de tu Negocio. El Lead Magnet es:</h3>
+            <ul>
+              <li className='rmk-first__subtitle'>Una de las herramientas más importantes del marketing</li>
+              <li className='rmk-first__subtitle'>Te permite tener el primer punto de contacto con tu audiencia</li>
+            </ul>
             <LeadForm
               from='leadMagnet'
               onSubmit={this.onSubmit} 
