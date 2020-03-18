@@ -55,6 +55,7 @@ import DescargarGuiaSiglasIT from './components/DescargarGuiaSiglasIT';
 import ArticuloGeneracionRec from './components/ArticuloGeneracionRec';
 import ArticuloEmbudoReclutador from './components/ArticuloEmbudoReclutador';
 import ArticuloReclutadorVendedor from './components/ArticuloReclutadorVendedor';
+import ArticuloRealidad from './components/ArticuloRealidad';
 
 import GoogleAnalytics from './components/GoogleAnalytics';
 
@@ -80,7 +81,7 @@ class App extends React.Component {
           <Route path="/guia-esquema-google" exact component={GuiaEsquemaGoogle} />
           <Route path="/guia-esquema-google/gracias" component={GuiaEsquemaGoogleGracias} />
 
-          {/* Agency Funnel */}
+          {/* Agency Funnel */}          
           <Route path="/guia-lead-magnet" exact component={GuiaLeadMagnet} />
           <Route path="/descarga-guia-lead-magnet" component={DescargarGuiaLeadMagnet} />
 
@@ -139,6 +140,8 @@ class App extends React.Component {
 
           <Route path='/blog/lead-magnet' exact={true} component={ArticuloLeadMagnet} />
           <Route path='/blog/sistema' exact={true} component={ArticuloSistema} />
+
+          <Route path='/blog/realidad-marketing' exact={true} component={ArticuloRealidad} />
 
           {/* Redirects */}
           <Route path='/secuencia/video-4' exact={true} component={MiniCurso} />
