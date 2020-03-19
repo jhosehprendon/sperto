@@ -56,6 +56,7 @@ import ArticuloGeneracionRec from './components/ArticuloGeneracionRec';
 import ArticuloEmbudoReclutador from './components/ArticuloEmbudoReclutador';
 import ArticuloReclutadorVendedor from './components/ArticuloReclutadorVendedor';
 import ArticuloRealidad from './components/ArticuloRealidad';
+import ArticuloContenido from './components/ArticuloContenido';
 
 import GoogleAnalytics from './components/GoogleAnalytics';
 
@@ -142,6 +143,7 @@ class App extends React.Component {
           <Route path='/blog/sistema' exact={true} component={ArticuloSistema} />
 
           <Route path='/blog/realidad-marketing' exact={true} component={ArticuloRealidad} />
+          <Route path='/blog/contenido' exact={true} component={ArticuloContenido} />
 
           {/* Redirects */}
           <Route path='/secuencia/video-4' exact={true} component={MiniCurso} />
