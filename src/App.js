@@ -41,6 +41,7 @@ import FBLeadGen from'./components/EmailVideoSequence/FBLeadGen';
 import PageLeadGen from'./components/EmailVideoSequence/PageLeadGen';
 import Cvo from'./components/EmailVideoSequence/Cvo';
 import Remarketing from'./components/EmailVideoSequence/Remarketing';
+import PreLaunch from'./components/EmailVideoSequence/PreLaunch';
 //
 import Nosotros from './components/Nosotros';
 import CursoReclutadoresPayment from './components/CursoReclutadoresPayment';
@@ -104,6 +105,7 @@ class App extends React.Component {
           <Route path="/email/page-lead-gen" component={PageLeadGen} />
           <Route path="/email/cvo" component={Cvo} />
           <Route path="/email/remarketing" component={Remarketing} />
+          <Route path="/email/prelaunch" component={PreLaunch} />
 
           {/* Recruiter Funnel */}
           <Route path="/curso-sistema-reclutadores" exact component={CursoReclutadores} />
