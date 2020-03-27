@@ -63,6 +63,10 @@ import ArticuloContenido from './components/ArticuloContenido';
 
 import GoogleAnalytics from './components/GoogleAnalytics';
 
+//Jobs
+import JobsNewsLetter from './components/JobsNewsLetter';
+import JobsNewsLetterGracias from './components/JobsNewsLetterGracias';
+
 class App extends React.Component {
   render() {
     return (
@@ -106,6 +110,10 @@ class App extends React.Component {
           <Route path="/email/cvo" component={Cvo} />
           <Route path="/email/remarketing" component={Remarketing} />
           <Route path="/email/prelaunch" component={PreLaunch} />
+
+          {/* Jobs News Letter Funnel */}
+          <Route path="/jobs-news-letter" exact component={JobsNewsLetter} />
+          <Route path="/jobs-news-letter/gracias" exact component={JobsNewsLetterGracias} />
 
           {/* Recruiter Funnel */}
           <Route path="/curso-sistema-reclutadores" exact component={CursoReclutadores} />

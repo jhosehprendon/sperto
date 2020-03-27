@@ -13,6 +13,18 @@ class Header extends React.Component  {
     this.refs.child.openModal();
   }
 
+  renderCtaButton() {
+    if(history.location.pathname === '/jobs-news-letter' || history.location.pathname === '/jobs-news-letter/gracias') {
+      return null
+    } else {
+      return (
+        <div className="header__left__align header-hide">
+          <button onClick={this.openModal} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Trabajemos juntos</button>
+        </div>
+      )
+    }
+  }
+
   render() {
     return (
       <div className="header-sperto">
@@ -21,9 +33,7 @@ class Header extends React.Component  {
           {/* <div className="header__left__align">
             <p className="header__left-icons" onClick={this.sendNosotros}>About Us</p>
           </div> */}
-          <div className="header__left__align header-hide">
-            <button onClick={this.openModal} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Trabajemos juntos</button>
-          </div>
+          {this.renderCtaButton()}
         </div>
         <ModalAsk ref="child"/>
       </div>

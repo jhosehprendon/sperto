@@ -97,6 +97,10 @@ export const createContact = (formValues, tagId, sequenceId) => {
           history.push('/descarga-guia-lead-magnet')
         }
 
+        if(tagId == '9'){
+          history.push('/jobs-news-letter/gracias')
+        }
+
         ////// ADD TAG
 
         const tagData = {
@@ -131,7 +135,7 @@ export const createContact = (formValues, tagId, sequenceId) => {
 
 
       } catch {
-        dispatch({ type: REQUEST_ERROR, payload: 'Ocurrió un error, por favor intenta de nuevo' })
+        dispatch({ type: REQUEST_ERROR, payload: 'Ocurrió un error, por favor intenta de nuevo o verifica tu email' })
       }
       
   }

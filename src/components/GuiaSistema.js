@@ -37,6 +37,7 @@ class GuiaSistema extends React.Component {
               onSubmit={this.onSubmit} 
               buttonText='Descargar Guía' 
               loading={this.state.tryCreate}
+              askManager={true}
             />
           </div>
           <div className="cover-guia">

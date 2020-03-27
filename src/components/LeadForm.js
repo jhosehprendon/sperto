@@ -88,7 +88,7 @@ class LeadForm extends React.Component {
           <form onSubmit={this.props.handleSubmit(this.onSubmit)} className="ui form error"> 
             <Field name="fullName" component={this.renderInput} label="Nombre y Apellido"/>
             <Field name="email" component={this.renderInput} label="Email"/>
-            {this.checkDropdown()}
+            {this.props.askManager ? this.checkDropdown() : null}
 
             <button className="ui button primary">{this.props.buttonText}</button>
             {this.renderSpinner()}

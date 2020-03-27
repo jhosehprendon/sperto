@@ -47,6 +47,7 @@ class GuiaMaximizador extends React.Component {
               buttonText='Descargar Guía'
               loading={this.state.tryCreate}
               message= {this.props.error}
+              askManager={true}
             />
           </div>
           <div className="cover-guia">
