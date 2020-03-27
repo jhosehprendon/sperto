@@ -28,8 +28,8 @@ class JobsNewsLetter extends React.Component {
     return (
         <div className='rmk-first--flex over' style={{display: 'flex'}}>
           <div style={{marginRight: '10%'}}>
-            <h2 className='rmk-first__title' style={{color: '#304057'}}>Entrérate de Oportunidades de Teletrabajo</h2>
-            <h3 className='rmk-first__subtitle' style={{color: '#304057', width: '85%'}}>Te notificamos a diario y te eseñamos todo lo que debes hacer para comenzar a trabajar desde casa</h3>
+            <h2 className='rmk-first__title' style={{color: '#304057'}}>Entérate de Oportunidades de Teletrabajo</h2>
+            <h3 className='rmk-first__subtitle' style={{color: '#304057', width: '85%'}}>Te notificamos a diario de nuevas vacantes y te enseñamos todo lo que debes hacer para comenzar a trabajar desde casa</h3>
             <LeadForm
               from='leadMagnet'
               onSubmit={this.onSubmit} 
