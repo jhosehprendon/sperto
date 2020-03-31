@@ -11,7 +11,7 @@ class JobsNewsLetterGracias extends React.Component {
         <div className='blog-content'>
           <div style={{textAlign: 'center'}}>
             <h2 style={{fontSize: '40px', textAlign: 'center'}}>Ya estas registrado!</h2>
-            <p>Nos vemos todos los dias con nuevas oportunidades :)</p>
+            <p>Nos vemos todos los dias con tips, oportunidades y nueva información :)</p>
             <p>Por favor revisa tu bandeja de entrada y verifica si el email llegó a correos no deseados</p>
           </div>
         </div>
