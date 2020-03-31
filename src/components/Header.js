@@ -14,7 +14,7 @@ class Header extends React.Component  {
   }
 
   renderCtaButton() {
-    if(history.location.pathname === '/jobs-news-letter' || history.location.pathname === '/jobs-news-letter/gracias') {
+    if(history.location.pathname === '/jobs-news-letter' || history.location.pathname === '/jobs-news-letter/gracias' || history.location.pathname === '/email/intro-upwork') {
       return null
     } else {
       return (
