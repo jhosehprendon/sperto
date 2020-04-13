@@ -68,6 +68,7 @@ import JobsNewsLetter from './components/JobsNewsLetter';
 import JobsNewsLetterGracias from './components/JobsNewsLetterGracias';
 
 import IntroUpwork from'./components/EmailVideoSequenceCourse/IntroUpwork';
+import PlayListIntro from './components/Curso/PlayListIntro';
 
 class App extends React.Component {
   render() {
@@ -118,6 +119,8 @@ class App extends React.Component {
           <Route path="/jobs-news-letter/gracias" exact component={JobsNewsLetterGracias} />
 
           <Route path="/email/intro-upwork" component={IntroUpwork} />
+
+          <Route path="/playlist-intro" component={PlayListIntro} />
 
           {/* Recruiter Funnel */}
           <Route path="/curso-sistema-reclutadores" exact component={CursoReclutadores} />
