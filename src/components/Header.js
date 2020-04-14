@@ -14,10 +14,14 @@ class Header extends React.Component  {
   }
 
   renderCtaButton() {
-    if(history.location.pathname === '/jobs-news-letter' 
+    if (history.location.pathname === '/jobs-news-letter' 
       || history.location.pathname === '/jobs-news-letter/gracias' 
       || history.location.pathname === '/email/intro-upwork'
-      || history.location.pathname === '/playlist-intro') {
+      || history.location.pathname === '/playlist-intro'
+      || history.location.pathname === '/mini-class-1'
+      || history.location.pathname === '/mini-class-2'
+      || history.location.pathname === '/mini-class-3'
+      || history.location.pathname === '/mini-class') {
       return null
     } else {
       return (

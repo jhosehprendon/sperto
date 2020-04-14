@@ -101,6 +101,10 @@ export const createContact = (formValues, tagId, sequenceId) => {
           history.push('/jobs-news-letter/gracias')
         }
 
+        if(tagId == '12'){
+          history.push('/mini-class-1')
+        }
+
         ////// ADD TAG
 
         const tagData = {

@@ -69,6 +69,10 @@ import JobsNewsLetterGracias from './components/JobsNewsLetterGracias';
 
 import IntroUpwork from'./components/EmailVideoSequenceCourse/IntroUpwork';
 import PlayListIntro from './components/Curso/PlayListIntro';
+import MiniClass1 from './components/Curso/MiniClass1';
+import MiniClass2 from './components/Curso/MiniClass2';
+import MiniClass3 from './components/Curso/MiniClass3';
+import RegisterMiniClass from './components/Curso/RegisterMiniClass';
 
 class App extends React.Component {
   render() {
@@ -121,6 +125,11 @@ class App extends React.Component {
           <Route path="/email/intro-upwork" component={IntroUpwork} />
 
           <Route path="/playlist-intro" component={PlayListIntro} />
+
+          <Route path="/mini-class" component={RegisterMiniClass} />
+          <Route path="/mini-class-1" component={MiniClass1} />
+          <Route path="/mini-class-2" component={MiniClass2} />
+          <Route path="/mini-class-3" component={MiniClass3} />
 
           {/* Recruiter Funnel */}
           <Route path="/curso-sistema-reclutadores" exact component={CursoReclutadores} />
