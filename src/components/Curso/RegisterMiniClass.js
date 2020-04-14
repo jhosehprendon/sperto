@@ -39,9 +39,6 @@ class RegisterMiniClass extends React.Component {
             askManager={false}
           />
         </div>
-        <div className="cover-guia">
-          <img style={{width: '250px'}} alt="sperto" src={require('../../images/phone.png')} />
-        </div>
       </div>
     )
   }
