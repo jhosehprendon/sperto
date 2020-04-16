@@ -21,7 +21,8 @@ class Header extends React.Component  {
       || history.location.pathname === '/mini-class-1'
       || history.location.pathname === '/mini-class-2'
       || history.location.pathname === '/mini-class-3'
-      || history.location.pathname === '/mini-class') {
+      || history.location.pathname === '/mini-class'
+      || history.location.pathname === '/curso-marketing-digital') {
       return null
     } else {
       return (

@@ -73,6 +73,7 @@ import MiniClass1 from './components/Curso/MiniClass1';
 import MiniClass2 from './components/Curso/MiniClass2';
 import MiniClass3 from './components/Curso/MiniClass3';
 import RegisterMiniClass from './components/Curso/RegisterMiniClass';
+import Curso from './components/Curso/Curso';
 
 class App extends React.Component {
   render() {
@@ -130,6 +131,7 @@ class App extends React.Component {
           <Route path="/mini-class-1" component={MiniClass1} />
           <Route path="/mini-class-2" component={MiniClass2} />
           <Route path="/mini-class-3" component={MiniClass3} />
+          <Route path="/curso-marketing-digital" component={Curso} />
 
           {/* Recruiter Funnel */}
           <Route path="/curso-sistema-reclutadores" exact component={CursoReclutadores} />
