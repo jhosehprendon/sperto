@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Blog.css';
+import '../../css/Blog.css';
 
 class ArticuloContenido extends React.Component {
   componentDidMount() {
@@ -10,7 +10,7 @@ class ArticuloContenido extends React.Component {
     return (
       <div>
         <div className='blog-image-block'>
-          <img className="blog-image" alt="sperto" src={require('../images/puzzle.jpg')} />
+          <img className="blog-image" alt="sperto" src={require('../../images/puzzle.jpg')} />
         </div>
         <div className='blog-block'>
           <h1 className='blog-title'>Tu Contenido de Marketing</h1>

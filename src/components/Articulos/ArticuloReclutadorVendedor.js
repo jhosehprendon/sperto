@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Blog.css'
+import '../../css/Blog.css'
 
 class ArticuloReclutadorVendedor extends React.Component {
   componentDidMount() {
@@ -9,7 +9,7 @@ class ArticuloReclutadorVendedor extends React.Component {
     return ( 
       <div>
         <div className='blog-image-block'>
-          <img className="blog-image" alt="sperto" src={require('../images/reclutadores-vendedores.png')} />
+          <img className="blog-image" alt="sperto" src={require('../../images/reclutadores-vendedores.png')} />
         </div>
         <div className='blog-block'>
           <h1 className='blog-title'>Si tus reclutadores saben vender, ganarás mas candidatos contratados.</h1>

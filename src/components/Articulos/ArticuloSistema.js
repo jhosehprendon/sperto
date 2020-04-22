@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Blog.css';
+import '../../css/Blog.css';
 
 class ArticuloSistema extends React.Component {
   componentDidMount() {
@@ -10,7 +10,7 @@ class ArticuloSistema extends React.Component {
     return ( 
       <div>
         <div className='blog-image-block'>
-          <img className="blog-image" alt="sperto" src={require('../images/sistema.png')} />
+          <img className="blog-image" alt="sperto" src={require('../../images/sistema.png')} />
         </div>
         <div className='blog-block'>
           <h1 className='blog-title'>Cómo mantenerte competitivo en Facebook Ad y lograr más ganancias</h1>

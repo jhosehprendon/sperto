@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import LeadForm from './LeadForm';
-import { createContact } from '../store/actions';
-import '../css/Sequence.css'
+import LeadForm from '../LeadForm';
+import { createContact } from '../../store/actions';
+import '../../css/Sequence.css'
 
 class GuiaMaximizador extends React.Component {
 
@@ -51,7 +51,7 @@ class GuiaMaximizador extends React.Component {
             />
           </div>
           <div className="cover-guia">
-            <img style={{width: '250px'}} alt="sperto" src={require('../images/maximizador.png')} />
+            <img style={{width: '250px'}} alt="sperto" src={require('../../images/maximizador.png')} />
           </div>
         </div>
       </div>

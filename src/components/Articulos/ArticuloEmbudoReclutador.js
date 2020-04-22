@@ -1,6 +1,6 @@
 import React from 'react';
-import '../css/Blog.css';
-import '../css/Home.css';
+import '../../css/Blog.css';
+import '../../css/Home.css';
 
 class ArticuloembudoReclutador extends React.Component {
   componentDidMount() {
@@ -10,7 +10,7 @@ class ArticuloembudoReclutador extends React.Component {
     return ( 
       <div>
         <div className='blog-image-block'>
-          <img className="blog-image" alt="sperto" src={require('../images/embudo-candidato.png')} />
+          <img className="blog-image" alt="sperto" src={require('../../images/embudo-candidato.png')} />
         </div>
         <div className='blog-block'>
           <h1 className='blog-title'>El camino que deben seguir tus candidatos IT en el proceso de reclutamiento.</h1>

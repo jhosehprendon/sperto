@@ -1,6 +1,6 @@
 import React from 'react';
-import '../css/Blog.css';
-import history from '../history';
+import '../../css/Blog.css';
+import history from '../../history';
 
 class ArticuloRealidad extends React.Component {
   componentDidMount() {
@@ -15,7 +15,7 @@ class ArticuloRealidad extends React.Component {
     return ( 
       <div>
         <div className='blog-image-block'>
-          <img className="blog-image" alt="sperto" src={require('../images/ice-cream.jpg')} />
+          <img className="blog-image" alt="sperto" src={require('../../images/ice-cream.jpg')} />
         </div>
         <div className='blog-block'>
           <h1 className='blog-title'>La Realidad del Marketing que debes conocer</h1>

@@ -14,14 +14,14 @@ class Consulta extends React.Component {
     return ( 
       <div>
       <div className='consulta-block'>
-        <h1 className='consulta-title'>Acelera el Crecimiento de tu Negocio con Facebook e Instagram Ads</h1>
+        <h1 className='consulta-title'>Acelera el Crecimiento de tu Negocio con un Sistema de Marketing Inteligente, Facebook e Instagram Ads</h1>
         <div style={{textAlign: 'center', marginTop: '30px'}}>
           <button onClick={this.sendCalendly} type="button" style={{marginBottom: '20px', fontWeight: 'bold', padding: '12px' }} className="btn btn-success">¡Agenda tu llamada ahora!</button>
         </div>
         <div style={{fontSize: '25px'}} className='blog-content'>
           <p>Si estás gastando dinero en Marketing pero no aumentas tus ventas…si Facebook ya no te es rentable y temes que tu negocio no pueda sostenerse por más tiempo…Entonces este mensaje es para ti.</p>
-          <p>Es por eso que el “Plan Inteligente de Marketing” es lo que tu negocio necesita para conseguir más clientes a través de Facebook e Instagram Ad. Podrás aumentar tus ventas, ser más rentable y crecer tu negocio de forma predecible.</p>
-          <p>Pero debes saber que si no decides mejorar tu estrategia de marketing, nada cambiara. Seguirás perdiendo dinero en publicidad sin resultado para tu negocio.</p>
+          <p>El “Plan Inteligente de Marketing” es lo que tu negocio necesita para conseguir más clientes a través de Facebook e Instagram Ad. Podrás aumentar tus ventas, ser más rentable y crecer tu negocio de forma predecible.</p>
+          <p>Pero debes saber que si no decides mejorar tu estrategia de marketing, nada cambiará. Seguirás perdiendo dinero en publicidad sin generar resultados para tu negocio.</p>
           <p>Lo que hace la mayoría cuando Facebook deja de funcionar y los costos aumentan, es probar nuevas imágenes/videos, nuevas audiencias, diferentes ángulos en el mensaje en la publicidad en Facebook e Instagram… O en algunos casos deciden contratar una nueva agencia de marketing. Pero para la mayoría el problema persiste:</p>
           <ul>
               <li>Altos costos por lead o ventas</li>

@@ -94,7 +94,7 @@ export const createContact = (formValues, tagId, sequenceId) => {
         }
 
         if(tagId == '8'){
-          history.push('/descarga-guia-lead-magnet')
+          history.push('/guia-lead-magnet/gracias-manager')
         }
 
         if(tagId == '9'){

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Blog.css'
+import '../../css/Blog.css'
 
 class ArticuloGeneracionRec extends React.Component {
   componentDidMount() {
@@ -9,7 +9,7 @@ class ArticuloGeneracionRec extends React.Component {
     return ( 
       <div>
         <div className='blog-image-block'>
-          <img className="blog-image" alt="sperto" src={require('../images/reclutador2.0.png')} />
+          <img className="blog-image" alt="sperto" src={require('../../images/reclutador2.0.png')} />
         </div>
         <div className='blog-block'>
           <h1 className='blog-title'>Conoce la Nueva Generación de Reclutadores 2.0</h1>
