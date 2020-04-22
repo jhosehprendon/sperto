@@ -54,7 +54,7 @@ class GuiaLeadMagnet extends React.Component {
           />
         </div>
         <div className="cover-guia">
-          <img style={{width: '250px'}} alt="sperto" src={require('../../images/lead_magnet_portada.jpg')} />
+          <img style={{width: '250px'}} alt="sperto" src={require('../../images/lead_magnet.jpg')} />
         </div>
       </div>
     )

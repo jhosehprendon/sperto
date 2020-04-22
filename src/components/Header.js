@@ -24,7 +24,8 @@ class Header extends React.Component  {
       || history.location.pathname === '/mini-class'
       || history.location.pathname === '/curso-marketing-digital'
       || history.location.pathname === '/guia-lead-magnet/gracias-manager'
-      || history.location.pathname === '/guia-lead-magnet/gracias-marketer') {
+      || history.location.pathname === '/guia-lead-magnet/gracias-marketer'
+      || history.location.pathname === '/consulta') {
       return null
     } else {
       return (
