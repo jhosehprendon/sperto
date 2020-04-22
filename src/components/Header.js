@@ -23,7 +23,8 @@ class Header extends React.Component  {
       || history.location.pathname === '/mini-class-3'
       || history.location.pathname === '/mini-class'
       || history.location.pathname === '/curso-marketing-digital'
-      || history.location.pathname === '/guia-lead-magnet/gracias-manager') {
+      || history.location.pathname === '/guia-lead-magnet/gracias-manager'
+      || history.location.pathname === '/guia-lead-magnet/gracias-marketer') {
       return null
     } else {
       return (

@@ -21,8 +21,9 @@ import GuiaSistemaGracias from './components/Guias/DescargarSistemaGracias';
 // Agency
 import ArticuloSMI from './components/Articulos/ArticuloSMI';
 import GuiaLeadMagnet from './components/Guias/GuiaLeadMagnet';
-import DescargarGuiaLeadMagnet from './components/Guias/DescargarGuiaLeadMagnet'
 import GraciasGuiaLmManager from './components/Guias/GraciasGuiaLmManager';
+import GraciasGuiaLmMarketer from './components/Guias/GraciasGuiaLmMarketer';
+import DescargarGuiaLeadMagnet from './components/Guias/DescargarGuiaLeadMagnet'
 
 import GuiaMaximizador from './components/Guias/GuiaMaximizador';
 import FBGrupo from './components/FBGrupo';
@@ -92,6 +93,7 @@ class App extends React.Component {
           <Route path="/sistema-smi" exact component={ArticuloSMI} />       
           <Route path="/guia-lead-magnet" exact component={GuiaLeadMagnet} />
           <Route path="/guia-lead-magnet/gracias-manager" component={GraciasGuiaLmManager} />
+          <Route path="/guia-lead-magnet/gracias-marketer" component={GraciasGuiaLmMarketer} />
           <Route path="/descarga-guia-lead-magnet" component={DescargarGuiaLeadMagnet} />
 
           <Route path="/guia-maximizador" exact component={GuiaMaximizador} />
