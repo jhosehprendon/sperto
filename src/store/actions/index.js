@@ -93,8 +93,12 @@ export const createContact = (formValues, tagId, sequenceId) => {
           history.push('/descarga-guia-maximizador')
         }
 
-        if(tagId == '8'){
+        if(tagId == '13'){
           history.push('/guia-lead-magnet/gracias-manager')
+        }
+
+        if(tagId == '14'){
+          history.push('/guia-lead-magnet/gracias-marketer')
         }
 
         if(tagId == '9'){

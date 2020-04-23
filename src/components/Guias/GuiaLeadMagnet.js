@@ -18,17 +18,17 @@ class GuiaLeadMagnet extends React.Component {
     this.setState({ tryCreate: true })
 
     if(formValues.leadType === 'manager') {
-      this.props.createContact(formValues, 8, 13).then(() => {
+      this.props.createContact(formValues, 13, 17).then(() => {
           this.setState({tryCreate: false})
       }).catch(e => {
         this.setState({tryCreate: false})
       })
     } else {
-      // this.props.createContact(formValues, 7, 9).then(() => {
-      //   this.setState({tryCreate: false})
-      // }).catch(e => {
-      //   this.setState({tryCreate: false})
-      // })
+      this.props.createContact(formValues, 14, 18).then(() => {
+        this.setState({tryCreate: false})
+      }).catch(e => {
+        this.setState({tryCreate: false})
+      })
     }
   }
 

@@ -53,7 +53,7 @@ class Consulta extends React.Component {
           <p>Pregúntate si es realmente lo que quieres lograr.</p>
           <p>Entonces, “Haz algo diferente, y obtendrás un resultado diferente”. Finalmente comienza a ser rentable y a hacer crecer tu Negocio.</p>
           <p>Esto es lo que tienes que hacer:</p>
-          <p>Haz Click en el botón de abajo para agendar una llamada Gratis de 30 min conmigo. En esta llamada, conversaremos sobre tu empresa, producto/servicio y los objetivos que quieres lograr para poder diseñar tu estrategia de marketing.</p>
+          <p>Haz Click en el botón de abajo para agendar una llamada Gratis de 30 min conmigo. En esta llamada evaluaremos oportunidades, mejoras y planificaremos la ejecución del Sistema de Marketing Inteligente</p>
         </div>
       </div>
       <div style={{textAlign: "center", marginTop: '6%'}}>
