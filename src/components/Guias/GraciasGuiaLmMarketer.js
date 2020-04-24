@@ -18,8 +18,8 @@ class GraciasGuiaLmMarketer extends React.Component {
           <h1>Tu Guía está en camino.</h1>
         </div>
         <div style={{fontSize: '25px'}} className='blog-content'>
-          <p>En pocos minutos llegará a tu email. Si no la encuentras en la bandeja de entrada revisa en correos no deseados.</p>
-          <p>Pero antes, te invito a conectar conmigo en LinkedIn asi podemos compartir más información de marketing y oportunidades.</p>
+          <p>En pocos minutos llegará la guía a tu email. Si no la encuentras en la bandeja de entrada revisa en correos no deseados.</p>
+          <p>Pero antes, te invito a conectar conmigo en LinkedIn así podemos compartir más información de marketing y oportunidades.</p>
         </div>
       </div>
       <div style={{textAlign: "center"}}>
