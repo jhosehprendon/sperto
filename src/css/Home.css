@@ -156,6 +156,11 @@ ul li::before {
   display: flex;
 }
 
+.info-block-fb {
+  margin: auto; 
+  display: flex;
+}
+
 .info-block div {
   margin-left: 10px;
 }
@@ -173,9 +178,18 @@ ul li::before {
   height: 270px;
 }
 
+.image-fb {
+  width: 50%;
+}
+
 @media (max-width: 1040px) {
   .info-block {
     margin: auto; 
+    display: block;
+  }
+
+  .info-block-fb {
+    text-align: center; 
     display: block;
   }
 
@@ -185,6 +199,10 @@ ul li::before {
 
   .image-cursos {
     width: 80%;
+  }
+
+  .image-fb {
+    width: 90%;
   }
 
   .image-cursos2 {

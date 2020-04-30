@@ -28,7 +28,7 @@ class HomeEs extends React.Component {
           <div className='home-first--flex over'>
             <div style={{marginRight: '10%'}}>
               <h2 className='home-first__title'>Vende Más y Acelera el Crecimiento de tu Negocio</h2>
-              <h3 className='home-first__subtitle'>Diseñamos y Ejecutamos un Sistema de Marketing que Funciona</h3>
+              <h3 className='home-first__subtitle'>Diseñamos y Ejecutamos un Sistema de Marketing Inteligente que Funciona</h3>
               <button onClick={this.sendToConsulta} type="button" style={{marginTop: '10px', fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Trabajemos juntos</button>
             </div>
           </div>
@@ -85,14 +85,14 @@ class HomeEs extends React.Component {
         <div className='home-fourth' style={{textAlign: 'center', padding: '40px 0 40px 0'}}>
           <h2 style={{fontSize: '30px', color: 'white'}}>Los Números no Mienten</h2>
           <p style={{color: "white", fontSize: '20px'}}>Lo que más nos importa es el Retorno de Inversión de nuestros Clientes</p>
-          <img style={{width: '50%'}} alt="sperto" src={require('../images/en-screenshot.png')} />
+          <img className='image-fb' alt="sperto" src={require('../images/en-screenshot.png')} />
           <p style={{color: "white", fontSize: '30px', fontWeight: 'bold'}}>2700% ROI</p>
         </div>
 
-        <h2 style={{textAlign: 'center', fontWeight: 'bold', marginTop: '50px'}}>Hemos Aumentado ROI de estos Proyectos</h2>
+        <h2 style={{textAlign: 'center', fontWeight: 'bold', marginTop: '50px', color: '#1F3144'}}>Hemos Aumentado ROI de estos Proyectos</h2>
 
         <div className="row" style={{margin: '20px 0 50px 0'}}>
-          <div className="info-block">
+          <div className="info-block-fb">
             <img  style={{width: '8rem', marginRight: '40px'}} alt="sperto" src={require('../images/EN-logo.png')} />
             <img style={{width: '10rem', marginRight: '40px'}} alt="sperto" src={require('../images/MC-logo.png')} />
             <img style={{width: '10rem', marginRight: '40px'}} alt="sperto" src={require('../images/rize-logo.png')} />
@@ -108,7 +108,7 @@ class HomeEs extends React.Component {
                   <img style={{width: '75%'}} alt="sperto" src={require('../images/background.png')} />
                 </div>
                 <div className="col" style={{ paddingTop: '6%', color: 'white', fontSize: '18px'}}>
-                  <h2 style={{padding: '0 0 5px 30px', fontSize: '30px'}}>Definamos una Estrategia de Marketing Digital para hacer Crecer tu Negocio</h2>
+                  <h2 style={{padding: '0 0 5px 30px', fontSize: '30px'}}>Pongamos en Marcha un Sistema de Marketing Inteligente para hacer Crecer tu Negocio</h2>
                   <div style={{paddingLeft: '30px'}}>
                     <button onClick={this.sendToConsulta} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Trabajemos juntos</button>
                   </div>

@@ -96,7 +96,7 @@ class InterestsTool extends React.Component {
     return ( 
       <div style={{margin: '30px 0 0 11%'}}>
         {/* <h2 style={{margin: '20px 0 50px 0', fontWeight: 'bold'}}>99% of Marketers are Bidding for the Same Interests <br/>Now you are part of the 1% with a competitive advantage</h2> */}
-        <h3>Start Finding Hidden Interests</h3>
+        <h3>Start Finding Hidden Interests on Facebook</h3>
         <div className="inputTool">
           <input 
             onChange={(e) => this.onChageInput(e)} 
