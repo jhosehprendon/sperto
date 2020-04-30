@@ -6,11 +6,15 @@ import ModalAsk from './ModalAsk';
 class Header extends React.Component  {
 
   sendHome = () => {
-    history.push('/')
+    history.push('/es')
   }
 
   openModal = () => {
-    this.refs.child.openModal();
+    if(history.location.pathname === '/es') {
+      history.push('/consulta')
+    } else {
+      this.refs.child.openModal();
+    }
   }
 
   renderCtaButton() {
