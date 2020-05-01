@@ -80,7 +80,8 @@ class App extends React.Component {
   renderHeaders() {
     if (history.location.pathname === '/'
       || history.location.pathname === '/consult'
-      || history.location.pathname === '/sistema-smi/en') {
+      || history.location.pathname === '/sistema-smi/en'
+      || history.location.pathname === '/interests-tool') {
       return <HeaderEn />
     } else {
       return <Header />
