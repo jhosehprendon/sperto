@@ -28,7 +28,7 @@ class HomeEs extends React.Component {
           <div className='home-first--flex over'>
             <div style={{marginRight: '10%'}}>
               <h2 className='home-first__title'>Vende Más y Acelera el Crecimiento de tu Negocio</h2>
-              <h3 className='home-first__subtitle'>Diseñamos y Ejecutamos un Sistema de Marketing Inteligente que Funciona</h3>
+              <h3 className='home-first__subtitle'>Diseñamos y Ejecutamos Sistemas de Marketing Inteligente que Funcionan</h3>
               <button onClick={this.sendToConsulta} type="button" style={{marginTop: '10px', fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Trabajemos juntos</button>
             </div>
           </div>

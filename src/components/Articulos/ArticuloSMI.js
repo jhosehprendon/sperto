@@ -50,7 +50,7 @@ class ArticuloSMI extends React.Component {
             <h3>Profit Maximizer</h3>
             <p>No podemos quedarnos con una sola compra, de hecho muchos negocios comienzan a tener ganancias con el maximizador de ganancias (Profit Maximizer).</p>
             <p>En este punto ofrecemos “Order bumps”. Cuando el cliente esta haciendo la compra ofrecemos un extra que nos permite tener mayor ingresos. Por ejemplo, si vendemos un libro en $30 con un simple check el cliente puede también agregar la version audio por $20 más.</p>
-            <p>También usamos “Bundles” que nos permite hacer una especie de upgrade. Por ejemplo, si vendemos un curso que contiene módulos básicos de marketing a $400, podemos ofrecer el modulo básico y avanzado por $1200.También usamos “Bundles” que nos permite hacer una especie de upgrade. Por ejemplo, si vendemos un curso que contiene módulos básicos de marketing a $400, podemos ofrecer el modulo básico y avanzado por $1200.</p>
+            <p>También usamos “Bundles” que nos permite hacer una especie de upgrade. Por ejemplo, si vendemos un curso que contiene módulos básicos de marketing a $400, podemos ofrecer el modulo básico y avanzado por $1200.</p>
             <p>El tercero es un “Cross-sell”. Este lo hemos visto en Amazon, cuando compramos un producto la plataforma nos sugiere otros productos complementarios. Por ejemplo, si compro una laptop me aparecen ofertas de cases o bolsos.</p>
             <p>Cuarto es un “Up-sell”. Si vendemos un par de medias por $5, podemos ofrecer un pack de 10 medias por $40.</p>
             <h3>Remarketing</h3>

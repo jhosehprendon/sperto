@@ -5,6 +5,7 @@ import history from './history';
 import Home from './components/Home';
 import HomeEs from './components/HomeEs';
 import Header from './components/Header';
+import HeaderEn from './components/HeaderEn';
 import RemarketingCase from './components/RemarketingCase';
 import RemarketingCaseGracias from './components/RemarketingCaseGracias';
 import InterestsTool from './components/InterestsTool';
@@ -16,11 +17,13 @@ import SecuenciaVideo3Curso from './components/SecuenciaVideo3Curso';
 import MiniCurso from './components/MiniCurso';
 import MiniCursoRegistro from './components/MiniCursoRegistro';
 import Consulta from './components/Consulta';
+import Consult from './components/Consult';
 import GuiaSistema from './components/Guias/GuiaSistema';
 import GuiaSistemaGracias from './components/Guias/DescargarSistemaGracias';
 
 // Agency
 import ArticuloSMI from './components/Articulos/ArticuloSMI';
+import ArticuloSMIEn from './components/Articulos/ArticuloSMIEn';
 import GuiaLeadMagnet from './components/Guias/GuiaLeadMagnet';
 import GraciasGuiaLmManager from './components/Guias/GraciasGuiaLmManager';
 import GraciasGuiaLmMarketer from './components/Guias/GraciasGuiaLmMarketer';
@@ -72,11 +75,22 @@ import MiniClass3 from './components/Curso/MiniClass3';
 import RegisterMiniClass from './components/Curso/RegisterMiniClass';
 import Curso from './components/Curso/Curso';
 
+
 class App extends React.Component {
+  renderHeaders() {
+    if (history.location.pathname === '/'
+      || history.location.pathname === '/consult'
+      || history.location.pathname === '/sistema-smi/en') {
+      return <HeaderEn />
+    } else {
+      return <Header />
+    }
+  }
+
   render() {
     return (
       <Router history={history}>
-        <Header />
+        {this.renderHeaders()}
         <Route path="/" render={({location}) => {
           if (typeof window.ga === 'function') {
             window.ga('set', 'page', location.pathname + location.search);
@@ -92,7 +106,8 @@ class App extends React.Component {
           <Route path="/interests-tool" component={InterestsTool} />
 
           {/* Agency Funnel */} 
-          <Route path="/sistema-smi" exact component={ArticuloSMI} />       
+          <Route path="/sistema-smi" exact component={ArticuloSMI} />  
+          <Route path="/sistema-smi/en" exact component={ArticuloSMIEn} />     
           <Route path="/guia-lead-magnet" exact component={GuiaLeadMagnet} />
           <Route path="/guia-lead-magnet/gracias-manager" component={GraciasGuiaLmManager} />
           <Route path="/guia-lead-magnet/gracias-marketer" component={GraciasGuiaLmMarketer} />
@@ -148,6 +163,8 @@ class App extends React.Component {
 
           <Route path="/consulta" exact component={Consulta} />
           <Route path="/consulta/gracias" component={ConsultaGracias} />
+
+          <Route path="/consult" exact component={Consult} />
 
           <Route path="/entrenamiento" component={Entrenamiento} />
 
