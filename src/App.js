@@ -27,7 +27,10 @@ import ArticuloSMIEn from './components/Articulos/ArticuloSMIEn';
 import GuiaLeadMagnet from './components/Guias/GuiaLeadMagnet';
 import GraciasGuiaLmManager from './components/Guias/GraciasGuiaLmManager';
 import GraciasGuiaLmMarketer from './components/Guias/GraciasGuiaLmMarketer';
-import DescargarGuiaLeadMagnet from './components/Guias/DescargarGuiaLeadMagnet'
+import DescargarGuiaLeadMagnet from './components/Guias/DescargarGuiaLeadMagnet';
+
+import GetInterestTool from './components/GetInterestTool';
+import GetInterestToolGracias from './components/GetInterestToolGracias';
 
 import GuiaMaximizador from './components/Guias/GuiaMaximizador';
 import FBGrupo from './components/FBGrupo';
@@ -113,6 +116,9 @@ class App extends React.Component {
           <Route path="/guia-lead-magnet/gracias-manager" component={GraciasGuiaLmManager} />
           <Route path="/guia-lead-magnet/gracias-marketer" component={GraciasGuiaLmMarketer} />
           <Route path="/descarga-guia-lead-magnet" component={DescargarGuiaLeadMagnet} />
+
+          <Route path="/get-interest-tool" exact component={GetInterestTool} />
+          <Route path="/get-interest-tool/gracias" exact component={GetInterestToolGracias} />
 
           <Route path="/guia-maximizador" exact component={GuiaMaximizador} />
           <Route path="/fb-grupo" exact component={FBGrupo} />
