@@ -14,15 +14,14 @@ const customStyles = {
   }
 };
 
-class ModalAsk extends React.Component  {
+class ModalAskLeadMagnet extends React.Component  {
 
   state= {
     modalIsOpen: false
   }
 
-  sendConsulta = () => {
-    this.setState({modalIsOpen: false});
-    history.push('/consulta')
+  sendCalendly = () => {
+    window.location.href = "https://calendly.com/jhosehp-rendon/30min"
   }
 
   sendYoutubeInvite = () => {
@@ -51,14 +50,9 @@ class ModalAsk extends React.Component  {
         >
           <p style={{marginLeft: '5px', color: '#295b8d', fontWeight: 'bold', fontSize: '25px'}}>¿Cómo te describes?</p>
             <p style={{fontSize: '18px', width: '80%'}}>Fundador, CEO o Director, tomo decisiones de marketing y presupuesto</p>
-            <button onClick={this.sendConsulta} type="button" style={{fontWeight: 'bold', padding: '12px', marginRight:'40px' }} className="btn btn-success">Continuar como Director</button>
+            <button onClick={this.sendCalendly} type="button" style={{fontWeight: 'bold', padding: '12px', marginRight:'40px' }} className="btn btn-success">Continuar como Director</button>
             <p style={{fontSize: '18px', width: '80%', marginTop: '30px'}}>Soy Marketer pero no tomo decisiones de marketing ni presupuesto</p>
             <button onClick={this.sendYoutubeInvite} type="button" style={{fontWeight: 'bold', padding: '12px', marginRight:'40px' }} className="btn btn-success">Continuar como Marketer</button>
-
-          {/* <div style={{display: 'flex', justifyContent: 'space-between', marginTop: '20px'}}>
-            <button onClick={() => this.sendClientInfo(this.state.clientData)} type="button" style={{marginTop: '10px', fontWeight: 'bold', padding: '12px', marginRight:'40px' }} className="btn btn-success">Enviar información</button>
-            <button onClick={this.closeModal} type="button" style={{marginTop: '10px', fontWeight: 'bold', padding: '12px' }} className="btn btn-success">Quizás luego</button>
-          </div> */}
           <p style={{color: 'red', marginTop: '5px'}}>{this.props.error}</p>
         </Modal>
       </div>
@@ -67,4 +61,4 @@ class ModalAsk extends React.Component  {
 }
 
 
-export default ModalAsk;
+export default ModalAskLeadMagnet;
