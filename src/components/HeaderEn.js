@@ -30,7 +30,7 @@ class HeaderEn extends React.Component  {
     } else {
       return (
         <div className="header__left__align header-hide">
-          <button onClick={this.sendToConsult} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Let's Work Together</button>
+          <button onClick={this.sendToConsult} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Book a Call</button>
         </div>
       )
     }

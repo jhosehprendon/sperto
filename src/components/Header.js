@@ -34,7 +34,7 @@ class Header extends React.Component  {
     } else {
       return (
         <div className="header__left__align header-hide">
-          <button onClick={this.openModal} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Trabajemos juntos</button>
+          <button onClick={this.openModal} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Agenda una Consulta</button>
         </div>
       )
     }

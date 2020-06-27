@@ -77,8 +77,11 @@ import MiniClass2 from './components/Curso/MiniClass2';
 import MiniClass3 from './components/Curso/MiniClass3';
 import RegisterMiniClass from './components/Curso/RegisterMiniClass';
 import Curso from './components/Curso/Curso';
+
+// Curso
 import GuiaPlan from './components/Guias/GuiaPlan';
 import GraciasGuiaPlan from './components/Guias/GraciasGuiaPlan';
+import DescargarGuiaPlan from './components/Guias/DescargaGuiaPlan';
 import YoutubeInvite from './components/YoutubeInvite';
 
 
@@ -123,9 +126,11 @@ class App extends React.Component {
           <Route path="/get-interest-tool" exact component={GetInterestTool} />
           <Route path="/get-interest-tool/gracias" exact component={GetInterestToolGracias} />
 
+          {/* Course Funnel */} 
           <Route path="/guia-plan-marketing" exact component={GuiaPlan} />
           <Route path="/guia-plan-marketing/gracias" exact component={GraciasGuiaPlan} />
           <Route path="/yt-invite" exact component={YoutubeInvite} />
+          <Route path="/guia-plan-marketing/descarga" component={DescargarGuiaPlan} />
 
           <Route path="/guia-maximizador" exact component={GuiaMaximizador} />
           <Route path="/fb-grupo" exact component={FBGrupo} />

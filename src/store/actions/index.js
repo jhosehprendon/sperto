@@ -109,6 +109,10 @@ export const createContact = (formValues, tagId, sequenceId) => {
           history.push('/mini-class-1')
         }
 
+        if(tagId == '15' || tagId == '16'){
+          history.push('/guia-plan-marketing/gracias')
+        }
+
         ////// ADD TAG
 
         const tagData = {

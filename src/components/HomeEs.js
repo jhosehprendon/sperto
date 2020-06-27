@@ -29,7 +29,7 @@ class HomeEs extends React.Component {
             <div style={{marginRight: '10%'}}>
               <h2 className='home-first__title'>Vende Más y Acelera el Crecimiento de tu Negocio</h2>
               <h3 className='home-first__subtitle'>Diseñamos y Ejecutamos Sistemas de Marketing Inteligente que Funcionan</h3>
-              <button onClick={this.sendToConsulta} type="button" style={{marginTop: '10px', fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Trabajemos juntos</button>
+              <button onClick={this.sendToConsulta} type="button" style={{marginTop: '10px', fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Agenda una Consulta</button>
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@ class HomeEs extends React.Component {
                 <div className="col" style={{ paddingTop: '6%', color: 'white', fontSize: '18px'}}>
                   <h2 style={{padding: '0 0 5px 30px', fontSize: '30px'}}>Pongamos en Marcha un Sistema de Marketing Inteligente para hacer Crecer tu Negocio</h2>
                   <div style={{paddingLeft: '30px'}}>
-                    <button onClick={this.sendToConsulta} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Trabajemos juntos</button>
+                    <button onClick={this.sendToConsulta} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Agenda una Consulta</button>
                   </div>
                 </div>
               </div>

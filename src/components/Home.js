@@ -29,7 +29,7 @@ class Home extends React.Component {
             <div style={{marginRight: '10%'}}>
               <h2 className='home-first__title'>Sell More, Grow your Business, Be Profitable</h2>
               <h3 className='home-first__subtitle'>We Design and Execute Smart Marketing Systems that Works!</h3>
-              <button onClick={this.sendToConsulta} type="button" style={{marginTop: '10px', fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Let's Work Together</button>
+              <button onClick={this.sendToConsulta} type="button" style={{marginTop: '10px', fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Book a Call</button>
             </div>
           </div>
         </div>
@@ -103,7 +103,7 @@ class Home extends React.Component {
                 <div className="col" style={{ paddingTop: '6%', color: 'white', fontSize: '18px'}}>
                   <h2 style={{padding: '0 0 5px 30px', fontSize: '30px'}}>Let's put to work a Smart Marketing System to Grow your Business</h2>
                   <div style={{paddingLeft: '30px'}}>
-                    <button onClick={this.sendToConsulta} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Let's Work Together</button>
+                    <button onClick={this.sendToConsulta} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Book a Call</button>
                   </div>
                 </div>
               </div>
