@@ -18,13 +18,13 @@ class GetInterestTool extends React.Component {
     this.setState({ tryCreate: true })
 
     if(formValues.leadType === 'manager') {
-      this.props.createContact(formValues, 13, 17).then(() => {
+      this.props.createContact(formValues, 15, 19).then(() => {
           this.setState({tryCreate: false})
       }).catch(e => {
         this.setState({tryCreate: false})
       })
     } else {
-      this.props.createContact(formValues, 14, 18).then(() => {
+      this.props.createContact(formValues, 16, 19).then(() => {
         this.setState({tryCreate: false})
       }).catch(e => {
         this.setState({tryCreate: false})
