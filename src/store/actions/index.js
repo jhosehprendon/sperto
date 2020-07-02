@@ -113,6 +113,10 @@ export const createContact = (formValues, tagId, sequenceId) => {
           history.push('/guia-plan-marketing/gracias')
         }
 
+        if(tagId == '17' || tagId == '18'){
+          history.push('/get-interest-tool/gracias')
+        }
+
         ////// ADD TAG
 
         const tagData = {
