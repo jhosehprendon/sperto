@@ -61,7 +61,7 @@ export const createContact = (formValues, tagId, sequenceId) => {
       }
 
       try {
-        const response = await axios.post('/contacts', data, {
+        const response = await active.post('/contacts', data, {
           headers: {
             'Content-type': 'application/json',
             'Api-Token': process.env.REACT_APP_API_AC_TOKEN
@@ -78,7 +78,7 @@ export const createContact = (formValues, tagId, sequenceId) => {
           }
         }
         
-        await axios.post('/contactTags', tagData, {
+        await active.post('/contactTags', tagData, {
           headers: {
             'Content-type': 'application/json',
             'Api-Token': process.env.REACT_APP_API_AC_TOKEN
@@ -94,7 +94,7 @@ export const createContact = (formValues, tagId, sequenceId) => {
           }
         }
         
-        await axios.post('/contactAutomations', sequenceData, {
+        await active.post('/contactAutomations', sequenceData, {
           headers: {
             'Content-type': 'application/json',
             'Api-Token': process.env.REACT_APP_API_AC_TOKEN
