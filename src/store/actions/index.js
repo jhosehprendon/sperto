@@ -69,6 +69,38 @@ export const createContact = (formValues, tagId, sequenceId) => {
         })
         dispatch({ type: CREATE_CONTACT, payload: response.data })
 
+        ////// ADD TAG
+
+        const tagData = {
+          contactTag: {
+            contact: response.data.contact.id,
+            tag: tagId
+          }
+        }
+        
+        await active.post('/contactTags', tagData, {
+          headers: {
+            'Content-type': 'application/json',
+            'Api-Token': process.env.REACT_APP_API_AC_TOKEN
+          }
+        })
+
+        ////// ADD TO SEQUENCE
+
+        const sequenceData = {
+          contactAutomation: {
+            contact: response.data.contact.id,
+            automation: sequenceId
+          }
+        }
+        
+        await active.post('/contactAutomations', sequenceData, {
+          headers: {
+            'Content-type': 'application/json',
+            'Api-Token': process.env.REACT_APP_API_AC_TOKEN
+          }
+        })
+
         if(tagId == '2'){
           history.push('/guia-email-candidato/gracias')
         }
@@ -116,38 +148,6 @@ export const createContact = (formValues, tagId, sequenceId) => {
         if(tagId == '17' || tagId == '18'){
           history.push('/get-interest-tool/gracias')
         }
-
-        ////// ADD TAG
-
-        const tagData = {
-          contactTag: {
-            contact: response.data.contact.id,
-            tag: tagId
-          }
-        }
-        
-        await active.post('/contactTags', tagData, {
-          headers: {
-            'Content-type': 'application/json',
-            'Api-Token': process.env.REACT_APP_API_AC_TOKEN
-          }
-        })
-
-        ////// ADD TO SEQUENCE
-
-        const sequenceData = {
-          contactAutomation: {
-            contact: response.data.contact.id,
-            automation: sequenceId
-          }
-        }
-        
-        await active.post('/contactAutomations', sequenceData, {
-          headers: {
-            'Content-type': 'application/json',
-            'Api-Token': process.env.REACT_APP_API_AC_TOKEN
-          }
-        })
 
 
       } catch {
