@@ -2,7 +2,6 @@
   "name": "sperto",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://jhosehprendon.api-us1.com/api/3",
   "engines": {
     "node": "10.13.0"
   },
