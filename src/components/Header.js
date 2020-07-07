@@ -29,7 +29,9 @@ class Header extends React.Component  {
       || history.location.pathname === '/curso-marketing-digital'
       || history.location.pathname === '/guia-lead-magnet/gracias-manager'
       || history.location.pathname === '/guia-lead-magnet/gracias-marketer'
-      || history.location.pathname === '/consulta') {
+      || history.location.pathname === '/consulta'
+      || history.location.pathname === '/checkout/basico'
+      || history.location.pathname === '/checkout/completo') {
       return null
     } else {
       return (
