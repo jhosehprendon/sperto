@@ -1,12 +1,11 @@
 import React from 'react';
 import Card from '../Card';
-import history from '../../history';
 import { Link } from 'react-router-dom';
 
 class InterestTraining extends React.Component {
 
   sendToTool = () => {
-    history.push('/interests-tool')
+    window.open('/interests-tool', '_blank');
   }
 
   render() {
