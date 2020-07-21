@@ -25,7 +25,12 @@ class HeaderEn extends React.Component  {
       || history.location.pathname === '/curso-marketing-digital'
       || history.location.pathname === '/guia-lead-magnet/gracias-manager'
       || history.location.pathname === '/guia-lead-magnet/gracias-marketer'
-      || history.location.pathname === '/consulta') {
+      || history.location.pathname === '/consulta'
+      || history.location.pathname === '/checkout/basico'
+      || history.location.pathname === '/checkout/completo'
+      || history.location.pathname === '/checkout/call-24'
+      || history.location.pathname === '/interest-training'
+      || history.location.pathname === '/guia-anuncio/descarga') {
       return null
     } else {
       return (

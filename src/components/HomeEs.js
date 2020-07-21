@@ -44,7 +44,7 @@ class HomeEs extends React.Component {
         <div style={{ paddingTop: '4%'}}>
           <h2 style={{textAlign: 'center', color: '#295b8d', fontWeight: 'bold'}}>Cómo podemos ayudarte</h2>
           <hr style={{backgroundColor: '#3a8dde', width: '80px'}}></hr>
-          <p style={{textAlign: 'center', color: '#295b8d', fontSize: '20px', width: '50%', margin: '5rem auto 0'}}>Entrenamos a dueńos de negocios y marketers a vender más, crecer y ser rentables usando un Sistema de Marketing Inteligente y el poder de Facebook e Instagram Ads.</p>
+          <p style={{textAlign: 'center', color: '#295b8d', fontSize: '20px', width: '50%', margin: '5rem auto 0'}}>Entrenamos a dueños de negocios y marketers a vender más, crecer y ser rentables usando un Sistema de Marketing Inteligente y el poder de Facebook e Instagram Ads.</p>
           <div className="row" style={{paddingTop: '3%'}}>
             <div className="info-block">
               <Card>

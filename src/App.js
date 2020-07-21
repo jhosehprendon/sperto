@@ -85,6 +85,9 @@ import DescargarGuiaPlan from './components/Guias/DescargaGuiaPlan';
 import YoutubeInvite from './components/YoutubeInvite';
 import BasicCheckout from './components/BasicCheckout';
 import CompletoCheckout from './components/CompletoCheckout';
+import InterestTraining from './components/Curso/InterestTraining';
+import CallCheckout from './components/CallCheckout';
+import DescargarGuiaAnuncio from './components/Guias/DescargaGuiaAnuncio';
 
 
 class App extends React.Component {
@@ -133,8 +136,14 @@ class App extends React.Component {
           <Route path="/guia-plan-marketing/gracias" exact component={GraciasGuiaPlan} />
           <Route path="/yt-invite" exact component={YoutubeInvite} />
           <Route path="/guia-plan-marketing/descarga" component={DescargarGuiaPlan} />
+          <Route path="/guia-anuncio/descarga" component={DescargarGuiaAnuncio} />
+          <Route path="/interest-training" component={InterestTraining} />
+
           <Route path="/checkout/basic" component={BasicCheckout} />
           <Route path="/checkout/completo" component={CompletoCheckout} />
+          <Route path="/checkout/call-24" component={CallCheckout} />
+
+          {/* ------------- */} 
 
           <Route path="/guia-maximizador" exact component={GuiaMaximizador} />
           <Route path="/fb-grupo" exact component={FBGrupo} />
