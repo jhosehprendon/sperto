@@ -48,7 +48,7 @@ class GuiaPerfectAd extends React.Component {
           <LeadForm
             from='leadMagnet'
             onSubmit={this.onSubmit} 
-            buttonText='Acceder a Herramienta'
+            buttonText='Descargar Guía'
             loading={this.state.tryCreate}
             message= {this.props.error}
             askManager={true}
