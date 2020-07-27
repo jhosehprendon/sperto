@@ -13,7 +13,7 @@ class CallCheckout extends React.Component {
         <div className='consulta-title'>
           <h1>Llamada de Consultoría Personalizada</h1>
         </div>
-        <p style={{color: '#304057', fontSize: '20px', marginTop: '20px', textAlign: 'center'}}><i className="fas fa-exclamation-circle" style={{marginRight: '8px', color: '#f2c924'}}></i>Revisemos tus Audiencias y Plan de Marketing</p>
+        <p style={{color: '#304057', fontSize: '20px', marginTop: '20px', textAlign: 'center'}}><i className="fas fa-exclamation-circle" style={{marginRight: '8px', color: '#f2c924'}}></i>Revisemos tus Audiencias, Plan de Marketing y Anuncios</p>
         <p style={{color: '#304057', fontSize: '20px', marginTop: '-10px', textAlign: 'center'}}><i className="fas fa-exclamation-circle" style={{marginRight: '8px', color: '#f2c924'}}></i>Vende más y Acelera el Crecimiento de tu Negocio</p>
         <div style={{fontSize: '24px', textAlign: 'center', width: '200px', margin: 'auto'}} className='blog-content'>
           <p><strong><span style={{textDecoration: 'line-through'}}>$150</span></strong></p>
