@@ -34,7 +34,10 @@ class Header extends React.Component  {
       || history.location.pathname === '/checkout/completo'
       || history.location.pathname === '/checkout/call-24'
       || history.location.pathname === '/interest-training'
-      || history.location.pathname === '/guia-anuncio/descarga') {
+      || history.location.pathname === '/guia-anuncio/descarga'
+      || history.location.pathname === '/guia/perfect-ad'
+      || history.location.pathname === '/guia/perfect-ad/gracias'
+      || history.location.pathname === '/checkout/call-15') {
       return null
     } else {
       return (

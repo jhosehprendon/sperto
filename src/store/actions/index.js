@@ -149,6 +149,10 @@ export const createContact = (formValues, tagId, sequenceId) => {
           history.push('/get-interest-tool/gracias')
         }
 
+        if(tagId == '20' || tagId == '21'){
+          history.push('/guia/perfect-ad/gracias')
+        }
+
 
       } catch {
         dispatch({ type: REQUEST_ERROR, payload: 'Ocurrió un error, por favor intenta de nuevo o verifica tu email' })

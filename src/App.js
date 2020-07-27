@@ -88,6 +88,10 @@ import CompletoCheckout from './components/CompletoCheckout';
 import InterestTraining from './components/Curso/InterestTraining';
 import CallCheckout from './components/CallCheckout';
 import DescargarGuiaAnuncio from './components/Guias/DescargaGuiaAnuncio';
+import GuiaPerfectAd from './components/Guias/GuiaPerfectAd';
+import GraciasGuiaPerfectAd from './components/Guias/GraciasGuiaPerfectAd';
+import CallCheckout15 from './components/CallCheckout15';
+import DescargarGuiaPerfectAd from './components/Guias/DescargarGuiaPerfectAd';
 
 
 class App extends React.Component {
@@ -142,6 +146,11 @@ class App extends React.Component {
           <Route path="/checkout/basic" component={BasicCheckout} />
           <Route path="/checkout/completo" component={CompletoCheckout} />
           <Route path="/checkout/call-24" component={CallCheckout} />
+
+          <Route path="/guia/perfect-ad" exact component={GuiaPerfectAd} />
+          <Route path="/guia/perfect-ad/gracias" exact component={GraciasGuiaPerfectAd} />
+          <Route path="/guia/perfect-ad/descarga" component={DescargarGuiaPerfectAd} />
+          <Route path="/checkout/call-15" component={CallCheckout15} />
 
           {/* ------------- */} 
 
