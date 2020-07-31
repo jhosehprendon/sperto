@@ -21,8 +21,8 @@ class PackCheckout5 extends React.Component {
           </ul>
         </div>
         <div style={{fontSize: '24px', textAlign: 'center', width: '200px', margin: 'auto', marginTop: '-50px'}} className='blog-content'>
-          <p><strong><span style={{textDecoration: 'line-through'}}>$130</span></strong></p>
-          <p style={{marginTop: '-20px'}}><strong>$5</strong></p>
+          <p><strong><span style={{textDecoration: 'line-through', color: 'red'}}>$130</span></strong></p>
+          <p style={{marginTop: '-20px', color: '#00b300', fontSize: '40px'}}><strong>$5</strong></p>
         </div>
         <div id="paypal-button-pack-5" style={{textAlign: 'center', marginTop: '5px'}}></div>
         <div style={{fontSize: '14px', textAlign: 'center'}}>

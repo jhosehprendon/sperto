@@ -13,7 +13,7 @@ class InterestTraining extends React.Component {
       <div>
         <div style={{textAlign: 'center', color: '#283d54', marginTop: '20px', marginBottom: '20px'}}>
           <h2 style={{fontSize: '30px', marginBottom: '40px'}}>Entrenamiento Avanzado de Intereses en Facebook</h2>
-          <iframe title="video1" type="text/html" frameborder="0" className="video" src="https://www.youtube.com/embed/9eJkKmMOmyc" allowfullscreen></iframe>
+          <iframe title="video1" type="text/html" frameborder="0" className="video" src="https://www.youtube.com/embed/lL2kvW6XQIw" allowfullscreen></iframe>
         </div>
         <Card>
           <div style={{ textAlign: 'center'}}>

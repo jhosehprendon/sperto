@@ -36,7 +36,7 @@ class GraciasGuiaPerfectAd extends React.Component {
               <li>Acceso a Template de Intereses ($10)</li>
             </ul>
             <hr></hr>
-            <h2 style={{textAlign: 'center'}}>Todos estos Recursos por UN SÓLO pago de $5</h2>
+            <h2 style={{textAlign: 'center'}}>Todos estos Recursos por UN SÓLO pago de <span style={{color: '#00b300', fontSize: '30px'}}>$5</span></h2>
           </div>
         </div>
         <div style={{textAlign: "center", marginTop: '-50px'}}>

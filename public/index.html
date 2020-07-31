@@ -86,7 +86,7 @@
               return actions.order.create({
                   purchase_units: [{
                       amount: {
-                          value: '1'
+                          value: '5'
                       }
                   }]
               });
@@ -94,6 +94,7 @@
           onApprove: function(data, actions) {
               return actions.order.capture().then(function(details) {
                 window.location.href = "https://www.spertomedia.com/interest-training"
+                fbq('track', '5PackPaid')
               });
           }
       }).render('#paypal-button-pack-5');
