@@ -9,7 +9,6 @@ import HeaderEn from './components/HeaderEn';
 import RemarketingCase from './components/RemarketingCase';
 import RemarketingCaseGracias from './components/RemarketingCaseGracias';
 import InterestsTool from './components/InterestsTool';
-import CursoReclutadores from './components/CursoReclutadores';
 import SecuenciaVideo1 from './components/SecuenciaVideo1';
 import SecuenciaVideo2 from './components/SecuenciaVideo2';
 import SecuenciaVideo3Consulta from './components/SecuenciaVideo3Consulta';
@@ -53,14 +52,10 @@ import Remarketing from'./components/EmailVideoSequence/Remarketing';
 import PreLaunch from'./components/EmailVideoSequence/PreLaunch';
 //
 import Nosotros from './components/Nosotros';
-import CursoReclutadoresPayment from './components/CursoReclutadoresPayment';
 import ConsultaGracias from './components/ConsultaGracias';
 import Entrenamiento from './components/Entrenamiento';
 
 //Blog
-import ArticuloGeneracionRec from './components/Articulos/ArticuloGeneracionRec';
-import ArticuloEmbudoReclutador from './components/Articulos/ArticuloEmbudoReclutador';
-import ArticuloReclutadorVendedor from './components/Articulos/ArticuloReclutadorVendedor';
 import ArticuloRealidad from './components/Articulos/ArticuloRealidad';
 import ArticuloContenido from './components/Articulos/ArticuloContenido';
 
@@ -86,13 +81,12 @@ import YoutubeInvite from './components/YoutubeInvite';
 import BasicCheckout from './components/BasicCheckout';
 import CompletoCheckout from './components/CompletoCheckout';
 import InterestTraining from './components/Curso/InterestTraining';
-import CallCheckout from './components/CallCheckout';
 import DescargarGuiaAnuncio from './components/Guias/DescargaGuiaAnuncio';
 import GuiaPerfectAd from './components/Guias/GuiaPerfectAd';
 import GraciasGuiaPerfectAd from './components/Guias/GraciasGuiaPerfectAd';
-import CallCheckout15 from './components/CallCheckout15';
 import DescargarGuiaPerfectAd from './components/Guias/DescargarGuiaPerfectAd';
 import PackCheckout5 from './components/PackCheckout5';
+import CBO from './components/Articulos/CBO';
 
 
 class App extends React.Component {
@@ -189,8 +183,6 @@ class App extends React.Component {
           <Route path="/curso-marketing-digital" component={Curso} />
 
           {/* Recruiter Funnel */}
-          <Route path="/curso-sistema-reclutadores" exact component={CursoReclutadores} />
-          <Route path="/curso-sistema-reclutadores/payment" component={CursoReclutadoresPayment} />
 
           <Route path="/guia-sistema" exact component={GuiaSistema} />
           <Route path="/guia-sistema/gracias" exact component={GuiaSistemaGracias} />
@@ -214,12 +206,10 @@ class App extends React.Component {
           <Route path="/sobre-nosotros" component={Nosotros} />
 
           {/* Blog */}
-          <Route path='/blog/nueva-generacion-de-reclutadores' exact={true} component={ArticuloGeneracionRec} />
-          <Route path='/blog/embudo-candidatos' exact={true} component={ArticuloEmbudoReclutador} />
-          <Route path='/blog/reclutador-vendedor' exact={true} component={ArticuloReclutadorVendedor} />
-
           <Route path='/blog/lead-magnet' exact={true} component={ArticuloLeadMagnet} />
           <Route path='/blog/sistema' exact={true} component={ArticuloSistema} />
+
+          <Route path='/blog/cbo' exact={true} component={CBO} />
 
           <Route path='/blog/realidad-marketing' exact={true} component={ArticuloRealidad} />
           <Route path='/blog/contenido' exact={true} component={ArticuloContenido} />
