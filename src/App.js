@@ -146,13 +146,13 @@ class App extends React.Component {
 
           <Route path="/checkout/basic" component={BasicCheckout} />
           <Route path="/checkout/completo" component={CompletoCheckout} />
-          <Route path="/checkout/call-24" component={CallCheckout} />
+          {/* <Route path="/checkout/call-24" component={CallCheckout} /> */}
 
           <Route path="/guia/perfect-ad" exact component={GuiaPerfectAd} />
           <Route path="/guia/perfect-ad/gracias" exact component={GraciasGuiaPerfectAd} />
           <Route path="/guia/perfect-ad/descarga" component={DescargarGuiaPerfectAd} />
           <Route path="/checkout/pack-5" component={PackCheckout5} />
-          <Route path="/checkout/call-15" component={CallCheckout15} />
+          {/* <Route path="/checkout/call-15" component={CallCheckout15} /> */}
 
           {/* ------------- */} 
 
