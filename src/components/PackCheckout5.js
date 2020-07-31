@@ -11,7 +11,7 @@ class PackCheckout5 extends React.Component {
       <div>
       <div className='consulta-block'>
         <div className='consulta-title'>
-          <h1>Consigue Ventas y Ganancias con tus Anuncios</h1>
+          <h1>Consigue Intereses que Generan Ventas y Ganancias</h1>
         </div>
         <div style={{fontSize: '25px', color: '#283d54'}} className='blog-content'>
           <ul>

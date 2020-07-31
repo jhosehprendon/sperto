@@ -22,9 +22,9 @@ class GraciasGuiaPerfectAd extends React.Component {
             <h2>No Importa si Tienes el Mejor Anuncio... O el más Llamativo.</h2>
             <h2>Si no estas Mostrándolo a la <span style={{color: '#ff5757'}}>Audiencia Indicada</span>... vas a Desperdiciar tu Dinero.</h2>
           </div>
-          <div style={{textAlign: 'center', color: '#283d54', marginTop: '-40px'}}>
+          {/* <div style={{textAlign: 'center', color: '#283d54', marginTop: '-40px'}}>
             <iframe title="video1" type="text/html" frameborder="0" className="video" src="https://www.youtube.com/embed/hEuCZAYNZng" allowfullscreen></iframe>
-          </div>
+          </div> */}
           <div style={{fontSize: '25px', color: '#283d54'}} className='blog-content'>
             <p>Para generar ventas y ser rentable en tus anuncios debes conocer el proceso de estudio de audiencias que ejecutan las empresas exitosas...</p>
             <p>...Y tener acceso a las <span style={{color: '#ff5757'}}>Herramientas Secretas</span> que usan.</p>
