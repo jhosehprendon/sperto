@@ -36,8 +36,8 @@ class GuiaPerfectAd extends React.Component {
     return (
       <div className='rmk-first--flex over' style={{display: 'flex'}}>
         <div style={{marginRight: '10%'}}>
-          <h3 className='rmk-first__subtitle' style={{ fontWeight: 'bold', color: '#304057'}}>Acceso GRATIS | GUIA</h3>
-          <h2 className='rmk-first__title' style={{color: '#304057'}}>Cómo crear Anuncios en Facebook e Instagram que Generan Millones en Ganancias</h2>
+          <h3 className='rmk-first__subtitle' style={{ fontWeight: 'bold', color: '#304057'}}>Acceso GRATIS</h3>
+          <h2 className='rmk-first__title' style={{color: '#304057'}}>GUIA Paso a Paso para crear Anuncios en Facebook e Instagram que Generan Millones en Ganancias</h2>
           <h3 className='rmk-first__subtitle' style={{color: '#304057'}}><i className="fas fa-exclamation-circle" style={{marginRight: '8px', color: '#f2c924'}}></i>SIN DESPERDICIAR TU DINERO EN PUBLICIDAD</h3>
           <ul>
             <li style={{color: '#304057', fontSize: '20px'}}>Conoce la fórmula que usan los negocios exitosos</li>

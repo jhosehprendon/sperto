@@ -25,9 +25,9 @@ class GraciasGuiaPerfectAd extends React.Component {
           {/* <div style={{textAlign: 'center', color: '#283d54', marginTop: '-40px'}}>
             <iframe title="video1" type="text/html" frameborder="0" className="video" src="https://www.youtube.com/embed/hEuCZAYNZng" allowfullscreen></iframe>
           </div> */}
-          <div style={{fontSize: '25px', color: '#283d54'}} className='blog-content'>
+          <div style={{fontSize: '25px', color: '#283d54', marginTop: '-35px'}} className='blog-content'>
             <p>Para generar ventas y ser rentable en tus anuncios debes conocer el proceso de estudio de audiencias que ejecutan las empresas exitosas...</p>
-            <p>...Y tener acceso a las <span style={{color: '#ff5757'}}>Herramientas Secretas</span> que usan.</p>
+            <p>...Y tener acceso a las <span style={{color: '#ff5757', fontWeight: 'bold'}}>Herramientas Secretas</span> que usan.</p>
             <hr></hr>
             <h2>Obtén ...</h2>
             <ul style={{color: '#ff5757'}}>
