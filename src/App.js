@@ -87,6 +87,7 @@ import GraciasGuiaPerfectAd from './components/Guias/GraciasGuiaPerfectAd';
 import DescargarGuiaPerfectAd from './components/Guias/DescargarGuiaPerfectAd';
 import PackCheckout5 from './components/PackCheckout5';
 import CBO from './components/Articulos/CBO';
+import Pixel from './components/Articulos/Pixel';
 import FivePackSalesPage from './components/FivePackSalesPage';
 
 
@@ -212,6 +213,7 @@ class App extends React.Component {
           <Route path='/blog/sistema' exact={true} component={ArticuloSistema} />
 
           <Route path='/blog/cbo' exact={true} component={CBO} />
+          <Route path='/blog/pixel' exact={true} component={Pixel} />
 
           <Route path='/blog/realidad-marketing' exact={true} component={ArticuloRealidad} />
           <Route path='/blog/contenido' exact={true} component={ArticuloContenido} />

@@ -40,6 +40,7 @@ class Header extends React.Component  {
       || history.location.pathname === '/checkout/call-15'
       || history.location.pathname === '/checkout/pack-5'
       || history.location.pathname === '/blog/cbo'
+      || history.location.pathname === '/blog/pixel'
       || history.location.pathname === '/secreto-2') {
       return null
     } else {
