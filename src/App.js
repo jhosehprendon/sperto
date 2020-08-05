@@ -87,6 +87,7 @@ import GraciasGuiaPerfectAd from './components/Guias/GraciasGuiaPerfectAd';
 import DescargarGuiaPerfectAd from './components/Guias/DescargarGuiaPerfectAd';
 import PackCheckout5 from './components/PackCheckout5';
 import CBO from './components/Articulos/CBO';
+import FivePackSalesPage from './components/FivePackSalesPage';
 
 
 class App extends React.Component {
@@ -146,6 +147,7 @@ class App extends React.Component {
           <Route path="/guia/perfect-ad/gracias" exact component={GraciasGuiaPerfectAd} />
           <Route path="/guia/perfect-ad/descarga" component={DescargarGuiaPerfectAd} />
           <Route path="/checkout/pack-5" component={PackCheckout5} />
+          <Route path="/secreto-2" component={FivePackSalesPage} />
           {/* <Route path="/checkout/call-15" component={CallCheckout15} /> */}
 
           {/* ------------- */} 
