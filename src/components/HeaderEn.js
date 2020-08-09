@@ -37,7 +37,8 @@ class HeaderEn extends React.Component  {
       || history.location.pathname === '/checkout/pack-5'
       || history.location.pathname === '/blog/cbo'
       || history.location.pathname === '/blog/pixel'
-      || history.location.pathname === '/secreto-2') {
+      || history.location.pathname === '/secreto-2'
+      || history.location.pathname === '/consultoria') {
       return null
     } else {
       return (

@@ -37,7 +37,7 @@ class FivePackSalesPage extends React.Component {
         </div>
         <div style={{textAlign: "center", marginTop: '-50px'}}>
           <div style={{textAlign: 'center'}}>
-            <button onClick={this.sendToPack5} type="button" style={{marginBottom: '40px', fontWeight: 'bold', padding: '12px' }} className="btn btn-lg btn-success">Sí, Quiero mi Herramienta y Entrenamiento ($5) </button>
+            <button onClick={this.sendToPack5} type="button" style={{marginBottom: '40px', fontWeight: 'bold', padding: '12px' }} className="btn btn-lg btn-success">Sí, Quiero mi Herramienta y Entrenamiento ($5)</button>
           </div>
         </div>
       </div>
