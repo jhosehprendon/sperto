@@ -20,9 +20,10 @@ class CallInvite extends React.Component {
         <div className='consulta-block'>
           <div className='consulta-title'>
             <h1>Espera! Te Falta un Paso</h1>
+            <h1 style={{marginTop: '-10px'}}>Tu Compra Incluye una Consultoría Personalizada</h1>
           </div>
           <div style={{fontSize: '25px', color: '#283d54'}} className='blog-content'>
-            <h2>Ya tienes Acceso a Herramientas muy Importantes.</h2>
+            <h2>Ya tienes Acceso a Herramientas muy Importantes <span style={{color: '#ff5757'}}>(Revisa tu email, y carpeta de spam)</span>.</h2>
             <h2>Pero es Necesario tener un Plan de Marketing Ajustado a tu Negocio y tus Objetivos.</h2>
           </div>
           <div style={{fontSize: '25px', color: '#283d54', marginTop: '-35px'}} className='blog-content'>

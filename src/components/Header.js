@@ -17,6 +17,10 @@ class Header extends React.Component  {
     }
   }
 
+  sendToGuia = () => {
+    history.push('/guia/perfect-ad')
+  }
+
   renderCtaButton() {
     if (history.location.pathname === '/jobs-news-letter' 
       || history.location.pathname === '/jobs-news-letter/gracias' 
@@ -46,8 +50,11 @@ class Header extends React.Component  {
       return null
     } else {
       return (
+        // <div className="header__left__align header-hide">
+        //   <button onClick={this.openModal} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Agenda una Consulta</button>
+        // </div>
         <div className="header__left__align header-hide">
-          <button onClick={this.openModal} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Agenda una Consulta</button>
+          <button onClick={this.sendToGuia} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Guia Anuncio de FB Perfecto</button>
         </div>
       )
     }

@@ -53,9 +53,9 @@ class HeaderEn extends React.Component  {
     return (
       <div className="header-sperto">
         <p className="header__title" onClick={this.sendHome} style={{cursor: 'pointer'}}><img alt="logo" style={{width: '45px'}} src={require('../images/logo.png')} /></p>
-        <div className="header__left">
+        {/* <div className="header__left">
           {this.renderCtaButton()}
-        </div>
+        </div> */}
         <ModalAsk ref="child"/>
       </div>
     )
