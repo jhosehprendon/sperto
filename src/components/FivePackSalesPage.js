@@ -29,6 +29,7 @@ class FivePackSalesPage extends React.Component {
             <ul style={{color: '#ff5757'}}>
               <li>Acceso de por Vida a Herramienta de Intereses Ocultos <span style={{textDecoration: 'line-through'}}>($80)</span></li>
               <li>Acceso a Entrenamiento de Estudio de Audiencias <span style={{textDecoration: 'line-through'}}>($40)</span></li>
+              <li>Consultoría Personalizada (Llamada 30min)<span style={{textDecoration: 'line-through'}}>($50)</span></li>
               <li>Acceso a Template de Intereses <span style={{textDecoration: 'line-through'}}>($10)</span></li>
             </ul>
             <hr></hr>
