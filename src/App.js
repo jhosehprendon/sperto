@@ -90,6 +90,8 @@ import CBO from './components/Articulos/CBO';
 import Pixel from './components/Articulos/Pixel';
 import FivePackSalesPage from './components/FivePackSalesPage';
 import CallInvite from './components/CallInvite';
+import FitnessCallSales from './components/FitnessCallSales';
+import CallInviteFitness from './components/CallInviteFitness';
 
 
 class App extends React.Component {
@@ -152,6 +154,9 @@ class App extends React.Component {
           <Route path="/secreto-2" component={FivePackSalesPage} />
           <Route path="/consultoria" component={CallInvite} />
           {/* <Route path="/checkout/call-15" component={CallCheckout15} /> */}
+
+          <Route path="/fitness-coach" exact component={FitnessCallSales} />
+          <Route path="/fitness-coach/agenda" exact component={CallInviteFitness} />
 
           {/* ------------- */} 
 
