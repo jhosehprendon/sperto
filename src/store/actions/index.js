@@ -150,7 +150,8 @@ export const createContact = (formValues, tagId, sequenceId) => {
         }
 
         if(tagId == '20' || tagId == '21'){
-          history.push('/guia/perfect-ad/gracias')
+          window.location.href = "https://www.spertomedia.com/guia/perfect-ad/gracias"
+          // history.push('/guia/perfect-ad/gracias')
         }
 
 

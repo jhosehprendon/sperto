@@ -37,12 +37,15 @@ class GraciasGuiaPerfectAd extends React.Component {
               <li>Acceso a Template de Intereses <span style={{textDecoration: 'line-through'}}>($10)</span></li>
             </ul>
             <hr></hr>
-            <h2 style={{textAlign: 'center'}}>Todos estos Recursos por UN SÓLO pago de <span style={{color: '#00b300', fontSize: '30px'}}>&#62;&#62; $5 &#60;&#60;</span></h2>
+            <h2 style={{textAlign: 'center', marginBottom: '-20px'}}>Todo por UN SÓLO pago de:</h2>
+            <h2 style={{textAlign: 'center', color: '#00b300', fontSize: '45px'}}>$5</h2>
           </div>
         </div>
-        <div style={{textAlign: "center", marginTop: '-50px'}}>
-          <div style={{textAlign: 'center'}}>
-            <button onClick={this.sendToPack5} type="button" style={{marginBottom: '40px', fontWeight: 'bold', padding: '12px', fontSize: '24px' }} className="btn btn-lg btn-success">Sí, Quiero mi Herramienta y Entrenamiento ($5)</button>
+        <div style={{textAlign: "center", marginTop: '-50px'}} className='blog-content'>
+          <div id="paypal-button-pack-5" style={{textAlign: 'center', marginTop: '5px'}}></div>
+          <div style={{fontSize: '14px', textAlign: 'center'}}>
+            <p>Si tienes problemas para completar el pago escríbenos a:</p>
+            <p style={{marginTop: '-10px'}}>jhosehp@spertomedia.com</p>
           </div>
         </div>
       </div>
