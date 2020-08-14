@@ -154,6 +154,11 @@ export const createContact = (formValues, tagId, sequenceId) => {
           // history.push('/guia/perfect-ad/gracias')
         }
 
+        if(tagId == '22' || tagId == '23'){
+          window.location.href = "https://www.spertomedia.com/guia/agencia/gracias"
+          // history.push('/guia/perfect-ad/gracias')
+        }
+
 
       } catch {
         dispatch({ type: REQUEST_ERROR, payload: 'Ocurrió un error, por favor intenta de nuevo o verifica tu email' })

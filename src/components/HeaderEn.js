@@ -40,7 +40,12 @@ class HeaderEn extends React.Component  {
       || history.location.pathname === '/secreto-2'
       || history.location.pathname === '/consultoria'
       || history.location.pathname === '/fitness-coach'
-      || history.location.pathname === '/fitness-coach/agenda') {
+      || history.location.pathname === '/fitness-coach/agenda'
+      || history.location.pathname === '/guia/agencia'
+      || history.location.pathname === '/guia/agencia/gracias'
+      || history.location.pathname === '/guia/agencia/descarga'
+      || history.location.pathname === '/agencia/llamada'
+      || history.location.pathname === '/agencia/clase') {
       return null
     } else {
       return (

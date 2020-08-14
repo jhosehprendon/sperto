@@ -93,7 +93,7 @@
     }
 
     .rmk-first__title{
-        font-size: 26px
+        font-size: 26px;
     }
 
     .rmk-first__subtitle {
@@ -130,6 +130,10 @@
   @media (min-width: 800px) {
     .inputTool {
         width: 50%
+    }
+
+    .rmk-first__title{
+        width: 80%;
     }
   }
 

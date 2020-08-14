@@ -85,6 +85,7 @@ import DescargarGuiaAnuncio from './components/Guias/DescargaGuiaAnuncio';
 import GuiaPerfectAd from './components/Guias/GuiaPerfectAd';
 import GraciasGuiaPerfectAd from './components/Guias/GraciasGuiaPerfectAd';
 import DescargarGuiaPerfectAd from './components/Guias/DescargarGuiaPerfectAd';
+import DescargarGuiaAgencia from './components/Guias/DescargarGuiaAgencia';
 import PackCheckout5 from './components/PackCheckout5';
 import CBO from './components/Articulos/CBO';
 import Pixel from './components/Articulos/Pixel';
@@ -92,6 +93,10 @@ import FivePackSalesPage from './components/FivePackSalesPage';
 import CallInvite from './components/CallInvite';
 import FitnessCallSales from './components/FitnessCallSales';
 import CallInviteFitness from './components/CallInviteFitness';
+import GuiaAgencia from './components/Guias/GuiaAgencia';
+import GraciasGuiaAgencia from './components/Guias/GraciasGuiaAgencia';
+import CallInviteAgencia from './components/CallInviteAgencia';
+import AgenciaClase from './components/AgenciaClase';
 
 
 class App extends React.Component {
@@ -157,6 +162,13 @@ class App extends React.Component {
 
           <Route path="/fitness-coach" exact component={FitnessCallSales} />
           <Route path="/fitness-coach/agenda" exact component={CallInviteFitness} />
+
+          <Route path="/guia/agencia" exact component={GuiaAgencia} />
+          <Route path="/guia/agencia/gracias" exact component={GraciasGuiaAgencia} />
+          <Route path="/agencia/llamada" exact component={CallInviteAgencia} />
+          <Route path="/guia/agencia/descarga" component={DescargarGuiaAgencia} />
+          <Route path="/agencia/clase" exact component={AgenciaClase} />
+
 
           {/* ------------- */} 
 
