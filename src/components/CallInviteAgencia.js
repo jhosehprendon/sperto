@@ -20,7 +20,7 @@ class CallInviteAgencia extends React.Component {
         </div>
         <div style={{textAlign: "center"}}>
           <div style={{textAlign: 'center'}}>
-            <button onClick={this.sendCalendly} type="button" style={{marginBottom: '40px', fontWeight: 'bold', padding: '12px', fontSize: '24px' }} className="btn btn-lg btn-success">Agenda tu Clase Aquí</button>
+            <button onClick={this.sendCalendly} type="button" style={{marginBottom: '40px', fontWeight: 'bold', padding: '12px', fontSize: '24px' }} className="btn btn-lg btn-success">Agenda tu Llamada Aquí</button>
           </div>
         </div>
       </div>

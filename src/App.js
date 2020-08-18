@@ -97,6 +97,10 @@ import GuiaAgencia from './components/Guias/GuiaAgencia';
 import GraciasGuiaAgencia from './components/Guias/GraciasGuiaAgencia';
 import CallInviteAgencia from './components/CallInviteAgencia';
 import AgenciaClase from './components/AgenciaClase';
+import GuiaRecruiter from './components/Guias/GuiaRecruiter';
+import GraciasGuiaRecruiter from './components/Guias/GraciasGuiaRecruiter';
+import DescargarGuiaRecruiter from './components/Guias/DescargarGuiaRecruiter';
+import RecruiterFive from './components/RecruiterFive';
 
 
 class App extends React.Component {
@@ -168,6 +172,11 @@ class App extends React.Component {
           <Route path="/agencia/llamada" exact component={CallInviteAgencia} />
           <Route path="/guia/agencia/descarga" component={DescargarGuiaAgencia} />
           <Route path="/agencia/clase" exact component={AgenciaClase} />
+
+          <Route path="/guia/recruiter" exact component={GuiaRecruiter} />
+          <Route path="/guia/recruiter/gracias" exact component={GraciasGuiaRecruiter} />
+          <Route path="/guia/recruiter/descarga" exact component={DescargarGuiaRecruiter} />
+          <Route path="/recruiter/llamada/checkout" exact component={RecruiterFive} />
 
 
           {/* ------------- */} 

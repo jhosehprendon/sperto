@@ -53,7 +53,12 @@ class Header extends React.Component  {
       || history.location.pathname === '/guia/agencia/gracias'
       || history.location.pathname === '/guia/agencia/descarga'
       || history.location.pathname === '/agencia/llamada'
-      || history.location.pathname === '/agencia/clase') {
+      || history.location.pathname === '/agencia/clase'
+      || history.location.pathname === '/guia/recruiter'
+      || history.location.pathname === '/guia/recruiter/gracias'
+      || history.location.pathname === '/guia/recruiter/descarga'
+      || history.location.pathname === '/recruiter/llamada/checkout'
+      || history.location.pathname === '/es') {
       return null
     } else {
       return (
