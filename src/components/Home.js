@@ -17,9 +17,9 @@ class Home extends React.Component {
     history.push('/sistema-smi/en')
   }
 
-  sendToLlamada = () => {
-    window.location.href = "https://www.spertomedia.com/recruiter/llamada/checkout"
-  }
+  // sendToLlamada = () => {
+  //   window.location.href = "https://www.spertomedia.com/recruiter/llamada/checkout"
+  // }
 
   sendToTool = () => {
     history.push('/interests-tool')
@@ -27,153 +27,153 @@ class Home extends React.Component {
 
   render() {
     return ( 
-      // <div>
-      //   <div className='home-first'>
-      //     <div className='home-first--flex over'>
-      //       <div style={{marginRight: '10%'}}>
-      //         <h2 className='home-first__title'>Sell More, Grow your Business, Be Profitable</h2>
-      //         <h3 className='home-first__subtitle'>We Teach You How to Design and Execute Smart Marketing Systems that Works!</h3>
-      //         {/* <button onClick={this.sendToConsulta} type="button" style={{marginTop: '10px', fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Join Our Academy</button> */}
-      //       </div>
-      //     </div>
-      //   </div>
-      //   <div style={{ backgroundColor: '#66b3ff', height: '10px' }}>
-      //   </div>
-      //   <div style={{ backgroundColor: '#9dccfa', padding: '3%', textAlign: 'center' }}>
-      //     <p className="banner-first" style={{padding: '30px', display: 'inline'}}>Read more about the Smart Marketing System</p>
-      //     <button onClick={this.sendToSystem} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-light">Read more</button>
-      //   </div>
-      //   <div style={{ backgroundColor: '#66b3ff', height: '10px' }}>
-      //   </div>
-      //   <div style={{ paddingTop: '4%'}}>
-      //     <h2 style={{textAlign: 'center', color: '#295b8d', fontWeight: 'bold'}}>This is how we can help you</h2>
-      //     <hr style={{backgroundColor: '#3a8dde', width: '80px'}}></hr>
-      //     <p style={{textAlign: 'center', color: '#295b8d', fontSize: '20px', width: '50%', margin: '5rem auto 0'}}>We teach business owners and marketers how to sell more through a Smart Marketing System so they can build a scalable, predictable and profitable business.</p>
-      //     {/* <p style={{textAlign: 'center', color: '#295b8d', fontSize: '20px', width: '50%', margin: '1rem auto 0'}}>We are professionals at using Facebook and Instragram ads to feed the sales funnel and keep consistent results.</p> */}
-      //     <div className="row" style={{paddingTop: '3%'}}>
-      //       <div className="info-block">
-      //         <Card>
-      //           <div style={{margin: '10px 0 4px 0px'}}>
-      //               <h5 style={{color: '#295b8d', textAlign: 'center'}}>Ecommerce</h5>
-      //           </div>
-      //         </Card>
-      //         <Card>
-      //           <div style={{margin: '10px 0 4px 0px'}}>  
-      //               <h5 style={{color: '#295b8d', textAlign: 'center'}}>Lead Generation</h5>
-      //           </div>
-      //         </Card>
-      //         <Card>
-      //           <div style={{margin: '10px 0 4px 0px'}}>  
-      //               <h5 style={{color: '#295b8d', textAlign: 'center'}}>Services</h5>
-      //           </div>
-      //         </Card>
-      //         <Card>
-      //           <div style={{margin: '10px 0 4px 0px'}}>  
-      //               <h5 style={{color: '#295b8d', textAlign: 'center'}}>Info Products</h5>
-      //           </div>
-      //         </Card>
-      //       </div>
-      //     </div>
-      //   </div>
-  
-      //   <div style={{ backgroundColor: 'white', padding: '3%', width: '68%', margin: 'auto' }}>
-      //     <p style={{textAlign: 'center', color: '#283d54', fontWeight: 'bold', fontSize: '24px', margin: 'auto'}}><i className="fas fa-quote-left" style={{marginRight: '8px', color: '#f2c924'}}></i>We Believe in the Power of Marketing to Build Relationships and Profit<i className="fas fa-quote-right" style={{marginLeft: '8px', color: '#f2c924'}}></i></p>
-      //   </div>
-      //   <div className='home-fourth' style={{textAlign: 'center', padding: '40px 0 40px 0'}}>
-      //     <h2 style={{fontSize: '30px', color: 'white'}}>Numbers don't lie</h2>
-      //     <p style={{color: "white", fontSize: '20px'}}>What we care the most is our Students' Return of Investment</p>
-      //     <img className='image-fb' alt="sperto" src={require('../images/en-screenshot.png')} />
-      //     <p style={{color: "white", fontSize: '30px', fontWeight: 'bold'}}>2700% ROI</p>
-      //   </div>
-
-      //   {/* <h2 style={{textAlign: 'center', fontWeight: 'bold', marginTop: '50px', color: '#1F3144'}}>We have incresed sales and ROI to these companies</h2>
-
-      //   <div className="row" style={{margin: '20px 0 50px 0'}}>
-      //     <div className="info-block-fb">
-      //       <img  style={{width: '8rem', marginRight: '40px'}} alt="sperto" src={require('../images/EN-logo.png')} />
-      //       <img style={{width: '10rem', marginRight: '40px'}} alt="sperto" src={require('../images/MC-logo.png')} />
-      //       <img style={{width: '10rem', marginRight: '40px'}} alt="sperto" src={require('../images/rize-logo.png')} />
-      //       <img style={{width: '12rem'}} alt="sperto" src={require('../images/FR-logo.png')} />
-      //     </div>
-      //   </div> */}
-        
-      //   {/* <div className='home-fourth' style={{height: '350px'}}>
-      //     <div className="over">
-      //       <div className="container">
-      //         <div className="row">
-      //           <div className="col imageBackground2" style={{marginTop: '5%'}}>
-      //             <img style={{width: '75%'}} alt="sperto" src={require('../images/background.png')} />
-      //           </div>
-      //           <div className="col" style={{ paddingTop: '6%', color: 'white', fontSize: '18px'}}>
-      //             <h2 style={{padding: '0 0 5px 30px', fontSize: '30px'}}>Join our Academy</h2>
-      //             <div style={{paddingLeft: '30px'}}>
-      //               <button onClick={this.sendToConsulta} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Join Now</button>
-      //             </div>
-      //           </div>
-      //         </div>
-      //       </div>
-      //     </div>
-      //   </div> */}
-        
-      //   <div style={{ backgroundColor: 'white', textAlign: 'center', color: '#295b8d', padding: '40px' }}>
-      //     <p style={{fontWeight: 'bold', fontSize: '20px'}}>Sperto Media</p>
-      //     <a onClick={this.sendToTool} style={{color: '#283d54', cursor: 'pointer'}}>Facebook Interests Finder</a>
-      //     <br/>
-      //     {/* <a style={{fontWeight: 'bold', cursor: 'pointer'}}  onClick={this.sendNosotros}>About Us</a> */}
-      //   </div>
-      // </div>
       <div>
-      <div className='home-first'>
-        <div className='home-first--flex over'>
-          <div style={{marginRight: '10%'}}>
-            <h2 className='home-first__title'>Find more Qualified Talent and Fill more Job Positions</h2>
-            <h3 className='home-first__subtitle'>We Train Recruiters on How to Apply Effective Marketing Systems</h3>
-            {/* <button onClick={this.sendToConsulta} type="button" style={{marginTop: '10px', fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Únete a la Academia</button> */}
+        <div className='home-first'>
+          <div className='home-first--flex over'>
+            <div style={{marginRight: '10%'}}>
+              <h2 className='home-first__title'>Sell More, Grow your Business, Be Profitable</h2>
+              <h3 className='home-first__subtitle'>We Teach You How to Design and Execute Smart Marketing Systems that Works!</h3>
+              {/* <button onClick={this.sendToConsulta} type="button" style={{marginTop: '10px', fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Join Our Academy</button> */}
+            </div>
           </div>
         </div>
-      </div>
-      <div style={{ backgroundColor: '#66b3ff', height: '10px' }}>
-      </div>
-      <div style={{ backgroundColor: '#9dccfa', padding: '3%', textAlign: 'center' }}>
-        <p className="banner-first" style={{padding: '30px', display: 'inline'}}>Learn more about the Marketing System for Recruitment</p>
-        <button onClick={this.sendToLlamada} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-light">Book a Call</button>
-      </div>
-      <div style={{ backgroundColor: '#66b3ff', height: '10px' }}>
-      </div>
-      <div style={{ paddingTop: '4%'}}>
-        <h2 style={{textAlign: 'center', color: '#295b8d', fontWeight: 'bold'}}>How We Can Help</h2>
-        <hr style={{backgroundColor: '#3a8dde', width: '80px'}}></hr>
-        <p style={{textAlign: 'center', color: '#295b8d', fontSize: '20px', width: '65%', margin: '5rem auto 0'}}>We train agency owners, managers and recruiters on how to execute marketing systems that allows them to build relationships with the best talent.</p>
-        <div className="row" style={{paddingTop: '3%'}}>
-          <div className="info-block">
-            <Card>
-              <div style={{margin: '10px 0 4px 0px'}}>
-                  <h5 style={{color: '#295b8d', textAlign: 'center'}}>Staffing Agencies</h5>
-              </div>
-            </Card>
-            <Card>
-              <div style={{margin: '10px 0 4px 0px'}}>  
-                  <h5 style={{color: '#295b8d', textAlign: 'center'}}>Startups</h5>
-              </div>
-            </Card>
-            <Card>
-              <div style={{margin: '10px 0 4px 0px'}}>  
-                  <h5 style={{color: '#295b8d', textAlign: 'center'}}>IT Companies</h5>
-              </div>
-            </Card>
-            <Card>
-              <div style={{margin: '10px 0 4px 0px'}}>  
-                  <h5 style={{color: '#295b8d', textAlign: 'center'}}>Recruiters</h5>
-              </div>
-            </Card>
+        <div style={{ backgroundColor: '#66b3ff', height: '10px' }}>
+        </div>
+        <div style={{ backgroundColor: '#9dccfa', padding: '3%', textAlign: 'center' }}>
+          <p className="banner-first" style={{padding: '30px', display: 'inline'}}>Read more about the Smart Marketing System</p>
+          <button onClick={this.sendToSystem} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-light">Read more</button>
+        </div>
+        <div style={{ backgroundColor: '#66b3ff', height: '10px' }}>
+        </div>
+        <div style={{ paddingTop: '4%'}}>
+          <h2 style={{textAlign: 'center', color: '#295b8d', fontWeight: 'bold'}}>This is how we can help you</h2>
+          <hr style={{backgroundColor: '#3a8dde', width: '80px'}}></hr>
+          <p style={{textAlign: 'center', color: '#295b8d', fontSize: '20px', width: '50%', margin: '5rem auto 0'}}>We teach business owners and marketers how to sell more through a Smart Marketing System so they can build a scalable, predictable and profitable business.</p>
+          {/* <p style={{textAlign: 'center', color: '#295b8d', fontSize: '20px', width: '50%', margin: '1rem auto 0'}}>We are professionals at using Facebook and Instragram ads to feed the sales funnel and keep consistent results.</p> */}
+          <div className="row" style={{paddingTop: '3%'}}>
+            <div className="info-block">
+              <Card>
+                <div style={{margin: '10px 0 4px 0px'}}>
+                    <h5 style={{color: '#295b8d', textAlign: 'center'}}>Ecommerce</h5>
+                </div>
+              </Card>
+              <Card>
+                <div style={{margin: '10px 0 4px 0px'}}>  
+                    <h5 style={{color: '#295b8d', textAlign: 'center'}}>Lead Generation</h5>
+                </div>
+              </Card>
+              <Card>
+                <div style={{margin: '10px 0 4px 0px'}}>  
+                    <h5 style={{color: '#295b8d', textAlign: 'center'}}>Services</h5>
+                </div>
+              </Card>
+              <Card>
+                <div style={{margin: '10px 0 4px 0px'}}>  
+                    <h5 style={{color: '#295b8d', textAlign: 'center'}}>Info Products</h5>
+                </div>
+              </Card>
+            </div>
           </div>
         </div>
-      </div>
+  
+        <div style={{ backgroundColor: 'white', padding: '3%', width: '68%', margin: 'auto' }}>
+          <p style={{textAlign: 'center', color: '#283d54', fontWeight: 'bold', fontSize: '24px', margin: 'auto'}}><i className="fas fa-quote-left" style={{marginRight: '8px', color: '#f2c924'}}></i>We Believe in the Power of Marketing to Build Relationships and Profit<i className="fas fa-quote-right" style={{marginLeft: '8px', color: '#f2c924'}}></i></p>
+        </div>
+        <div className='home-fourth' style={{textAlign: 'center', padding: '40px 0 40px 0'}}>
+          <h2 style={{fontSize: '30px', color: 'white'}}>Numbers don't lie</h2>
+          <p style={{color: "white", fontSize: '20px'}}>What we care the most is our Students' Return of Investment</p>
+          <img className='image-fb' alt="sperto" src={require('../images/en-screenshot.png')} />
+          <p style={{color: "white", fontSize: '30px', fontWeight: 'bold'}}>2700% ROI</p>
+        </div>
 
-      <div style={{ backgroundColor: 'white', padding: '3%', width: '65%', margin: 'auto' }}>
-        <p style={{textAlign: 'center', color: '#283d54', fontWeight: 'bold', fontSize: '24px', margin: 'auto'}}><i className="fas fa-quote-left" style={{marginRight: '8px', color: '#f2c924'}}></i>We Believe in the Power of Marketing to Build Relationships with your Candidates<i className="fas fa-quote-right" style={{marginLeft: '8px', color: '#f2c924'}}></i></p>
+        {/* <h2 style={{textAlign: 'center', fontWeight: 'bold', marginTop: '50px', color: '#1F3144'}}>We have incresed sales and ROI to these companies</h2>
+
+        <div className="row" style={{margin: '20px 0 50px 0'}}>
+          <div className="info-block-fb">
+            <img  style={{width: '8rem', marginRight: '40px'}} alt="sperto" src={require('../images/EN-logo.png')} />
+            <img style={{width: '10rem', marginRight: '40px'}} alt="sperto" src={require('../images/MC-logo.png')} />
+            <img style={{width: '10rem', marginRight: '40px'}} alt="sperto" src={require('../images/rize-logo.png')} />
+            <img style={{width: '12rem'}} alt="sperto" src={require('../images/FR-logo.png')} />
+          </div>
+        </div> */}
+        
+        {/* <div className='home-fourth' style={{height: '350px'}}>
+          <div className="over">
+            <div className="container">
+              <div className="row">
+                <div className="col imageBackground2" style={{marginTop: '5%'}}>
+                  <img style={{width: '75%'}} alt="sperto" src={require('../images/background.png')} />
+                </div>
+                <div className="col" style={{ paddingTop: '6%', color: 'white', fontSize: '18px'}}>
+                  <h2 style={{padding: '0 0 5px 30px', fontSize: '30px'}}>Join our Academy</h2>
+                  <div style={{paddingLeft: '30px'}}>
+                    <button onClick={this.sendToConsulta} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Join Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> */}
+        
+        <div style={{ backgroundColor: 'white', textAlign: 'center', color: '#295b8d', padding: '40px' }}>
+          <p style={{fontWeight: 'bold', fontSize: '20px'}}>Sperto Media</p>
+          <a onClick={this.sendToTool} style={{color: '#283d54', cursor: 'pointer'}}>Facebook Interests Finder</a>
+          <br/>
+          {/* <a style={{fontWeight: 'bold', cursor: 'pointer'}}  onClick={this.sendNosotros}>About Us</a> */}
+        </div>
       </div>
-    </div>
+    //   <div>
+    //   <div className='home-first'>
+    //     <div className='home-first--flex over'>
+    //       <div style={{marginRight: '10%'}}>
+    //         <h2 className='home-first__title'>Find more Qualified Talent and Fill more Job Positions</h2>
+    //         <h3 className='home-first__subtitle'>We Train Recruiters on How to Apply Effective Marketing Systems</h3>
+    //         {/* <button onClick={this.sendToConsulta} type="button" style={{marginTop: '10px', fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Únete a la Academia</button> */}
+    //       </div>
+    //     </div>
+    //   </div>
+    //   <div style={{ backgroundColor: '#66b3ff', height: '10px' }}>
+    //   </div>
+    //   <div style={{ backgroundColor: '#9dccfa', padding: '3%', textAlign: 'center' }}>
+    //     <p className="banner-first" style={{padding: '30px', display: 'inline'}}>Learn more about the Marketing System for Recruitment</p>
+    //     <button onClick={this.sendToLlamada} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-light">Book a Call</button>
+    //   </div>
+    //   <div style={{ backgroundColor: '#66b3ff', height: '10px' }}>
+    //   </div>
+    //   <div style={{ paddingTop: '4%'}}>
+    //     <h2 style={{textAlign: 'center', color: '#295b8d', fontWeight: 'bold'}}>How We Can Help</h2>
+    //     <hr style={{backgroundColor: '#3a8dde', width: '80px'}}></hr>
+    //     <p style={{textAlign: 'center', color: '#295b8d', fontSize: '20px', width: '65%', margin: '5rem auto 0'}}>We train agency owners, managers and recruiters on how to execute marketing systems that allows them to build relationships with the best talent.</p>
+    //     <div className="row" style={{paddingTop: '3%'}}>
+    //       <div className="info-block">
+    //         <Card>
+    //           <div style={{margin: '10px 0 4px 0px'}}>
+    //               <h5 style={{color: '#295b8d', textAlign: 'center'}}>Staffing Agencies</h5>
+    //           </div>
+    //         </Card>
+    //         <Card>
+    //           <div style={{margin: '10px 0 4px 0px'}}>  
+    //               <h5 style={{color: '#295b8d', textAlign: 'center'}}>Startups</h5>
+    //           </div>
+    //         </Card>
+    //         <Card>
+    //           <div style={{margin: '10px 0 4px 0px'}}>  
+    //               <h5 style={{color: '#295b8d', textAlign: 'center'}}>IT Companies</h5>
+    //           </div>
+    //         </Card>
+    //         <Card>
+    //           <div style={{margin: '10px 0 4px 0px'}}>  
+    //               <h5 style={{color: '#295b8d', textAlign: 'center'}}>Recruiters</h5>
+    //           </div>
+    //         </Card>
+    //       </div>
+    //     </div>
+    //   </div>
+
+    //   <div style={{ backgroundColor: 'white', padding: '3%', width: '65%', margin: 'auto' }}>
+    //     <p style={{textAlign: 'center', color: '#283d54', fontWeight: 'bold', fontSize: '24px', margin: 'auto'}}><i className="fas fa-quote-left" style={{marginRight: '8px', color: '#f2c924'}}></i>We Believe in the Power of Marketing to Build Relationships with your Candidates<i className="fas fa-quote-right" style={{marginLeft: '8px', color: '#f2c924'}}></i></p>
+    //   </div>
+    // </div>
     )
   }
 } 
