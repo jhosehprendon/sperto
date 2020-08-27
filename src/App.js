@@ -15,6 +15,8 @@ import SecuenciaVideo3Consulta from './components/SecuenciaVideo3Consulta';
 import SecuenciaVideo3Curso from './components/SecuenciaVideo3Curso';
 import MiniCurso from './components/MiniCurso';
 import MiniCursoRegistro from './components/MiniCursoRegistro';
+import GraciasPagoConsultoria from './components/GraciasPagoConsultoria'
+
 import Consulta from './components/Consulta';
 import Consult from './components/Consult';
 import GuiaSistema from './components/Guias/GuiaSistema';
@@ -211,6 +213,9 @@ class App extends React.Component {
           <Route path="/mini-class-1" component={MiniClass1} />
           <Route path="/mini-class-2" component={MiniClass2} />
           <Route path="/mini-class-3" component={MiniClass3} />
+
+          <Route path="/pago-consultoria-confirmacion" component={GraciasPagoConsultoria} />
+
           <Route path="/curso-marketing-digital" component={Curso} />
 
           {/* Recruiter Funnel */}

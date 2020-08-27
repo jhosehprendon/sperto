@@ -163,6 +163,10 @@ export const createContact = (formValues, tagId, sequenceId) => {
           window.location.href = "https://www.spertomedia.com/guia/recruiter/gracias"
         }
 
+        if(tagId == '25'){
+          history.push('/mini-class-1')
+        }
+
 
       } catch {
         dispatch({ type: REQUEST_ERROR, payload: 'Ocurrió un error, por favor intenta de nuevo o verifica tu email' })

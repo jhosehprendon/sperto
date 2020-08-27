@@ -136,18 +136,43 @@
               return actions.order.create({
                   purchase_units: [{
                       amount: {
-                          value: '5'
+                          value: '60'
                       }
                   }]
               });
           },
           onApprove: function(data, actions) {
               return actions.order.capture().then(function(details) {
-                window.location.href = "https://www.spertomedia.com/fitness-coach/agenda"
-                fbq('track', 'FitnessIntroCcourse')
+                window.location.href = "https://www.spertomedia.com/pago-consultoria-confirmacion"
+                fbq('track', '1MesConsultoria')
               });
           }
-      }).render('#paypal-button-fitness-intro');
+      }).render('#paypal-button-1mes-consultoria');
+
+      paypal.Buttons({
+          style: {
+              shape: 'rect',
+              color: 'gold',
+              layout: 'vertical',
+              label: 'paypal',
+              
+          },
+          createOrder: function(data, actions) {
+              return actions.order.create({
+                  purchase_units: [{
+                      amount: {
+                          value: '300'
+                      }
+                  }]
+              });
+          },
+          onApprove: function(data, actions) {
+              return actions.order.capture().then(function(details) {
+                window.location.href = "https://www.spertomedia.com/pago-consultoria-confirmacion"
+                fbq('track', '6MesesConsultoria')
+              });
+          }
+      }).render('#paypal-button-6meses-consultoria');
 
         paypal.Buttons({
           style: {
