@@ -167,9 +167,13 @@ export const createContact = (formValues, tagId, sequenceId) => {
           history.push('/mini-class-1')
         }
 
+        if(tagId == '26'){
+          history.push('/join-list/thanks')
+        }
+
 
       } catch {
-        dispatch({ type: REQUEST_ERROR, payload: 'Ocurrió un error, por favor intenta de nuevo o verifica tu email' })
+        dispatch({ type: REQUEST_ERROR, payload: 'Something went wrong, please verify your email and try again' })
       }
       
   }

@@ -103,6 +103,8 @@ import GuiaRecruiter from './components/Guias/GuiaRecruiter';
 import GraciasGuiaRecruiter from './components/Guias/GraciasGuiaRecruiter';
 import DescargarGuiaRecruiter from './components/Guias/DescargarGuiaRecruiter';
 import RecruiterFive from './components/RecruiterFive';
+import JoinList from './components/Tauro/JoinList';
+import GraciasJoinList from './components/Tauro/GraciasJoinList';
 
 
 class App extends React.Component {
@@ -112,6 +114,9 @@ class App extends React.Component {
       || history.location.pathname === '/sistema-smi/en'
       || history.location.pathname === '/interests-tool') {
       return <HeaderEn />
+    } else if(history.location.pathname === '/join-list'
+      || history.location.pathname === '/join-list/thanks') {
+      return null
     } else {
       return <Header />
     }
@@ -250,6 +255,19 @@ class App extends React.Component {
 
           <Route path='/blog/realidad-marketing' exact={true} component={ArticuloRealidad} />
           <Route path='/blog/contenido' exact={true} component={ArticuloContenido} />
+          
+          {/* ------------- */} 
+          {/* ------------- */} 
+          {/* ------------- */} 
+          {/* TauroFi */} 
+
+
+          <Route path="/join-list" exact component={JoinList} />
+          <Route path="/join-list/thanks" exact component={GraciasJoinList} />
+
+          {/* ------------- */} 
+          {/* ------------- */} 
+          {/* ------------- */} 
 
           {/* Redirects */}
           <Route path='/secuencia/video-4' exact={true} component={MiniCurso} />
