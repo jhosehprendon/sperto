@@ -4,27 +4,30 @@ import '../../css/Sequence.css';
 
 class MiniClass3 extends React.Component {
 
+  sendFirstVideo = () => {
+    window.location.href = "https://www.spertomedia.com/mini-class-1"
+  }
+
+  sendSecondVideo = () => {
+    window.location.href = "https://www.spertomedia.com/mini-class-2"
+  }
+
   render() {
     return ( 
       <div style={{textAlign: 'center', color: '#283d54', marginTop: '20px'}}>
-        <h3><span style={{cursor:'pointer'}} onClick={() => history.push('/mini-class-1')}>1. Estrategia de Marketing </span> &gt; <span style={{cursor:'pointer'}} onClick={() => history.push('/mini-class-2')}>2. Audiencias de Facebook </span> &gt; 3. Crea tu Campaña de Facebook</h3> 
+        <h3><span style={{cursor:'pointer'}} onClick={this.sendFirstVideo}>1. Estrategia de Marketing </span> &gt; <span style={{cursor:'pointer'}} onClick={this.sendSecondVideo}>2. Audiencias de Facebook </span> &gt; 3. Crea tu Campaña de Facebook</h3> 
         <h2 style={{fontSize: '30px'}}>Crea tu Campaña de Facebook</h2>
-        <iframe title="video1" type="text/html" frameborder="0" className="video" src="https://www.youtube.com/embed/-EUL6I_MT98" allowfullscreen></iframe>
+        <iframe title="video1" type="text/html" frameborder="0" className="video" src="https://www.youtube.com/embed/4D2dIiv_Pmw" allowfullscreen></iframe>
         <div style={{textAlign: "center"}} className='blog-content'>
-          <h2>Coaching y Consultoría via Mensajería</h2>
-          <div className="row">
-            <div className="info-block">
-              <div style={{marginRight: '30px', width: '100%'}}>
-                <h2 style={{textAlign: 'center', color: '#00b300', fontSize: '45px'}}>$60/mes</h2>
-                <p>(Pagos Mensuales)</p>
-                <div id="paypal-button-1mes-consultoria" style={{textAlign: 'center', marginTop: '5px'}}></div>
-              </div>
-              <div style={{width: '100%'}}>
-                <h2 style={{textAlign: 'center', color: '#00b300', fontSize: '45px'}}>$300/6meses</h2>
-                <p>(Ahorra $60, Paga 6 meses a $50 cada uno)</p>
-                <div id="paypal-button-6meses-consultoria" style={{textAlign: 'center', marginTop: '5px'}}></div>
-              </div>
-            </div>
+          <h2>Curso Avanzado y Práctico de Marketing Digital, Facebook e Instagram Ads</h2>
+          <p>Duración un mes</p>
+          <p style={{marginTop: '-20px'}}>Recibirás 2 clases intensivas cada semana</p>
+          <p style={{marginTop: '-20px'}}>Incluye acceso de por vida a grupo de Facebook</p>
+          <p style={{marginTop: '-20px'}}>Estaré guiándote y respondiendo tus dudas</p>
+          <div>
+            <h2 style={{textAlign: 'center', fontSize: '30px', textDecoration: 'line-through', marginBottom: '-20px'}}>$400</h2>
+            <h2 style={{textAlign: 'center', color: '#00b300', fontSize: '45px'}}>$200</h2>
+            <div id="paypal-button-curso-200" style={{textAlign: 'center', marginTop: '5px'}}></div>
           </div>
           <div style={{fontSize: '14px', textAlign: 'center'}}>
             <p>(Si no aparece los métodos de pago, refrésca la página)</p>

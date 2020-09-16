@@ -7,8 +7,8 @@ class ArticuloSMI extends React.Component {
     window.scrollTo(0, 0)
   }
 
-  sendToLeadMagnet = () => {
-    history.push('/guia-lead-magnet')
+  sendCalendly = () => {
+    window.location.href = "https://calendly.com/jhosehp-rendon/30min"
   }
   
   render() {
@@ -28,7 +28,7 @@ class ArticuloSMI extends React.Component {
             <p>Si lo haces correctamente, puedes obtener resultados en momentos difíciles y posicionarte como el líder de tu mercado para cuando todo esto pase. Todo esto se logra con un sistema de marketing que te va a permitir vender y crecer tu negocio de forma automática y predecible. Yo lo llamo “El Sistema de Marketing Inteligente”</p>
             <p>Este sistema lo hemos implementado con varios clientes y hemos obtenido resultados extraordinarios, inclusive mucho mejores en estos momentos. Por eso quiero compartirlo contigo.</p>
             <p>El objetivo del sistema es convertir desconocidos en amigos, amigos en clientes y clientes en promotores. Esto se logra de la siguiente manera:</p>
-            <p><strong>Lead Magnet >> Tripwire >> Core Offer >> Profit Maximizer >> Remarketing</strong></p>
+            <p><strong>Lead Magnet &gt; Tripwire &gt; Core Offer &gt; Profit Maximizer &gt; Remarketing</strong></p>
             <p>Hablemos de cada componente…</p>
             <h3>Lead Magnet</h3>
             <p>El lead magnet es el primer punto de contacto con tu prospecto y es muy importante diseñar uno que tenga sentido en tu embudo de marketing y tu negocio.</p>
@@ -39,7 +39,7 @@ class ArticuloSMI extends React.Component {
             <p>Abajo puedes descargar una guía gratis donde explico los detalles de un lead magnet efectivo. La Fórmula Perfecta de un Lead Magnet Ganador que te va a permitir generar más ventas y acelerar el crecimiento de tu negocio.</p>
             <p>Nota: Voy a pedir tu email a cambio, estoy usando un lead magnet! Además de enseñarte la estructura de un buen lead magnet estoy poniendo en práctica lo que te enseño. Así puedes ver la estructura de la página, la forma cómo muestro la información y el proceso.</p>
             <div style={{textAlign: 'center'}}>
-              <button onClick={this.sendToLeadMagnet} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Ver Fórmula del Lead Magnet Ganador</button>
+              <button onClick={this.sendCalendly} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Agenda una Consultoría Gratis</button>
             </div>
             <h3>Tripwire</h3>
             <p>Luego que tienes el email de un potencial cliente necesitas dar un paso más en la relación, generar un mayor compromiso. Este compromiso se logra normalmente con un intercambio pequeño de dinero o de tiempo.</p>
@@ -59,9 +59,9 @@ class ArticuloSMI extends React.Component {
             <p>Resulta que la gran mayoría de tu tráfico no convierte en la primera visita, es normal. En muchos casos necesitan un incentivo o mayor información para completar la compra, allí entra el remarketing.</p>
             <p>Por eso es importante tener el pixel de Facebook instalado y saber cómo crear audiencias de cada interacción relevante de tu embudo.</p>
             <p>Es importante darle importancia a todos los elementos del sistema, de esa manera vas a poder generar mayores ventas, acelerar el crecimiento de tu negocio, predecir tus ingresos y ganarle a la competencia.</p>
-            <p>Comienza a construir tu Sistema de Marketing Inteligente con un Lead Magnet Ganador</p>
+            <p>Comienza a construir tu Sistema de Marketing Inteligente con un Lead Magnet Ganador.</p>
             <div style={{textAlign: 'center'}}>
-              <button onClick={this.sendToLeadMagnet} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Ver Fórmula del Lead Magnet Ganador</button>
+              <button onClick={this.sendCalendly} type="button" style={{fontWeight: 'bold', fontSize: '16px', padding: '12px' }} className="btn btn-success">Agenda una Consultoría Gratis</button>
             </div>
           </div>
         </div>

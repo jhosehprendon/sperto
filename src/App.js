@@ -15,7 +15,9 @@ import SecuenciaVideo3Consulta from './components/SecuenciaVideo3Consulta';
 import SecuenciaVideo3Curso from './components/SecuenciaVideo3Curso';
 import MiniCurso from './components/MiniCurso';
 import MiniCursoRegistro from './components/MiniCursoRegistro';
-import GraciasPagoConsultoria from './components/GraciasPagoConsultoria'
+import GraciasPagoCurso from './components/GraciasPagoCurso'
+
+import Audience from './components/Audience';
 
 import Consulta from './components/Consulta';
 import Consult from './components/Consult';
@@ -73,7 +75,7 @@ import MiniClass1 from './components/Curso/MiniClass1';
 import MiniClass2 from './components/Curso/MiniClass2';
 import MiniClass3 from './components/Curso/MiniClass3';
 import RegisterMiniClass from './components/Curso/RegisterMiniClass';
-import Curso from './components/Curso/Curso';
+// import Curso from './components/Curso/Curso';
 
 // Curso
 import GuiaPlan from './components/Guias/GuiaPlan';
@@ -105,6 +107,8 @@ import DescargarGuiaRecruiter from './components/Guias/DescargarGuiaRecruiter';
 import RecruiterFive from './components/RecruiterFive';
 import JoinList from './components/Tauro/JoinList';
 import GraciasJoinList from './components/Tauro/GraciasJoinList';
+import Consultor from './components/Tests/Consultor';
+import Curso from './components/Tests/Curso';
 
 
 class App extends React.Component {
@@ -115,7 +119,9 @@ class App extends React.Component {
       || history.location.pathname === '/interests-tool') {
       return <HeaderEn />
     } else if(history.location.pathname === '/join-list'
-      || history.location.pathname === '/join-list/thanks') {
+      || history.location.pathname === '/join-list/thanks'
+      || history.location.pathname === '/sistema-smi'
+      || history.location.pathname === '/consultor-marketing') {
       return null
     } else {
       return <Header />
@@ -134,8 +140,8 @@ class App extends React.Component {
           return null;
         }} />
         <Switch>
-          <Route path="/" exact component={Home}/>
-          <Route path="/es" exact component={HomeEs}/>
+          <Route path="/" exact component={Curso}/>
+          <Route path="/es" exact component={Curso}/>
           <Route path="/case-remarketing" exact component={RemarketingCase} />
           <Route path="/case-remarketing/gracias" component={RemarketingCaseGracias} />
           <Route path="/interests-tool" component={InterestsTool} />
@@ -219,9 +225,7 @@ class App extends React.Component {
           <Route path="/mini-class-2" component={MiniClass2} />
           <Route path="/mini-class-3" component={MiniClass3} />
 
-          <Route path="/pago-consultoria-confirmacion" component={GraciasPagoConsultoria} />
-
-          <Route path="/curso-marketing-digital" component={Curso} />
+          <Route path="/pago-curso-confirmacion" component={GraciasPagoCurso} />
 
           {/* Recruiter Funnel */}
 
@@ -268,6 +272,11 @@ class App extends React.Component {
           {/* ------------- */} 
           {/* ------------- */} 
           {/* ------------- */} 
+
+          <Route path="/audience" exact component={Audience} />
+
+          <Route path="/consultor-marketing" exact component={Consultor} />
+          <Route path="/curso-marketing-digital" exact component={Curso} />
 
           {/* Redirects */}
           <Route path='/secuencia/video-4' exact={true} component={MiniCurso} />

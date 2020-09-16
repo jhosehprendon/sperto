@@ -87,19 +87,21 @@ export const createContact = (formValues, tagId, sequenceId) => {
 
         ////// ADD TO SEQUENCE
 
-        const sequenceData = {
-          contactAutomation: {
-            contact: response.data.contact.id,
-            automation: sequenceId
+        if (sequenceId) {
+          const sequenceData = {
+            contactAutomation: {
+              contact: response.data.contact.id,
+              automation: sequenceId
+            }
           }
+          
+          await axios.post('/api/contactAutomations', sequenceData, {
+            headers: {
+              'Content-type': 'application/json',
+              'Api-Token': process.env.REACT_APP_API_AC_TOKEN
+            }
+          })
         }
-        
-        await axios.post('/api/contactAutomations', sequenceData, {
-          headers: {
-            'Content-type': 'application/json',
-            'Api-Token': process.env.REACT_APP_API_AC_TOKEN
-          }
-        })
 
         if(tagId == '2'){
           history.push('/guia-email-candidato/gracias')
@@ -164,7 +166,7 @@ export const createContact = (formValues, tagId, sequenceId) => {
         }
 
         if(tagId == '25'){
-          history.push('/mini-class-1')
+          window.location.href = "https://www.spertomedia.com/mini-class-1"
         }
 
         if(tagId == '26'){

@@ -1,7 +1,9 @@
 import React from 'react';
 import '../css/Header.css'
-import history from '../history';
 import Modal from 'react-modal';
+import { connect } from 'react-redux';
+import LeadForm from './LeadForm';
+import { createContact } from '../store/actions';
 
 const customStyles = {
   content : {
@@ -17,16 +19,8 @@ const customStyles = {
 class ModalAskLeadMagnet extends React.Component  {
 
   state= {
-    modalIsOpen: false
-  }
-
-  sendCalendly = () => {
-    window.location.href = "https://calendly.com/jhosehp-rendon/30min"
-  }
-
-  sendYoutubeInvite = () => {
-    this.setState({modalIsOpen: false});
-    history.push('/yt-invite')
+    modalIsOpen: false,
+    tryCreate: false
   }
 
  
@@ -38,6 +32,15 @@ class ModalAskLeadMagnet extends React.Component  {
     this.setState({modalIsOpen: true});
   }
 
+  onSubmit = (formValues) => {
+    this.setState({ tryCreate: true })
+
+    this.props.createContact(formValues, 25, null).then(() => {
+      this.setState({tryCreate: false})
+    }).catch(e => {
+      this.setState({tryCreate: false})
+    })
+  }
 
   render() {
     return (
@@ -48,17 +51,25 @@ class ModalAskLeadMagnet extends React.Component  {
           onRequestClose={this.closeModal}
           style={customStyles}
         >
-          <p style={{marginLeft: '5px', color: '#295b8d', fontWeight: 'bold', fontSize: '25px'}}>¿Cómo te describes?</p>
-            <p style={{fontSize: '18px', width: '80%'}}>Fundador, CEO o Director, tomo decisiones de marketing y presupuesto</p>
-            <button onClick={this.sendCalendly} type="button" style={{fontWeight: 'bold', padding: '12px', marginRight:'40px' }} className="btn btn-success">Continuar como Director</button>
-            <p style={{fontSize: '18px', width: '80%', marginTop: '30px'}}>Soy Marketer pero no tomo decisiones de marketing ni presupuesto</p>
-            <button onClick={this.sendYoutubeInvite} type="button" style={{fontWeight: 'bold', padding: '12px', marginRight:'40px' }} className="btn btn-success">Continuar como Marketer</button>
-          <p style={{color: 'red', marginTop: '5px'}}>{this.props.error}</p>
+          <p style={{marginLeft: '5px', color: '#295b8d', fontWeight: 'bold', fontSize: '25px'}}>Comienza Aquí</p>
+          <p style={{margin: '-20px 0 -25px 5px', color: '#295b8d', fontWeight: 'bold', fontSize: '18px'}}>Obtén Acceso Inmediato</p>
+          <LeadForm
+            from='leadMagnet'
+            onSubmit={this.onSubmit} 
+            buttonText='Acceder a Curso Gratis'
+            loading={this.state.tryCreate}
+            message= {this.props.error}
+          />
         </Modal>
       </div>
     )
   } 
 }
 
+const mapStateToProps = (state) => {
+  return {
+    error: state.contact.error
+  }
+}
 
-export default ModalAskLeadMagnet;
+export default connect(mapStateToProps, {createContact}, null, {forwardRef: true})(ModalAskLeadMagnet)
