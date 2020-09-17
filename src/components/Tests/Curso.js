@@ -27,8 +27,8 @@ class Curso extends React.Component {
         <div className='home-first'>
           <div className='home-first--flex over'>
             <div style={{marginRight: '10%', marginTop: '-5%'}}>
-              <h2 className='home-first__title'>Curso Avanzado y Práctico de Marketing Digital, <span style={{color: '#2DB67C'}}>Facebook</span> e <span style={{color: '#2DB67C'}}>Instagram</span> Ads</h2>
-              <h3 className='home-first__subtitle'>Comienza con el Módulo de Fundamentos del Marketing y Facebook Gratis</h3>
+              <h2 className='home-first__title'>Curso Práctico de Marketing Digital, <span style={{color: '#2DB67C'}}>Facebook</span> e <span style={{color: '#2DB67C'}}>Instagram</span> Ads</h2>
+              <h3 className='home-first__subtitle'>Comienza Gratis con el Módulo de Fundamentos del Marketing y Facebook Ads</h3>
               <button onClick={this.openModal} type="button" style={{marginTop: '10px', fontWeight: 'bold', fontSize: '20px', padding: '12px' }} className="btn btn-success">Acceso Gratis</button>
               <ModalAskLeadMagnet ref="child"/>
             </div>
